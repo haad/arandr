@@ -26,7 +26,7 @@ Features
 Status
 ------
 
-Works for me, hardly tested on other systems. (If this program had a controlled release cycle, the current version would be called "alpha".)
+Works for me and some others.
 
 See TODO_ for planned features.
 
@@ -34,35 +34,29 @@ See TODO_ for planned features.
 Installation
 ------------
 
- * Python Setuptools style::
-
-	sudo easy_install http://svn.amsuess.com/svn/tools/arandr/
-	arandr
-
  * Debian package_::
 
-	wget http://christian.amsuess.com/tools/arandr/files/arandr_0.0-1_all.deb
-	sudo dpkg -i arandr_0.0-1_all.deb
+	wget http://christian.amsuess.com/tools/arandr/files/arandr_0.1-1_all.deb
+	sudo dpkg -i arandr_0.1-1_all.deb
 	arandr
 
  * Directly from SVN::
 
-	svn co http://svn.amsuess.com/svn/tools/arandr/
+	svn co http://svn.amsuess.com/svn/tools/arandr/trunk/ arandr
 	cd arandr
-	./run.py
+	./arandr
 
 
 Dependencies
 ------------
 
+ * python
  * xrandr
- * setuptools_ (Debian_/Ubuntu_: ``python-setuptools``)
 
 
 Bugs / Caveats
 --------------
 
- * Not tested in many environments
  * Changes while running are not caught (no HAL events!)
 
 
@@ -78,7 +72,7 @@ Inspired by the `dual head sketch`_ in the ThinkWiki_.
  .. _xsetwacom: http://linuxwacom.sourceforge.net/index.php/howto/xsetwacom
  .. _TODO: ./TODO
  .. _setuptools: http://pypi.python.org/pypi/setuptools
- .. _package: http://christian.amsuess.com/tools/arandr/files/arandr_0.0-1_all.deb
+ .. _package: http://christian.amsuess.com/tools/arandr/files/arandr_0.1-1_all.deb
  .. _Debian: http://packages.debian.org/etch/python-setuptools
  .. _Ubuntu: http://packages.ubuntu.com/gutsy/python-setuptools
  .. _chrysn: http://christian.amsuess.com
