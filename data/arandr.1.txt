@@ -1,0 +1,33 @@
+=========
+ arandr
+=========
+
+-------------------------------
+visual front end for XRandR 1.2
+-------------------------------
+
+:Author: chrysn <chrysn@fsfe.org>
+:Date: 2008-06-03
+:Manual section: 1
+
+SYNOPSIS
+=========
+
+``arandr``
+
+DESCRIPTION
+===========
+
+ARandR is a visual front end for XRandR 1.2 (per display options), which
+provides full controll over positioning, saving and loading to/from shell
+scripts and easy integration with other applications.
+
+SEE ALSO
+========
+
+``man 1 xrandr``
+
+.. As long as rst2man is not yet widespread, download it from
+   http://docutils.sourceforge.net/sandbox/manpage-writer/.
+   The ready-made arandr.1 will be in the package as long as rst2man is not
+   packaged.

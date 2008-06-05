@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ARandR
+GenericName=Screen Settings
+GenericName[de]=Bildschirmeinstellungen
+Icon=display
+Exec=arandr
+Terminal=false
+Type=Application
+Categories=Settings;HardwareSettings;
+StartupNotify=true

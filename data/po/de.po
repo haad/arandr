@@ -1,0 +1,152 @@
+# ARandR
+# Copyright (C) 2008 chrysn <chrysn@fsfe.org
+# This file is distributed under the same license as the arandr package.
+# chrysn <chrysn@fsfe.org>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: arandr 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-06-03 18:29+0200\n"
+"PO-Revision-Date: 2008-06-03 18:38+0100\n"
+"Last-Translator: chrysn <chrysn@fsfe.org>\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: screenlayout/gui.py:91
+msgid "_Layout"
+msgstr "_Layout"
+
+#: screenlayout/gui.py:102
+msgid "_View"
+msgstr "_Ansicht"
+
+#: screenlayout/gui.py:104
+msgid "_Outputs"
+msgstr "_Ausgabegeräte"
+
+#: screenlayout/gui.py:105
+msgid "Dummy"
+msgstr "Dummy"
+
+#: screenlayout/gui.py:107
+msgid "_System"
+msgstr "_System"
+
+#: screenlayout/gui.py:108
+msgid "_Keybindings (Metacity)"
+msgstr "_Tastenkombinationen (Metacity)"
+
+#: screenlayout/gui.py:110
+msgid "_Help"
+msgstr "_Hilfe"
+
+#: screenlayout/gui.py:114
+msgid "1:4"
+msgstr "1:4"
+
+#: screenlayout/gui.py:115
+msgid "1:8"
+msgstr "1:8"
+
+#: screenlayout/gui.py:116
+msgid "1:16"
+msgstr "1:16"
+
+#: screenlayout/gui.py:160
+msgid "Script Properties"
+msgstr "Skript-Eigenschaften"
+
+#: screenlayout/gui.py:172
+msgid "Script"
+msgstr "Skript"
+
+#: screenlayout/gui.py:188
+#, python-format
+msgid "XRandR failed: %s"
+msgstr "XRandR fehlgeschlagen: %s"
+
+#: screenlayout/gui.py:198
+msgid "Open Layout"
+msgstr "Layout öffnen"
+
+#: screenlayout/gui.py:210
+msgid "Save Layout"
+msgstr "Layout speichern"
+
+#: screenlayout/gui.py:261
+msgid "Keybindings (via Metacity)"
+msgstr "Tastenkombinationen (über Metacity)"
+
+#: screenlayout/gui.py:283
+msgid "ARandR Screen Layout Editor"
+msgstr "ARandR Bildschirmlayout-Editor"
+
+#: screenlayout/gui.py:286
+msgid "Another XRandR GUI (1.2 only)"
+msgstr "Another XRandR GUI (nur 1.2)"
+
+#: screenlayout/metacity.py:32
+msgid "Accelerator"
+msgstr "Kombination"
+
+#: screenlayout/metacity.py:33
+msgid "Action"
+msgstr "Aktion"
+
+#: screenlayout/metacity.py:91
+msgid "disabled"
+msgstr "deaktiviert"
+
+#: screenlayout/metacity.py:106
+msgid "New accelerator..."
+msgstr "Neue Kombination..."
+
+#: screenlayout/metacity.py:168
+msgid "no action"
+msgstr "keine Aktion"
+
+#: screenlayout/metacity.py:198
+msgid "incompatible configuration"
+msgstr "Konfiguration nicht verwendbar."
+
+#: screenlayout/metacity.py:205
+msgid "other application"
+msgstr "andere Anwendung"
+
+#: screenlayout/widget.py:42
+msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
+msgstr "Diese Konfiguration beinhaltet keinen aktiven Monitor. Soll sie angewandt werden?"
+
+#: screenlayout/widget.py:256
+msgid "Active"
+msgstr "Aktiv"
+
+#: screenlayout/widget.py:274
+#, python-format
+msgid "Setting this resolution is not possible here: %s"
+msgstr "Setzen der Bildschirmauflösung unmöglich: %s"
+
+#: screenlayout/widget.py:287
+#, python-format
+msgid "This orientation is not possible here: %s"
+msgstr "Drehung nicht möglich: %s"
+
+#: screenlayout/widget.py:293
+msgid "Resolution"
+msgstr "Auflösung"
+
+#: screenlayout/widget.py:295
+msgid "Orientation"
+msgstr "Drehung"
+
+#: screenlayout/xrandr.py:196
+msgid "A part of an output is outside the virtual screen."
+msgstr "Ein Teil des Ausgabegeräts liegt außerhalb des Virtual-Bereichs."
+
+#: screenlayout/xrandr.py:199
+msgid "An output is outside the virtual screen."
+msgstr "Ein Ausgabegerät liegt außerhalb des Virtual-Bereichs."
+

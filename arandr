@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+"""Run ARandR GUI"""
+
+from screenlayout.gui import main
+main()

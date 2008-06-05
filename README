@@ -1,0 +1,87 @@
+==========================
+ARandR: Another XRandR GUI
+==========================
+
+
+Design intent
+-------------
+
+Provide a simple visual front end for XRandR_ 1.2, client side X only (no xorg.conf involved, no pre-1.2 options).
+
+
+Features
+--------
+
+ * Full controll over positioning (instead of plain "left of") with edge snapping
+ * Saving configurations as executable shell scripts (configurations can be loaded without using this program)
+ * Configuration files can be edited to include additional payload (like xsetwacom_ commands tablet PC users need when rotating), which is preserved when editing
+ * Metacity keybinding integration:
+
+  * Saved configurations can be bound to arbitrary keys via metacity's custom commands.
+  * Several layouts can be bound to one key; they are cycled through. (Useful for "rotate" buttons on tablet PCs.)
+
+ * Main widget separated from packaged application (to facilitate integration with existing solutions)
+
+
+Status
+------
+
+Works for me, hardly tested on other systems. (If this program had a controlled release cycle, the current version would be called "alpha".)
+
+See TODO_ for planned features.
+
+
+Installation
+------------
+
+ * Python Setuptools style::
+
+	sudo easy_install http://svn.amsuess.com/svn/tools/arandr/
+	arandr
+
+ * Debian package_::
+
+	wget http://christian.amsuess.com/tools/arandr/files/arandr_0.0-1_all.deb
+	sudo dpkg -i arandr_0.0-1_all.deb
+	arandr
+
+ * Directly from SVN::
+
+	svn co http://svn.amsuess.com/svn/tools/arandr/
+	cd arandr
+	./run.py
+
+
+Dependencies
+------------
+
+ * xrandr
+ * setuptools_ (Debian_/Ubuntu_: ``python-setuptools``)
+
+
+Bugs / Caveats
+--------------
+
+ * Not tested in many environments
+ * Changes while running are not caught (no HAL events!)
+
+
+About
+-----
+
+Copyright (c) chrysn_ <chrysn@fsfe.org> 2008, published under GPLv3_
+
+Inspired by the `dual head sketch`_ in the ThinkWiki_.
+
+
+ .. _XRandR: http://www.x.org/wiki/Projects/XRandR
+ .. _xsetwacom: http://linuxwacom.sourceforge.net/index.php/howto/xsetwacom
+ .. _TODO: ./TODO
+ .. _setuptools: http://pypi.python.org/pypi/setuptools
+ .. _package: http://christian.amsuess.com/tools/arandr/files/arandr_0.0-1_all.deb
+ .. _Debian: http://packages.debian.org/etch/python-setuptools
+ .. _Ubuntu: http://packages.ubuntu.com/gutsy/python-setuptools
+ .. _chrysn: http://christian.amsuess.com
+ .. _GPLv3: http://www.gnu.org/licenses/gpl-3.0.txt
+ .. _`dual head sketch`: http://www.thinkwiki.org/wiki/Image:Intel-DualHead.png
+ .. _ThinkWiki: http://thinkwiki.org/
