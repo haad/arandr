@@ -40,6 +40,13 @@ Installation
 	sudo dpkg -i arandr_0.1-1_all.deb
 	arandr
 
+ * `tar ball`_::
+	
+	wget http://christian.amsuess.com/tools/arandr/files/arandr-0.1.tar.gz
+	tar xzf arandr-0.1.tar.gz
+	cd arandr-0.1
+	sudo ./setup.py install
+
  * Directly from SVN::
 
 	svn co http://svn.amsuess.com/svn/tools/arandr/trunk/ arandr
