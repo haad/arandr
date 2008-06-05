@@ -80,6 +80,7 @@ Inspired by the `dual head sketch`_ in the ThinkWiki_.
  .. _TODO: ./TODO
  .. _setuptools: http://pypi.python.org/pypi/setuptools
  .. _package: http://christian.amsuess.com/tools/arandr/files/arandr_0.1-1_all.deb
+ .. _`tar ball`: http://christian.amsuess.com/tools/arandr/files/arandr-0.1.tar.gz
  .. _Debian: http://packages.debian.org/etch/python-setuptools
  .. _Ubuntu: http://packages.ubuntu.com/gutsy/python-setuptools
  .. _chrysn: http://christian.amsuess.com
