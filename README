@@ -36,7 +36,7 @@ Installation
 
  * Debian package_::
 
-	wget http://christian.amsuess.com/tools/arandr/files/arandr_0.1-1_all.deb
+	wget http://christian.amsuess.com/tools/arandr/files/debian/arandr_0.1-1_all.deb
 	sudo dpkg -i arandr_0.1-1_all.deb
 	arandr
 
