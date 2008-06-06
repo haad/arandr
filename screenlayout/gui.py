@@ -300,8 +300,8 @@ class Application(object):
 		gtk.main()
 
 def main():
-	p = optparse.OptionParser(usage="%program [savedfile]", description="Another XRandrR GUI", version="%%prog %s"%__version__)
-	p.add_option('--randr-display', help='Use D as display for xrandr (but still show the GUI on the display from the environment)', metavar='D')
+	p = optparse.OptionParser(usage="%prog [savedfile]", description="Another XRandrR GUI", version="%%prog %s"%__version__)
+	p.add_option('--randr-display', help='Use D as display for xrandr (but still show the GUI on the display from the environment; e.g. `localhost:10.0`)', metavar='D')
 
 	(options, args) = p.parse_args()
 	if len(args) == 0:
