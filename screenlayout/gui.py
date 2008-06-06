@@ -1,9 +1,12 @@
 # This Python file uses the following encoding: utf-8
 """Main GUI for ARandR"""
 import os, stat
+import optparse
 import gtk, gobject
 from . import widget
 from .metacity import MetacityWidget
+
+__version__ = '0.1'
 
 #import os
 #os.environ['DISPLAY']=':0.0'
@@ -82,7 +85,7 @@ class Application(object):
 		</toolbar>
 	</ui>
 	"""
-	def __init__(self):
+	def __init__(self, file=None, randr_display=None):
 		self.window = window = gtk.Window()
 		window.props.title = "Screen Layout Editor"
 
@@ -129,8 +132,11 @@ class Application(object):
 		self.uimanager.add_ui_from_string(self.uixml)
 
 		# widget
-		self.widget = widget.ARandRWidget()
-		self.filetemplate = self.widget.load_from_x()
+		self.widget = widget.ARandRWidget(display=randr_display)
+		if file is None:
+			self.filetemplate = self.widget.load_from_x()
+		else:
+			self.filetemplate = self.widget.load_from_file(file)
 
 		self.widget.connect('changed', self._widget_changed)
 		self._widget_changed(self.widget)
@@ -281,7 +287,7 @@ class Application(object):
 	def about(self, *args):
 		d = gtk.AboutDialog()
 		d.props.program_name = _(u'ARandR Screen Layout Editor')
-		d.props.version = '0.0'
+		d.props.version = __version__
 		d.props.copyright = u'© chrysn 2008'
 		d.props.comments = _(u'Another XRandR GUI (1.2 only)')
 		d.props.license = open(os.path.join(os.path.dirname(__file__), 'data', 'gpl-3.txt')).read()
@@ -294,4 +300,15 @@ class Application(object):
 		gtk.main()
 
 def main():
-	Application().run()
+	p = optparse.OptionParser(usage="%program [savedfile]", description="Another XRandrR GUI", version="%%prog %s"%__version__)
+	p.add_option('--randr-display', help='Use D as display for xrandr (but still show the GUI on the display from the environment)', metavar='D')
+
+	(options, args) = p.parse_args()
+	if len(args) == 0:
+		file_to_open = None
+	elif len(args) == 1:
+		file_to_open = args[0]
+	else:
+		p.usage()
+
+	Application(file=file_to_open, randr_display=options.randr_display).run()

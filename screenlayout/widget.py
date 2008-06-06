@@ -15,7 +15,7 @@ class ARandRWidget(gtk.DrawingArea):
 			'changed':(gobject.SIGNAL_RUN_LAST, gobject.TYPE_NONE, ()),
 			}
 
-	def __init__(self, factor=8):
+	def __init__(self, factor=8, display=None):
 		super(ARandRWidget, self).__init__()
 
 		self._factor = factor
@@ -27,7 +27,7 @@ class ARandRWidget(gtk.DrawingArea):
 
 		self.setup_draganddrop()
 
-		self._xrandr = XRandR()
+		self._xrandr = XRandR(display=display)
 
 	#################### widget features ####################
 	

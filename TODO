@@ -1,8 +1,6 @@
  * add option to make layout default on startup
  * implement missing xrandr features: reflect, additional modes (for forcibly applying saved layouts so they are already active when an output is connected), fb, fbmm/dpi
- * indicate connection status
  * call xrandr without blocking
- * add command line args (loading configurations, using other $DISPLAY internally)
  * receive notifications on changes (XRRScreenChangeNotify)
  
  * integrate related settings: (might end up writing a complete configuration manager, which is not my intention)

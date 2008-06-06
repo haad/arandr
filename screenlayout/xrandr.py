@@ -1,4 +1,5 @@
 """Wrapper around command line xrandr (only 1.2 per output features supported)"""
+import os
 import subprocess
 import warnings
 
@@ -11,7 +12,11 @@ SHELLSHEBANG='#!/bin/sh'
 class XRandR(object):
 	DEFAULTTEMPLATE = [SHELLSHEBANG, '%(xrandr)s']
 
-	def __init__(self):
+	def __init__(self, display=None):
+		self.environ = dict(os.environ)
+		if display:
+			self.environ['DISPLAY'] = display
+
 		if "1.2" not in self._output("--version"):
 			raise Exception("XRandR 1.2 required; for newer versions please adapt the code")
 	
@@ -23,7 +28,7 @@ class XRandR(object):
 	#################### calling xrandr ####################
 	
 	def _output(self, *args):
-		p = subprocess.Popen(("xrandr",)+args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+		p = subprocess.Popen(("xrandr",)+args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=self.environ)
 		ret, err = p.communicate()
 		status = p.wait()
 		if status!=0:
