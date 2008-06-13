@@ -64,6 +64,7 @@ Dependencies
 ------------
 
  * python
+ * PyGTK
  * xrandr
 
 
