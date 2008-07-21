@@ -61,7 +61,7 @@ class install_data(_install_data):
         _install_data.run(self)
 
 setup(name = "arandr",
-	version = "0.1",
+	version = "0.1.1",
 	description = u"Screen layout editor for xrandr 1.2 (Another XRandR gui)",
 	author = u"chrysn",
 	author_email = "chrysn@fsfe.org",

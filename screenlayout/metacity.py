@@ -218,15 +218,18 @@ class ActionWidget(GConfButton):
 
 	def on_clicked(self, widget):
 		m = gtk.Menu()
-		for f in os.listdir(SCRIPTSDIR):
-			if not f.endswith('.sh'):
-				continue
-			text = f[:-3]
-			i = gtk.CheckMenuItem(text)
-			if text in self.items:
-				i.props.active = True
-			i.connect('activate', lambda menuitem, script: self.toggle(script), text)
-			m.add(i)
+		try:
+			for f in os.listdir(SCRIPTSDIR):
+				if not f.endswith('.sh'):
+					continue
+				text = f[:-3]
+				i = gtk.CheckMenuItem(text)
+				if text in self.items:
+					i.props.active = True
+				i.connect('activate', lambda menuitem, script: self.toggle(script), text)
+				m.add(i)
+		except OSError: # no such directory
+			pass
 
 		if not m.get_children():
 			i = gtk.MenuItem(_("No files in %(folder)r. Save a layout first.")%{'folder':SCRIPTSDIR})

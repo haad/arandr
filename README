@@ -36,8 +36,8 @@ Installation
 
  * Debian package_::
 
-	wget http://christian.amsuess.com/tools/arandr/files/debian/arandr_0.1-1_all.deb
-	sudo dpkg -i arandr_0.1-1_all.deb
+	wget http://christian.amsuess.com/tools/arandr/files/debian/arandr_0.1.1-1_all.deb
+	sudo dpkg -i arandr_0.1.1-1_all.deb
 
  * PKGBUILD_ for archlinux on AUR::
 
@@ -45,9 +45,9 @@ Installation
 
  * `tar ball`_::
 	
-	wget http://christian.amsuess.com/tools/arandr/files/arandr-0.1.tar.gz
-	tar xzf arandr-0.1.tar.gz
-	cd arandr-0.1
+	wget http://christian.amsuess.com/tools/arandr/files/arandr-0.1.1.tar.gz
+	tar xzf arandr-0.1.1.tar.gz
+	cd arandr-0.1.1
 	sudo ./setup.py install
 
  * Directly from SVN::
@@ -86,8 +86,8 @@ Inspired by the `dual head sketch`_ in the ThinkWiki_.
  .. _xsetwacom: http://linuxwacom.sourceforge.net/index.php/howto/xsetwacom
  .. _TODO: ./TODO
  .. _setuptools: http://pypi.python.org/pypi/setuptools
- .. _package: http://christian.amsuess.com/tools/arandr/files/debian/arandr_0.1-1_all.deb
- .. _`tar ball`: http://christian.amsuess.com/tools/arandr/files/arandr-0.1.tar.gz
+ .. _package: http://christian.amsuess.com/tools/arandr/files/debian/arandr_0.1.1-1_all.deb
+ .. _`tar ball`: http://christian.amsuess.com/tools/arandr/files/arandr-0.1.1.tar.gz
  .. _PKGBUILD: http://aur.archlinux.org/packages.php?ID=17385
  .. _chrysn: http://christian.amsuess.com
  .. _GPLv3: http://www.gnu.org/licenses/gpl-3.0.txt
