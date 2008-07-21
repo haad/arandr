@@ -5,7 +5,8 @@ import warnings
 
 from .auxiliary import BetterList, Size, Position, Geometry, FileLoadError, FileSyntaxError, InadequateConfiguration, Rotation, ROTATIONS, NORMAL
 
-_ = lambda x:x # fake gettext
+import gettext
+gettext.install('arandr')
 
 SHELLSHEBANG='#!/bin/sh'
 

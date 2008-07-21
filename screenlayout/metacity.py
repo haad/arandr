@@ -1,9 +1,14 @@
 import os
 import gobject
 import gtk
-import gconf
 
-_ = lambda x:x # fake gettext
+try:
+	import gconf
+except ImportError:
+	gconf = None
+
+import gettext
+gettext.install('arandr')
 
 SCRIPTSDIR = os.path.expanduser('~/.screenlayout/') # must end in /
 
@@ -51,6 +56,9 @@ class MetacityWidget(gtk.Table):
 
 	
 class GConfButton(gtk.Button):
+	"""Button connected to a gconfkey via a gconf client c.
+	
+	Will call self._update when the key is changed; use self.set(value) to change the key's value."""
 	def __init__(self, c, gconfkey):
 		self._properties = {}
 		super(GConfButton, self).__init__()
@@ -62,7 +70,7 @@ class GConfButton(gtk.Button):
 	
 	def __del__(self):
 		self.gconf.notify_remove(self._id)
-		print "del" # FIXME: not called!
+		#print "del" # FIXME: not called!
 	
 	def do_get_property(self, key):
 		return self._properties[key]
@@ -74,6 +82,7 @@ class GConfButton(gtk.Button):
 
 
 class KeyBindingButton(GConfButton):
+	"""GConfButton that will interpret the value as a keybinding and ask for a new keybinding when pressed."""
 	__gproperties__ = {
 			'bound': (gobject.TYPE_BOOLEAN, 'bound', 'slot is bound to a key', False, gobject.PARAM_READWRITE),
 			}
@@ -113,7 +122,7 @@ class KeyBindingButton(GConfButton):
 
 		keymap = gtk.gdk.keymap_get_default()
 		translation = keymap.translate_keyboard_state(event.hardware_keycode, event.state, event.group)
-		if translation == None: # FIXME: metacity can also handle raw keycodes with modifiers
+		if translation == None: # FIXME: metacity can also handle raw keycodes with modifiers (but can compiz?)
 			accel_name = "%#x"%event.hardware_keycode
 		else:
 			(keyval, egroup, level, consumed_modifiers) = translation
@@ -146,6 +155,7 @@ class KeyBindingButton(GConfButton):
 		self.set(accel_name)
 
 class ActionWidget(GConfButton):
+	"""GConfButton that will interpret the value as a command and allow changing it if it is a screenlayout script or a collection thereof."""
 	__gproperties__ = {
 			'editable': (gobject.TYPE_BOOLEAN, 'editable', 'true if property can be managed by MetacityWidget', False, gobject.PARAM_READWRITE),
 			}
@@ -217,11 +227,17 @@ class ActionWidget(GConfButton):
 				i.props.active = True
 			i.connect('activate', lambda menuitem, script: self.toggle(script), text)
 			m.add(i)
-		m.add(gtk.MenuItem())
 
-		i = gtk.ImageMenuItem(gtk.STOCK_CLEAR)
-		i.connect('activate', lambda menuitem: self.set(""))
-		m.add(i)
+		if not m.get_children():
+			i = gtk.MenuItem(_("No files in %(folder)r. Save a layout first.")%{'folder':SCRIPTSDIR})
+			i.props.sensitive = False
+			m.add(i)
+		else:
+			m.add(gtk.MenuItem())
+
+			i = gtk.ImageMenuItem(gtk.STOCK_CLEAR)
+			i.connect('activate', lambda menuitem: self.set(""))
+			m.add(i)
 
 		m.show_all()
 		m.popup(None, None, None, 1, 0)
@@ -237,3 +253,35 @@ class ActionWidget(GConfButton):
 			self.set('"%s%s.sh"'%(SCRIPTSDIR, self.items[0]))
 		else:
 			self.set(CYCLINGPATTERN%{'length':len(self.items), 'countfile':'/tmp/screenlayout_count.%s'%os.environ['USER'], 'cases':" ;; ".join('%d) "%s.sh"'%(i,SCRIPTSDIR+script) for (i,script) in enumerate(self.items))})
+
+
+def show_keybinder():
+	if not gconf:
+		d = gtk.MessageDialog(None, gtk.DIALOG_DESTROY_WITH_PARENT, gtk.MESSAGE_ERROR, gtk.BUTTONS_CLOSE)
+		d.props.text = _("gconf not available.")
+		d.props.secondary_text = _("In order to configure metacity, you need to have the python gconf module installed, which usually comes with the python gnome package.")
+		d.run()
+		d.destroy()
+		return
+
+	d = gtk.Window()
+	d.props.modal = True
+	d.props.title = _("Keybindings (via Metacity)")
+
+	close = gtk.Button(gtk.STOCK_CLOSE)
+	close.props.use_stock = True
+	close.connect('clicked', lambda *args: d.destroy())
+	buttons = gtk.HBox() # FIXME: use HButtonBox
+	buttons.props.border_width = 5
+	buttons.pack_end(close, expand=False)
+
+	t = MetacityWidget()
+
+	contents = gtk.VBox()
+	contents.pack_start(t)
+	l = gtk.Label(_('Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n\nThis will only work if you use metacity or another program reading its configuration.'))
+	l.props.wrap = True
+	contents.pack_start(l)
+	contents.pack_end(buttons, expand=False)
+	d.add(contents)
+	d.show_all()

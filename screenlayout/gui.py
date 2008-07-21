@@ -4,7 +4,7 @@ import os, stat
 import optparse
 import gtk, gobject
 from . import widget
-from .metacity import MetacityWidget
+from .metacity import show_keybinder
 
 __version__ = '0.1'
 
@@ -262,25 +262,7 @@ class Application(object):
 
 	@actioncallback
 	def do_open_metacity(self):
-		d = gtk.Window()
-		d.props.modal = True
-		d.props.title = _("Keybindings (via Metacity)")
-
-		close = gtk.Button(gtk.STOCK_CLOSE)
-		close.props.use_stock = True
-		close.connect('clicked', lambda *args: d.destroy())
-		buttons = gtk.HBox() # FIXME: use HButtonBox
-		buttons.props.border_width = 5
-		buttons.pack_end(close, expand=False)
-
-		t = MetacityWidget()
-
-		contents = gtk.VBox()
-		contents.pack_start(t)
-		contents.pack_start(gtk.Label('Use backspace to clear accelerators, escape to abort editing.'))
-		contents.pack_end(buttons, expand=False)
-		d.add(contents)
-		d.show_all()
+		show_keybinder()
 	
 	#################### application related ####################
 	
