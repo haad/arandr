@@ -85,7 +85,7 @@ class Application(object):
 		</toolbar>
 	</ui>
 	"""
-	def __init__(self, file=None, randr_display=None):
+	def __init__(self, file=None, randr_display=None, force_version=False):
 		self.window = window = gtk.Window()
 		window.props.title = "Screen Layout Editor"
 
@@ -132,7 +132,7 @@ class Application(object):
 		self.uimanager.add_ui_from_string(self.uixml)
 
 		# widget
-		self.widget = widget.ARandRWidget(display=randr_display)
+		self.widget = widget.ARandRWidget(display=randr_display, force_version=force_version)
 		if file is None:
 			self.filetemplate = self.widget.load_from_x()
 		else:
@@ -284,6 +284,7 @@ class Application(object):
 def main():
 	p = optparse.OptionParser(usage="%prog [savedfile]", description="Another XRandrR GUI", version="%%prog %s"%__version__)
 	p.add_option('--randr-display', help='Use D as display for xrandr (but still show the GUI on the display from the environment; e.g. `localhost:10.0`)', metavar='D')
+	p.add_option('--force-version', help='Even run with untested XRandR versions', action='store_true')
 
 	(options, args) = p.parse_args()
 	if len(args) == 0:
@@ -293,4 +294,9 @@ def main():
 	else:
 		p.usage()
 
-	Application(file=file_to_open, randr_display=options.randr_display).run()
+	a = Application(
+			file=file_to_open,
+			randr_display=options.randr_display,
+			force_version=options.force_version
+			)
+	a.run()

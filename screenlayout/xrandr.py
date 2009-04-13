@@ -13,12 +13,15 @@ SHELLSHEBANG='#!/bin/sh'
 class XRandR(object):
 	DEFAULTTEMPLATE = [SHELLSHEBANG, '%(xrandr)s']
 
-	def __init__(self, display=None):
+	def __init__(self, display=None, force_version=False):
+		"""Create proxy object and check for xrandr at `display`. Fail with
+		untested versions unless `force_version` is True."""
 		self.environ = dict(os.environ)
 		if display:
 			self.environ['DISPLAY'] = display
 
-		if "1.2" not in self._output("--version"):
+		version_output = self._output("--version")
+		if not ("1.2" in version_output or "1.3" in version_output) and not force_version:
 			raise Exception("XRandR 1.2 required; for newer versions please adapt the code")
 	
 	def _get_outputs(self):
