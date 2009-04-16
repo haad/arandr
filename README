@@ -26,7 +26,7 @@ Features
 Status
 ------
 
-Works for me and some others.
+Works with recent X servers supporting XRandR 1.2 or 1.3 (which is 1.2 compatible).
 
 See TODO_ for planned features.
 
@@ -36,7 +36,7 @@ Installation
 
  * Debian package_::
 
-	wget http://christian.amsuess.com/tools/arandr/files/debian/arandr_0.1.1-1_all.deb
+	wget http://christian.amsuess.com/tools/arandr/files/debian/arandr_0.1.2-1_all.deb
 	sudo dpkg -i arandr_0.1.1-1_all.deb
 
  * PKGBUILD_ for archlinux on AUR::
@@ -45,9 +45,9 @@ Installation
 
  * `tar ball`_::
 	
-	wget http://christian.amsuess.com/tools/arandr/files/arandr-0.1.1.tar.gz
-	tar xzf arandr-0.1.1.tar.gz
-	cd arandr-0.1.1
+	wget http://christian.amsuess.com/tools/arandr/files/arandr-0.1.2.tar.gz
+	tar xzf arandr-0.1.2.tar.gz
+	cd arandr-0.1.2
 	sudo ./setup.py install
 
  * Directly from SVN::
