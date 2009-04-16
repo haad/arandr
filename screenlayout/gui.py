@@ -6,7 +6,7 @@ import gtk, gobject
 from . import widget
 from .metacity import show_keybinder
 
-__version__ = '0.1'
+__version__ = '0.1.2'
 
 #import os
 #os.environ['DISPLAY']=':0.0'

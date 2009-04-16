@@ -1,0 +1,5 @@
+checklist before release:
+
+ * set version in `setup.py` and `screenlayout/gui.py`
+ * update README for new file names (be sure to catch all)
+ * update website to reflect new README
