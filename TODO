@@ -4,9 +4,12 @@
  * receive notifications on changes (XRRScreenChangeNotify)
  * don't reset displays moved over edges; instead, move as far as possible
  * allow setting dpi
- 
  * integrate related settings: (might end up writing a complete configuration manager, which is not my intention)
+
   * xsetwacom
-  * gnome-panel layout
+  * gnome-panel layout (is this 1.3's --primary?)
 
  * integrate new 1.3 features (projection matrix, panning)
+ * be more intelligent about future xrandr versions (cf debian #523903)
+ * enhance python packaging (eg --install-layout=deb from ubuntu or python-central/python-support)
+ * read --props, parse edid (using parse-edid from read-edid), maybe even offer setting properties
