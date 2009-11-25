@@ -1,13 +1,18 @@
 #!/usr/bin/env python
-from distutils.core import setup
 
-import os, subprocess, glob, gzip
+import os
+import subprocess
+import glob
+import gzip
+
+from distutils.core import setup
 from distutils.dep_util import newer
-from distutils.log import info
+from distutils.log import info, warn
 from distutils.cmd import Command
 from distutils.command.build import build as _build
 from distutils.command.install_data import install_data as _install_data
 from distutils.command.install import install as _install
+from distutils.command.sdist import sdist as _sdist
 
 class build_trans(Command):
     description = 'Compile .po files into .mo files'
@@ -60,11 +65,18 @@ class install_data(_install_data):
 
         _install_data.run(self)
 
+class sdist(_sdist):
+    def run(self):
+        warn("WARNING: Usually, arandr's source tarballs are generated from `git archive`!")
+        _sdist.run(self)
+
+
 setup(name = "arandr",
 	version = "0.1.2",
-	description = u"Screen layout editor for xrandr 1.2 (Another XRandR gui)",
+	description = u"Screen layout editor for xrandr (Another XRandR gui)",
 	author = u"chrysn",
 	author_email = "chrysn@fsfe.org",
+        url = "http://christian.amsuess.com/tools/arandr/",
 	packages = ['screenlayout'],
 	license = u'GNU GPL 3',
 	package_data = {
@@ -77,6 +89,7 @@ setup(name = "arandr",
             'build_man': build_man,
             'build': build,
             'install_data': install_data,
+            'sdist': sdist,
             },
         data_files = [
             ('share/applications', ['data/arandr.desktop']),
