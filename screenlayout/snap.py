@@ -1,4 +1,4 @@
-from .xrandr import Position
+from .auxiliary import Position
 
 class Snap(object):
 	"""Snap-to-edges manager"""
@@ -18,7 +18,6 @@ class Snap(object):
 			self.horizontal.add(i[0].top-size.height)
 			self.horizontal.add(i[0].top+i[1].height-size.height)
 
-	
 	def suggest(self, position):
 		vertical = [x for x in self.vertical if abs(x-position[0])<self.tolerance]
 		horizontal = [y for y in self.horizontal if abs(y-position[1])<self.tolerance]

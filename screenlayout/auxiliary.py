@@ -1,10 +1,14 @@
 """Exceptions and generic classes"""
+
 from math import pi
 
 class FileLoadError(Exception): pass
-class FileSyntaxError(FileLoadError): pass
+class FileSyntaxError(FileLoadError):
+	"""A file's syntax could not be parsed."""
 
-class InadequateConfiguration(Exception): pass
+class InadequateConfiguration(Exception):
+	"""A configuration is incompatible with the current state of X."""
+
 
 class BetterList(list):
 	"""List that can be split like a string"""
@@ -16,7 +20,7 @@ class BetterList(list):
 			except ValueError:
 				break
 			yield i
-	
+
 	def split(self, item):
 		indices = list(self.indices(item))
 		yield self[:indices[0]]
@@ -24,7 +28,9 @@ class BetterList(list):
 			yield x
 		yield self[indices[-1]+1:]
 
+
 class Size(tuple):
+	"""2-tuple of width and height that can be created from a '<width>x<height>' string"""
 	def __new__(cls, arg):
 		if isinstance(arg, basestring):
 			arg = [int(x) for x in arg.split("x")]
@@ -38,6 +44,7 @@ class Size(tuple):
 		return "%dx%d"%self
 
 class Position(tuple):
+	"""2-tuple of left and top that can be created from a '<left>x<top>' string"""
 	def __new__(cls, arg):
 		if isinstance(arg, basestring):
 			arg = [int(x) for x in arg.split("x")]
@@ -51,6 +58,8 @@ class Position(tuple):
 		return "%dx%d"%self
 
 class Geometry(tuple):
+	"""4-tuple of width, height, left and top that can be created from an XParseGeometry style string"""
+	# FIXME: use XParseGeometry instead of an own incomplete implementation
 	def __new__(cls, width, height=None, left=None, top=None):
 		if isinstance(width, basestring):
 			width,rest = width.split("x")
@@ -68,7 +77,9 @@ class Geometry(tuple):
 	position = property(lambda self:Position(self[2:4]))
 	size = property(lambda self:Size(self[0:2]))
 
+
 class Rotation(str):
+	"""String that represents a rotation by a multiple of 90 degree"""
 	def __init__(self, original_me):
 		if self not in ('left','right','normal','inverted'):
 			raise Exception("No know rotation.")

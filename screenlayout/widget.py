@@ -30,7 +30,7 @@ class ARandRWidget(gtk.DrawingArea):
 		self._xrandr = XRandR(display=display, force_version=force_version)
 
 	#################### widget features ####################
-	
+
 	def _set_factor(self, f):
 		self._factor = f
 		self.set_size_request(self._xrandr.state.virtual.max[0]//self.factor,self._xrandr.state.virtual.max[1]//self.factor)
@@ -42,7 +42,7 @@ class ARandRWidget(gtk.DrawingArea):
 		if not len([x for x in self._xrandr.configuration.outputs.values() if x.active]):
 			d = gtk.MessageDialog(None, gtk.DIALOG_MODAL, gtk.MESSAGE_WARNING, gtk.BUTTONS_YES_NO, _("Your configuration does not include an active monitor. Do you want to apply the configuration?"))
 			result = d.run()
-			d.hide()
+			d.destroy()
 			if result == gtk.RESPONSE_YES:
 				return False
 			else:
@@ -52,7 +52,7 @@ class ARandRWidget(gtk.DrawingArea):
 	def error_message(self, message):
 			d = gtk.MessageDialog(None, gtk.DIALOG_MODAL, gtk.MESSAGE_ERROR, gtk.BUTTONS_CLOSE, message)
 			d.run()
-			d.hide()
+			d.destroy()
 
 	#################### loading ####################
 
@@ -66,7 +66,7 @@ class ARandRWidget(gtk.DrawingArea):
 		self._xrandr.load_from_x()
 		self._xrandr_was_reloaded()
 		return self._xrandr.DEFAULTTEMPLATE
-	
+
 	def _xrandr_was_reloaded(self):
 		self.sequence = sorted(self._xrandr.outputs)
 		self._lastclick = (-1,-1)
@@ -75,11 +75,11 @@ class ARandRWidget(gtk.DrawingArea):
 		if self.window:
 			self._force_repaint()
 		self.emit('changed')
-	
+
 	def save_to_x(self):
 		self._xrandr.save_to_x()
 		self.load_from_x()
-	
+
 	def save_to_file(self, file, template=None, additional=None):
 		data = self._xrandr.save_to_shellscript_string(template, additional)
 		open(file, 'w').write(data)
@@ -99,16 +99,15 @@ class ARandRWidget(gtk.DrawingArea):
 
 		self._force_repaint()
 		self.emit('changed')
-	
+
 	def set_position(self, on, pos):
 		self._set_something('position', on, pos)
 	def set_rotation(self, on, rot):
 		self._set_something('rotation', on, rot)
 	def set_resolution(self, on, res):
 		self._set_something('mode', on, res)
-	
+
 	def set_active(self, on, active):
-		print "set active"
 		v = self._xrandr.state.virtual
 		o = self._xrandr.configuration.outputs[on]
 
@@ -121,6 +120,7 @@ class ARandRWidget(gtk.DrawingArea):
 			else:
 				pos = Position((0,0))
 				for m in self._xrandr.state.outputs[on].modes:
+					# determine first possible mode
 					if m[0]<=v.max[0] and m[1]<=v.max[1]:
 						mode = m
 						break
@@ -187,14 +187,14 @@ class ARandRWidget(gtk.DrawingArea):
 			cr.rel_move_to(-width/2-x_bearing, -height/2-y_bearing)
 			cr.show_text(on)
 			cr.restore()
-	
+
 	def _force_repaint(self):
-		 # using self.allocation as rect is offset by the menu bar.
+        # using self.allocation as rect is offset by the menu bar.
 		self.window.invalidate_rect(gtk.gdk.Rectangle(0,0,self._xrandr.state.virtual.max[0]//self.factor,self._xrandr.state.virtual.max[1]//self.factor), False)
 		# this has the side effect of not painting out of the available region on drag and drop
 
 	#################### click handling ####################
-	
+
 	def click(self, widget, event):
 		undermouse = self._get_point_outputs(event.x, event.y)
 		if event.button == 1 and undermouse:
@@ -222,7 +222,7 @@ class ARandRWidget(gtk.DrawingArea):
 				m.popup(None, None, None, event.button, event.time)
 
 		self._lastclick = (event.x, event.y) # deposit for drag and drop until better way found to determine exact starting coordinates
-	
+
 	def _get_point_outputs(self, x, y):
 		x,y = x*self.factor, y*self.factor
 		outputs = set()

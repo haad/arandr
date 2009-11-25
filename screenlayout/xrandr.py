@@ -1,4 +1,5 @@
 """Wrapper around command line xrandr (only 1.2 per output features supported)"""
+
 import os
 import subprocess
 import warnings
@@ -22,21 +23,21 @@ class XRandR(object):
 
 		version_output = self._output("--version")
 		if not ("1.2" in version_output or "1.3" in version_output) and not force_version:
-			raise Exception("XRandR 1.2 required; for newer versions please adapt the code")
-	
+			raise Exception("XRandR 1.2/1.3 required.")
+
 	def _get_outputs(self):
 		assert self.state.outputs.keys() == self.configuration.outputs.keys()
 		return self.state.outputs.keys()
 	outputs = property(_get_outputs)
-	
+
 	#################### calling xrandr ####################
-	
+
 	def _output(self, *args):
 		p = subprocess.Popen(("xrandr",)+args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=self.environ)
 		ret, err = p.communicate()
 		status = p.wait()
 		if status!=0:
-			raise Exception("XRandR returned error code %d: %r"%(status,err))
+			raise Exception("XRandR returned error code %d: %s"%(status,err))
 		if err:
 			warnings.warn("XRandR wrote to stderr, but did not report an error (Message was: %r)"%err)
 		return ret
@@ -45,7 +46,7 @@ class XRandR(object):
 		self._output(*args)
 
 	#################### loading ####################
-	
+
 	def load_from_string(self, data):
 		data = data.replace("%","%%")
 		lines = data.split("\n")
@@ -53,7 +54,7 @@ class XRandR(object):
 
 		if lines[0] != SHELLSHEBANG:
 			raise FileLoadError('Not a shell script.')
-	
+
 		xrandrlines = [i for i,l in enumerate(lines) if l.strip().startswith('xrandr ')]
 		if len(xrandrlines)==0:
 			raise FileLoadError('No recognized xrandr command in this shell script.')
@@ -74,7 +75,7 @@ class XRandR(object):
 
 		for on,oa in options.items():
 			o = self.configuration.outputs[on]
-			if oa == ['--off']: 
+			if oa == ['--off']:
 				o.active = False
 			else:
 				if len(oa)%2 != 0:
@@ -93,7 +94,7 @@ class XRandR(object):
 						raise FileSyntaxError()
 				o.active = True
 
-	def load_from_x(self):
+	def load_from_x(self): # FIXME -- use --verbose or, better, a library
 		self.configuration = self.Configuration()
 		self.state = self.State()
 
@@ -122,7 +123,6 @@ class XRandR(object):
 				active = False
 				geometry = None
 				rotation = None
-				
 
 			o.rotations = set()
 			for r in ROTATIONS:
@@ -131,10 +131,10 @@ class XRandR(object):
 
 			for d in details:
 				o.modes.append(Size(int(a) for a in d.strip().split(" ")[0].split("x")))
-			
+
 			self.state.outputs[o.name] = o
 			self.configuration.outputs[o.name] = self.configuration.OutputConfiguration(active, geometry, rotation)
-	
+
 	def _load_raw_lines(self):
 		output = self._output("-q")
 		items = []
@@ -163,7 +163,7 @@ class XRandR(object):
 		self.configuration.virtual = Size((int(ssplit[7]),int(ssplit[9][:-1])))
 
 	#################### saving ####################
-	
+
 	def save_to_shellscript_string(self, template=None, additional=None):
 		"""Return a shellscript that will set the current configuration. Output can be parsed by load_from_string.
 
@@ -177,11 +177,11 @@ class XRandR(object):
 			d.update(additional)
 
 		return template%d
-	
+
 	def save_to_x(self):
 		self.check_configuration()
 		self._run(*self.configuration.commandlineargs())
-	
+
 	def check_configuration(self):
 		vmax = self.state.virtual.max
 
@@ -208,7 +208,7 @@ class XRandR(object):
 				raise InadequateConfiguration(_("An output is outside the virtual screen."))
 
 	#################### sub objects ####################
-	
+
 	class State(object):
 		"""Represents everything that can not be set by xrandr."""
 		def __init__(self):
@@ -229,7 +229,7 @@ class XRandR(object):
 
 			def __repr__(self):
 				return '<%s %r (%d modes)>'%(type(self).__name__, self.name, len(self.modes))
-	
+
 	class Configuration(object):
 		"""Represents everything that can be set by xrand (and is therefore subject to saving and loading from files)"""
 		def __init__(self):

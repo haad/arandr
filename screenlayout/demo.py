@@ -1,3 +1,7 @@
+"""Demo application, primarily used to make sure the screenlayout library can be used independent of ARandR.
+
+Run by calling the main() function."""
+
 import gtk
 from . import widget
 

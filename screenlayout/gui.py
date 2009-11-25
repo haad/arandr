@@ -1,10 +1,16 @@
 # This Python file uses the following encoding: utf-8
 """Main GUI for ARandR"""
+
 import os, stat
 import optparse
-import gtk, gobject
+import inspect
+
+import gtk
+import gobject
+
 from . import widget
 from .metacity import show_keybinder
+
 
 __version__ = '0.1.2'
 
@@ -17,9 +23,10 @@ gettext.install('arandr')
 
 def actioncallback(function):
 	"""Wrapper around a function that is intended to be used both as a callback from a gtk.Action and as a normal function.
+
 	Functions taking no arguments will never be given any, functions taking one argument (callbacks for radio actions) will be given the value of the action or just the argument.
+
 	A first argument called 'self' is passed through."""
-	import inspect
 	argnames = inspect.getargspec(function)[0]
 	if argnames[0] == 'self':
 		has_self = True
@@ -38,7 +45,8 @@ def actioncallback(function):
 		elif len(argnames)+1 == len(args_in):
 			if len(argnames):
 				args_out.append(args_in[1].props.value)
-		else: raise TypeError("Arguments don't match")
+		else:
+			raise TypeError("Arguments don't match")
 
 		return function(*args_out)
 
@@ -85,6 +93,7 @@ class Application(object):
 		</toolbar>
 	</ui>
 	"""
+
 	def __init__(self, file=None, randr_display=None, force_version=False):
 		self.window = window = gtk.Window()
 		window.props.title = "Screen Layout Editor"
@@ -156,9 +165,9 @@ class Application(object):
 		self.gconf = None
 
 	#################### actions ####################
-	
+
 	@actioncallback
-	def set_zoom(self, value): # don't use directly: state is not pushed back to action.
+	def set_zoom(self, value): # don't use directly: state is not pushed back to action group.
 		self.widget.factor = value
 		self.window.resize(1,1)
 
@@ -183,7 +192,7 @@ class Application(object):
 
 		d.run()
 		d.destroy()
-	
+
 	@actioncallback
 	def do_apply(self):
 		if self.widget.abort_if_unsafe():
@@ -192,14 +201,14 @@ class Application(object):
 		try:
 			self.widget.save_to_x()
 		except Exception, e:
-			d = gtk.MessageDialog(None, gtk.DIALOG_MODAL, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, _("XRandR failed: %s")%e)
+			d = gtk.MessageDialog(None, gtk.DIALOG_MODAL, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, _("XRandR failed:\n%s")%e)
 			d.run()
 			d.destroy()
 
 	@actioncallback
 	def do_new(self):
 		self.filetemplate = self.widget.load_from_x()
-	
+
 	@actioncallback
 	def do_open(self):
 		d = self._new_file_dialog(_("Open Layout"), gtk.FILE_CHOOSER_ACTION_OPEN)
@@ -225,7 +234,7 @@ class Application(object):
 			f = filenames[0]
 			if not f.endswith('.sh'): f = f + '.sh'
 			self.widget.save_to_file(f, self.filetemplate)
-	
+
 	def _new_file_dialog(self, title, type):
 		d = gtk.FileChooserDialog(title, None, type)
 		d.add_button(gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL)
@@ -245,15 +254,11 @@ class Application(object):
 
 		return d
 
-	def reset(self, widget):
-		self.widget.reload()
-		self._widget_changed(widget)
-
 	#################### widget maintenance ####################
-	
+
 	def _widget_changed(self, widget):
 		self._populate_outputs()
-	
+
 	def _populate_outputs(self):
 		w = self.uimanager.get_widget('/MenuBar/Outputs')
 		w.props.submenu = self.widget.contextmenu()
@@ -263,21 +268,20 @@ class Application(object):
 	@actioncallback
 	def do_open_metacity(self):
 		show_keybinder()
-	
+
 	#################### application related ####################
-	
+
 	def about(self, *args):
 		d = gtk.AboutDialog()
 		d.props.program_name = _(u'ARandR Screen Layout Editor')
 		d.props.version = __version__
-		d.props.copyright = u'© chrysn 2008'
-		d.props.comments = _(u'Another XRandR GUI (1.2 only)')
+		d.props.copyright = u'© chrysn 2008 – 2009'
+		d.props.comments = _(u'Another XRandR GUI')
 		d.props.license = open(os.path.join(os.path.dirname(__file__), 'data', 'gpl-3.txt')).read()
 		d.props.logo_icon_name = 'video-display'
-		d.connect('close', lambda widget: foobar)
 		d.run()
-		d.hide()
-	
+		d.destroy()
+
 	def run(self):
 		gtk.main()
 

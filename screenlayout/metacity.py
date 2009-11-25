@@ -47,17 +47,17 @@ class MetacityWidget(gtk.Table):
 			k.connect('notify::bound', lambda *args: self._update())
 			a.connect('notify::editable', lambda *args: self._update())
 		self._update()
-	
+
 	def _update(self):
 		for i,(k,a) in enumerate(self.lines):
 			enable = (i==0 or k.props.bound or self.lines[i-1][0].props.bound) and a.props.editable
 			k.props.sensitive = enable
 			a.props.sensitive = enable and k.props.bound
 
-	
+
 class GConfButton(gtk.Button):
 	"""Button connected to a gconfkey via a gconf client c.
-	
+
 	Will call self._update when the key is changed; use self.set(value) to change the key's value."""
 	def __init__(self, c, gconfkey):
 		self._properties = {}
@@ -67,16 +67,16 @@ class GConfButton(gtk.Button):
 		self.gconfkey = gconfkey
 		self._id = c.notify_add(gconfkey, self._update)
 		c.notify(gconfkey)
-	
+
 	def __del__(self):
 		self.gconf.notify_remove(self._id)
 		#print "del" # FIXME: not called!
-	
+
 	def do_get_property(self, key):
 		return self._properties[key]
 	def do_set_property(self, key, value):
 		self._properties[key] = value
-	
+
 	def set(self, value):
 		self.gconf.set_string(self.gconfkey, value)
 
@@ -92,7 +92,7 @@ class KeyBindingButton(GConfButton):
 
 		self.connect('clicked', self.on_clicked)
 		self.connect('key-press-event', self.on_keypress)
-	
+
 	def _update(self, *args):
 		s = self.gconf.get_string(self.gconfkey)
 
@@ -104,11 +104,11 @@ class KeyBindingButton(GConfButton):
 			self.props.bound = True
 
 		self.editing = False
-	
+
 	def abort_editing(self):
 		self.editing = False
 		self._update()
-	
+
 	def on_clicked(self, widget):
 		if not self.editing:
 			self.editing = True
@@ -244,7 +244,7 @@ class ActionWidget(GConfButton):
 
 		m.show_all()
 		m.popup(None, None, None, 1, 0)
-	
+
 	def toggle(self, item):
 		if item in self.items:
 			self.items.remove(item)
@@ -262,7 +262,7 @@ def show_keybinder():
 	if not gconf:
 		d = gtk.MessageDialog(None, gtk.DIALOG_DESTROY_WITH_PARENT, gtk.MESSAGE_ERROR, gtk.BUTTONS_CLOSE)
 		d.props.text = _("gconf not available.")
-		d.props.secondary_text = _("In order to configure metacity, you need to have the python gconf module installed, which usually comes with the python gnome package.")
+		d.props.secondary_text = _("In order to configure metacity, you need to have the python gconf module installed.")
 		d.run()
 		d.destroy()
 		return
