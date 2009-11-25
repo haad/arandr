@@ -36,8 +36,8 @@ Installation
 
  * Debian package_::
 
-	wget http://christian.amsuess.com/tools/arandr/files/debian/arandr_0.1.2-1_all.deb
-	sudo dpkg -i arandr_0.1.2-1_all.deb
+	wget http://christian.amsuess.com/tools/arandr/files/debian/arandr_0.1.2-2_all.deb
+	sudo dpkg -i arandr_0.1.2-2_all.deb
 
  * PKGBUILD_ for archlinux on AUR::
 
@@ -71,7 +71,8 @@ Dependencies
 Bugs / Caveats
 --------------
 
- * Changes while running are not caught (no HAL events!)
+ * Changes while running are not caught.
+ * Depends on all modes to have a <width>x<height> name.
 
 
 About
@@ -86,7 +87,7 @@ Inspired by the `dual head sketch`_ in the ThinkWiki_.
  .. _xsetwacom: http://linuxwacom.sourceforge.net/index.php/howto/xsetwacom
  .. _TODO: ./TODO
  .. _setuptools: http://pypi.python.org/pypi/setuptools
- .. _package: http://christian.amsuess.com/tools/arandr/files/debian/arandr_0.1.2-1_all.deb
+ .. _package: http://christian.amsuess.com/tools/arandr/files/debian/arandr_0.1.2-2_all.deb
  .. _`tar ball`: http://christian.amsuess.com/tools/arandr/files/arandr-0.1.2.tar.gz
  .. _PKGBUILD: http://aur.archlinux.org/packages.php?ID=17385
  .. _chrysn: http://christian.amsuess.com
