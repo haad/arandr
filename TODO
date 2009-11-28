@@ -11,5 +11,4 @@
 
  * integrate new 1.3 features (projection matrix, panning)
  * be more intelligent about future xrandr versions (cf debian #523903)
- * enhance python packaging (eg --install-layout=deb from ubuntu or python-central/python-support)
  * read --props, parse edid (using parse-edid from read-edid), maybe even offer setting properties
