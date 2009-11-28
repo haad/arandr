@@ -50,9 +50,9 @@ Installation
 	cd arandr-0.1.2
 	sudo ./setup.py install
 
- * Directly from SVN::
+ * Directly from GIT (`hosted on gitorious`_)::
 
-	svn co http://svn.amsuess.com/svn/tools/arandr/trunk/ arandr
+	git clone git://gitorious.org/arandr/arandr.git
 
    To run::
 
@@ -94,3 +94,4 @@ Inspired by the `dual head sketch`_ in the ThinkWiki_.
  .. _GPLv3: http://www.gnu.org/licenses/gpl-3.0.txt
  .. _`dual head sketch`: http://www.thinkwiki.org/wiki/Image:Intel-DualHead.png
  .. _ThinkWiki: http://thinkwiki.org/
+ .. _`hosted on gitorious`: http://gitorious.org/arandr/arandr
