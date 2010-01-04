@@ -49,7 +49,9 @@ class build_man(Command):
     def finalize_options(self): pass
 
     def run(self):
-        gzip.open('build/arandr.1.gz', 'w', 9).write(open('data/arandr.1').read())
+        compressed = gzip.open('build/arandr.1.gz', 'w', 9)
+        compressed.write(open('data/arandr.1').read())
+        compressed.close()
 
 class build(_build):
     sub_commands = _build.sub_commands + [('build_trans', None), ('build_man', None)]
