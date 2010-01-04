@@ -13,6 +13,8 @@ from distutils.command.build import build as _build
 from distutils.command.install_data import install_data as _install_data
 from distutils.command.install import install as _install
 from distutils.command.sdist import sdist as _sdist
+from distutils.dir_util import remove_tree
+from distutils.command.clean import clean as _clean
 
 class build_trans(Command):
     description = 'Compile .po files into .mo files'
@@ -72,6 +74,14 @@ class sdist(_sdist):
         warn("WARNING: Usually, arandr's source tarballs are generated from `git archive`!")
         _sdist.run(self)
 
+class clean(_clean):
+    def run(self):
+        if self.all:
+            remove_tree('build/locale', dry_run=self.dry_run)
+            if not self.dry_run:
+                os.unlink('build/arandr.1.gz')
+        _clean.run(self)
+
 
 setup(name = "arandr",
 	version = "0.1.2",
@@ -92,6 +102,7 @@ setup(name = "arandr",
             'build': build,
             'install_data': install_data,
             'sdist': sdist,
+            'clean': clean,
             },
         data_files = [
             ('share/applications', ['data/arandr.desktop']),
