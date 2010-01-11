@@ -84,18 +84,18 @@ class clean(_clean):
 
 
 setup(name = "arandr",
-	version = "0.1.2",
-	description = u"Screen layout editor for xrandr (Another XRandR gui)",
-	author = u"chrysn",
-	author_email = "chrysn@fsfe.org",
+    version = "0.1.2",
+    description = u"Screen layout editor for xrandr (Another XRandR gui)",
+    author = u"chrysn",
+    author_email = "chrysn@fsfe.org",
         url = "http://christian.amsuess.com/tools/arandr/",
-	packages = ['screenlayout'],
-	license = u'GNU GPL 3',
-	package_data = {
-		'screenlayout': [
-			'data/gpl-3.txt',
-			],
-		},
+    packages = ['screenlayout'],
+    license = u'GNU GPL 3',
+    package_data = {
+        'screenlayout': [
+            'data/gpl-3.txt',
+            ],
+        },
         cmdclass = {
             'build_trans': build_trans,
             'build_man': build_man,
