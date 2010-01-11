@@ -1,6 +1,6 @@
 from __future__ import division
-import os, stat
-import math
+import os
+import stat
 import gobject, gtk
 from .auxiliary import Position, Size, NORMAL, ROTATIONS, InadequateConfiguration
 from .xrandr import XRandR

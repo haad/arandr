@@ -80,6 +80,10 @@ class GConfButton(gtk.Button):
     def set(self, value):
         self.gconf.set_string(self.gconfkey, value)
 
+    def _update(self, *args):
+        """Called when the value of the key is changed (hooked into GConf); overwrite this."""
+        pass
+
 
 class KeyBindingButton(GConfButton):
     """GConfButton that will interpret the value as a keybinding and ask for a new keybinding when pressed."""
@@ -182,7 +186,7 @@ class ActionWidget(GConfButton):
             try:
                 left = s[len(CYCLINGPATTERN_RECOGNITION[0]):]
                 index = left.index(CYCLINGPATTERN_RECOGNITION[1])
-                countfile = left[:index]
+                # countfile = left[:index] # not needed because not configurable. differing count files will be reset to the global one on change.
                 left = left[index+len(CYCLINGPATTERN_RECOGNITION[1]):]
                 index = left.index(CYCLINGPATTERN_RECOGNITION[2])
                 length = int(left[:index])

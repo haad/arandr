@@ -187,7 +187,7 @@ class XRandR(object):
 
         for on in self.outputs:
             oc = self.configuration.outputs[on]
-            os = self.state.outputs[on]
+            #os = self.state.outputs[on]
 
             if not oc.active:
                 continue

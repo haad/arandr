@@ -1,12 +1,11 @@
 # This Python file uses the following encoding: utf-8
 """Main GUI for ARandR"""
 
-import os, stat
+import os
 import optparse
 import inspect
 
 import gtk
-import gobject
 
 from . import widget
 from .metacity import show_keybinder
