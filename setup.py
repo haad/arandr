@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import os
+import operator
 import subprocess
 import glob
 import gzip
@@ -16,6 +17,30 @@ from distutils.command.sdist import sdist as _sdist
 from distutils.dir_util import remove_tree
 from distutils.command.clean import clean as _clean
 
+PO_DIR = 'data/po'
+
+PACKAGENAME = "arandr"
+PACKAGEVERSION = "0.1.2"
+AUTHOR = "chrysn"
+AUTHOR_MAIL = "chrysn@fsfe.org"
+URL = "http://christian.amsuess.com/tools/arandr/"
+LICENSE = "GNU GPL 3"
+DESCRIPTION = "Screen layout editor for xrandr (Another XRandR gui)"
+
+class update_pot(Command):
+    description = 'Update the .pot translation template'
+
+    user_options = []
+
+    def initialize_options(self): pass
+    def finalize_options(self): pass
+
+    def run(self):
+        POT_FILE = os.path.join(PO_DIR, 'messages.pot')
+        all_py_files = sorted(reduce(operator.add, [[os.path.join(dn, f) for f in fs if f.endswith('.py')] for (dn,ds,fs) in os.walk('.')])) # sort to make diffs easier
+        # not working around xgettext not substituting for PACKAGE everywhere in the header; it's just a template and usually worked on using tools that ignore much of it anyway
+        subprocess.check_call(['xgettext', '-LPython', '-o', POT_FILE, '--copyright-holder', AUTHOR, '--package-name', PACKAGENAME, '--package-version', PACKAGEVERSION, '--msgid-bugs-address', AUTHOR_MAIL] + all_py_files)
+
 class build_trans(Command):
     description = 'Compile .po files into .mo files'
 
@@ -25,7 +50,6 @@ class build_trans(Command):
     def finalize_options(self): pass
 
     def run(self):
-        PO_DIR = 'data/po'
         for po in glob.glob(os.path.join(PO_DIR,'*.po')):
             lang = os.path.basename(po[:-3])
             mo = os.path.join('build', 'locale', lang, 'LC_MESSAGES', 'arandr.mo')
@@ -83,14 +107,14 @@ class clean(_clean):
         _clean.run(self)
 
 
-setup(name = "arandr",
-    version = "0.1.2",
-    description = u"Screen layout editor for xrandr (Another XRandR gui)",
-    author = u"chrysn",
-    author_email = "chrysn@fsfe.org",
-        url = "http://christian.amsuess.com/tools/arandr/",
+setup(name = PACKAGENAME,
+    version = PACKAGEVERSION,
+    description = DESCRIPTION,
+    author = AUTHOR,
+    author_email = AUTHOR_MAIL,
+    url = URL,
     packages = ['screenlayout'],
-    license = u'GNU GPL 3',
+    license = LICENSE,
     package_data = {
         'screenlayout': [
             'data/gpl-3.txt',
@@ -103,6 +127,7 @@ setup(name = "arandr",
             'install_data': install_data,
             'sdist': sdist,
             'clean': clean,
+            'update_pot': update_pot,
             },
         data_files = [
             ('share/applications', ['data/arandr.desktop']),
