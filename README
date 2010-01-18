@@ -73,9 +73,9 @@ Installation
 Dependencies
 ------------
 
- * python
- * PyGTK
- * xrandr
+ * python_
+ * PyGTK_
+ * xrandr_
 
 
 
@@ -85,6 +85,13 @@ Bugs / Caveats
  * Changes while running are not caught.
  * Depends on all modes to have a <width>x<height> name.
 
+
+Contributing
+------------
+
+If you are fluent with languages other than German and English, you can add translations to ARandR using gettext_. An easy way to do this is `ARandR's transifex site`_.
+
+Please send bug reports, suggestions, patches and git pull requests to me_.
 
 
 About
@@ -98,8 +105,6 @@ Inspired by the `dual head sketch`_ in the ThinkWiki_.
  .. _XRandR: http://www.x.org/wiki/Projects/XRandR
  .. _xsetwacom: http://linuxwacom.sourceforge.net/index.php/howto/xsetwacom
  .. _TODO: ./TODO
- .. _setuptools: http://pypi.python.org/pypi/setuptools
- .. _package: http://christian.amsuess.com/tools/arandr/files/debian/arandr_0.1.2-2_all.deb
  .. _`latest release`: http://christian.amsuess.com/tools/arandr/files/arandr-0.1.2.tar.gz
  .. _PKGBUILD: http://aur.archlinux.org/packages.php?ID=17385
  .. _chrysn: http://christian.amsuess.com
@@ -109,3 +114,8 @@ Inspired by the `dual head sketch`_ in the ThinkWiki_.
  .. _`hosted on gitorious`: http://gitorious.org/arandr/arandr
  .. _Debian: http://packages.debian.org/arandr
  .. _Ubuntu: http://packages.ubuntu.com/arandr
+ .. _gettext: http://www.gnu.org/software/gettext/
+ .. _`ARandR's transifex site`: https://transifex.net/projects/p/arandr/c/arandr/
+ .. _me: mailto:chrysn@fsfe.org
+ .. _python: http://www.python.org/
+ .. _PyGTK: http://www.pygtk.org/
