@@ -101,9 +101,19 @@ class sdist(_sdist):
 class clean(_clean):
     def run(self):
         if self.all:
-            remove_tree('build/locale', dry_run=self.dry_run)
+            dirs = ['build/locale']
+            files = ['build/arandr.1.gz']
+            for directory in dirs:
+                if os.path.exists(directory):
+                    remove_tree(directory, dry_run=self.dry_run)
+                else:
+                    warn("%r does not exist -- can't clean it", directory)
             if not self.dry_run:
-                os.unlink('build/arandr.1.gz')
+                for file in files:
+                    if os.path.exists(file):
+                        os.unlink(file)
+                    else:
+                        warn("%r does not exist -- can't clean it", file)
         _clean.run(self)
 
 
