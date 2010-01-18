@@ -102,7 +102,7 @@ msgstr "deaktiviert"
 
 #: screenlayout/metacity.py:119
 msgid "New accelerator..."
-msgstr "Neue Kombination..."
+msgstr "Neue Kombination…"
 
 #: screenlayout/metacity.py:182
 msgid "no action"
@@ -145,7 +145,7 @@ msgstr ""
 
 #: screenlayout/widget.py:43
 msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
-msgstr "Diese Konfiguration beinhaltet keinen aktiven Monitor. Soll sie angewandt werden?"
+msgstr "Diese Konfiguration beinhaltet keinen aktiven Monitor. Soll sie angewendet werden?"
 
 #: screenlayout/widget.py:257
 msgid "Active"
@@ -176,4 +176,3 @@ msgstr "Ein Teil des Ausgabegeräts liegt außerhalb des Virtual-Bereichs."
 #: screenlayout/xrandr.py:208
 msgid "An output is outside the virtual screen."
 msgstr "Ein Ausgabegerät liegt außerhalb des Virtual-Bereichs."
-
