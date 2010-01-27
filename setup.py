@@ -6,6 +6,9 @@ import subprocess
 import glob
 import gzip
 
+import docutils.core
+import docutils.writers.manpage
+
 from distutils.core import setup
 from distutils.dep_util import newer
 from distutils.log import info, warn
@@ -16,6 +19,7 @@ from distutils.command.install import install as _install
 from distutils.command.sdist import sdist as _sdist
 from distutils.dir_util import remove_tree
 from distutils.command.clean import clean as _clean
+
 
 PO_DIR = 'data/po'
 
@@ -67,7 +71,7 @@ class build_trans(Command):
                     subprocess.check_call(cmd)
 
 class build_man(Command):
-    description = 'Compress man page'
+    description = 'Generate and compress man page'
 
     user_options = []
 
@@ -75,9 +79,20 @@ class build_man(Command):
     def finalize_options(self): pass
 
     def run(self):
-        compressed = gzip.open('build/arandr.1.gz', 'w', 9)
-        compressed.write(open('data/arandr.1').read())
-        compressed.close()
+        self.mkpath('build')
+
+        sourcefile = 'data/arandr.1.txt'
+        gzfile = os.path.join('build', 'arandr.1.gz')
+
+        if newer(sourcefile, gzfile):
+            rst_source = open(sourcefile).read()
+            manpage = docutils.core.publish_string(rst_source, writer=docutils.writers.manpage.Writer())
+            info('compressing man page to %s', gzfile)
+
+            if not self.dry_run:
+                compressed = gzip.open(gzfile, 'w', 9)
+                compressed.write(manpage)
+                compressed.close()
 
 class build(_build):
     sub_commands = _build.sub_commands + [('build_trans', None), ('build_man', None)]
