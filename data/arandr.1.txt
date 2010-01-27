@@ -19,7 +19,7 @@ DESCRIPTION
 ===========
 
 ARandR is a visual front end for XRandR 1.2 (per display options), which
-provides full controll over positioning, saving and loading to/from shell
+provides full control over positioning, saving and loading to/from shell
 scripts and easy integration with other applications.
 
 SEE ALSO
