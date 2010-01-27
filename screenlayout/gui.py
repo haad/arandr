@@ -12,6 +12,7 @@ from .metacity import show_keybinder
 
 
 __version__ = '0.1.2'
+TRANSLATORS = ['chrysn <chrysn@fsfe.org>', 'Quizzlo <paolone.marco@gmail.com>']
 
 #import os
 #os.environ['DISPLAY']=':0.0'
@@ -274,6 +275,7 @@ class Application(object):
         d = gtk.AboutDialog()
         d.props.program_name = _(u'ARandR Screen Layout Editor')
         d.props.version = __version__
+        d.props.translator_credits = "\n".join(TRANSLATORS)
         d.props.copyright = u'© chrysn 2008 – 2009'
         d.props.comments = _(u'Another XRandR GUI')
         d.props.license = open(os.path.join(os.path.dirname(__file__), 'data', 'gpl-3.txt')).read()
