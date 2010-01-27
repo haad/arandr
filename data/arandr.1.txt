@@ -13,21 +13,22 @@ visual front end for XRandR 1.2
 SYNOPSIS
 =========
 
-``arandr``
+``arandr`` [savedfile]
 
 DESCRIPTION
 ===========
 
 ARandR is a visual front end for XRandR 1.2 (per display options), which
-provides full controll over positioning, saving and loading to/from shell
+provides full control over positioning, saving and loading to/from shell
 scripts and easy integration with other applications.
+
+--version          show program's version number and exit
+-h, --help         show this help message and exit
+--randr-display=D  Use D as display for xrandr (but still show the GUI on
+                   the display from the environment; e.g. `localhost:10.0`)
+--force-version    Even run with untested XRandR versions
 
 SEE ALSO
 ========
 
 ``man 1 xrandr``
-
-.. As long as rst2man is not yet widespread, download it from
-   http://docutils.sourceforge.net/sandbox/manpage-writer/.
-   The ready-made arandr.1 will be in the package as long as rst2man is not
-   packaged.

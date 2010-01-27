@@ -83,6 +83,7 @@ Dependencies
  * python_
  * PyGTK_
  * xrandr_
+ * docutils_ (>=0.6; for building the man page)
 
 
 
@@ -127,3 +128,4 @@ Inspired by the `dual head sketch`_ in the ThinkWiki_.
  .. _python: http://www.python.org/
  .. _PyGTK: http://www.pygtk.org/
  .. _`slackbuild by PhantomX`: http://github.com/PhantomX/slackbuilds/tree/master/arandr/
+ .. _docutils: http://docutils.sourceforge.net/
