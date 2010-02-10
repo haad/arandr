@@ -12,7 +12,7 @@ from .metacity import show_keybinder
 
 
 __version__ = '0.1.2'
-TRANSLATORS = ['chrysn <chrysn@fsfe.org>', 'Quizzlo <paolone.marco@gmail.com>', 'Phantom X <megaphantomx@bol.com.br>']
+TRANSLATORS = ['chrysn <chrysn@fsfe.org>', 'Quizzlo <paolone.marco@gmail.com>', 'Phantom X <megaphantomx@bol.com.br>', 'Joe Hansen <joedalton2@yahoo.dk>']
 
 #import os
 #os.environ['DISPLAY']=':0.0'

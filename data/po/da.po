@@ -1,0 +1,196 @@
+# Danish translation ARandR.
+# Copyright (C) 2009 chrysn & Joe Hansen.
+# This file is distributed under the same license as the ARandR package.
+# Joe Hansen <joedalton2@yahoo.dk>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: arandr 0.1.2\n"
+"Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
+"POT-Creation-Date: 2010-01-18 20:08+0100\n"
+"PO-Revision-Date: 2010-02-01 17:30+01:00\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: screenlayout/gui.py:103
+msgid "_Layout"
+msgstr "_Udseende"
+
+#: screenlayout/gui.py:114
+msgid "_View"
+msgstr "_Vis"
+
+#: screenlayout/gui.py:116
+msgid "_Outputs"
+msgstr "_Uddata"
+
+#: screenlayout/gui.py:117
+msgid "Dummy"
+msgstr "Dummy"
+
+#: screenlayout/gui.py:119
+msgid "_System"
+msgstr "_System"
+
+#: screenlayout/gui.py:120
+msgid "_Keybindings (Metacity)"
+msgstr "_Nøgletildelinger (Metacity)"
+
+#: screenlayout/gui.py:122
+msgid "_Help"
+msgstr "_Hjælp"
+
+#: screenlayout/gui.py:126
+msgid "1:4"
+msgstr "1:4"
+
+#: screenlayout/gui.py:127
+msgid "1:8"
+msgstr "1:8"
+
+#: screenlayout/gui.py:128
+msgid "1:16"
+msgstr "1:16"
+
+#: screenlayout/gui.py:175
+msgid "Script Properties"
+msgstr "Skriptegenskaber"
+
+#: screenlayout/gui.py:187
+msgid "Script"
+msgstr "Skript"
+
+#: screenlayout/gui.py:203
+#, python-format
+msgid ""
+"XRandR failed:\n"
+"%s"
+msgstr ""
+"XRandR mislykkedes:\n"
+"%s"
+
+#: screenlayout/gui.py:213
+msgid "Open Layout"
+msgstr "Åbn udseende"
+
+#: screenlayout/gui.py:225
+msgid "Save Layout"
+msgstr "Gem udseende"
+
+#: screenlayout/gui.py:275
+msgid "ARandR Screen Layout Editor"
+msgstr "ARandR - redigering af skærmudseende"
+
+#: screenlayout/gui.py:278
+msgid "Another XRandR GUI"
+msgstr "En anden XRandR-grænseflade"
+
+#: screenlayout/metacity.py:37
+msgid "Accelerator"
+msgstr "Accelerator"
+
+#: screenlayout/metacity.py:38
+msgid "Action"
+msgstr "Handling"
+
+#: screenlayout/metacity.py:104
+msgid "disabled"
+msgstr "deaktiveret"
+
+#: screenlayout/metacity.py:119
+msgid "New accelerator..."
+msgstr "Ny accelerator..."
+
+#: screenlayout/metacity.py:182
+msgid "no action"
+msgstr "ingen handling"
+
+#: screenlayout/metacity.py:212
+msgid "incompatible configuration"
+msgstr "inkompatibel konfiguration"
+
+#: screenlayout/metacity.py:219
+msgid "other application"
+msgstr "andet program"
+
+#: screenlayout/metacity.py:239
+#, python-format
+msgid "No files in %(folder)r. Save a layout first."
+msgstr "Ingen filer i %(folder)r. Gem et udseende først."
+
+#: screenlayout/metacity.py:268
+msgid "gconf not available."
+msgstr "gconf ikke tilgængelig."
+
+#: screenlayout/metacity.py:269
+msgid ""
+"In order to configure metacity, you need to have the python gconf module "
+"installed."
+msgstr ""
+"For at kunne konfigurere metacity, skal du have pythons gconf-modul "
+"installeret."
+
+#: screenlayout/metacity.py:276
+msgid "Keybindings (via Metacity)"
+msgstr "Nøgletildelinger (via Metacity)"
+
+#: screenlayout/metacity.py:289
+msgid ""
+"Click on a button in the left column and press a key combination you want to "
+"bind to a certain screen layout. (Use backspace to clear accelerators, "
+"escape to abort editing.) Then, select one or more layouts in the right "
+"column.\n"
+"\n"
+"This will only work if you use metacity or another program reading its "
+"configuration."
+msgstr ""
+"Klik på en knap i den venstre kolonne og tryk på en tastkombination du "
+"ønsker at tildele til et bestemt skærmudseende. (Brug Slet tilbage for at "
+"rydde acceleratorer, escape for at fortryde redigering.) Vælg så et eller "
+"flere udseender i den højre kolonne.\n"
+"\n"
+"Dette vil kun virke, hvis du bruger metacity eller et andet program, der "
+"læser dens konfiguration."
+
+#: screenlayout/widget.py:43
+msgid ""
+"Your configuration does not include an active monitor. Do you want to apply "
+"the configuration?"
+msgstr ""
+"Din konfiguration inkluderer ikke en aktiv overvågning. Ønsker du at anvende "
+"konfigurationen?"
+
+#: screenlayout/widget.py:257
+msgid "Active"
+msgstr "Aktiv"
+
+#: screenlayout/widget.py:275
+#, python-format
+msgid "Setting this resolution is not possible here: %s"
+msgstr "Angivelse af denne opløsning er ikke muligt her: %s"
+
+# retning er brugt i OpenOffice, kunne måske også være opsætning
+#: screenlayout/widget.py:288
+#, python-format
+msgid "This orientation is not possible here: %s"
+msgstr "Denne retning er ikke mulig her: %s"
+
+#: screenlayout/widget.py:294
+msgid "Resolution"
+msgstr "Opløsning"
+
+# retning er brugt i OpenOffice, kunne måske også være opsætning
+#: screenlayout/widget.py:296
+msgid "Orientation"
+msgstr "Retning"
+
+#: screenlayout/xrandr.py:205
+msgid "A part of an output is outside the virtual screen."
+msgstr "En del af noget uddata er uden for den virtuelle skærm."
+
+#: screenlayout/xrandr.py:208
+msgid "An output is outside the virtual screen."
+msgstr "Uddata er uden for den virtuelle skærm."

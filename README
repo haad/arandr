@@ -97,7 +97,7 @@ Bugs / Caveats
 Contributing
 ------------
 
-If you are fluent with languages other than German, English, Italian or Brasilian Portuguese, you can add translations to ARandR using gettext_. An easy way to do this is `ARandR's transifex site`_.
+If you are fluent with languages other than German, English, Italian, Danish or Brasilian Portuguese, you can add translations to ARandR using gettext_. An easy way to do this is `ARandR's transifex site`_.
 
 Please send bug reports, suggestions, patches and git pull requests to me_.
 
