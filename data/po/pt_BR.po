@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
-"POT-Creation-Date: 2010-01-18 20:08+0100\n"
+"POT-Creation-Date: 2010-03-03 14:37+0100\n"
 "PO-Revision-Date: 2010-01-27 01:45+0100\n"
 "Last-Translator: chrysn <chrysn@fsfe.org>\n"
 "Language-Team: Português do Brasil <pt@li.org>\n"
@@ -18,55 +18,55 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: screenlayout/gui.py:103
+#: screenlayout/gui.py:104
 msgid "_Layout"
 msgstr "_Disposição"
 
-#: screenlayout/gui.py:114
+#: screenlayout/gui.py:115
 msgid "_View"
 msgstr "_Visualizar"
 
-#: screenlayout/gui.py:116
+#: screenlayout/gui.py:117
 msgid "_Outputs"
 msgstr "_Saídas"
 
-#: screenlayout/gui.py:117
+#: screenlayout/gui.py:118
 msgid "Dummy"
 msgstr "Simulação"
 
-#: screenlayout/gui.py:119
+#: screenlayout/gui.py:120
 msgid "_System"
 msgstr "_Sistema"
 
-#: screenlayout/gui.py:120
+#: screenlayout/gui.py:121
 msgid "_Keybindings (Metacity)"
 msgstr "_Atalhos (Metacity)"
 
-#: screenlayout/gui.py:122
+#: screenlayout/gui.py:123
 msgid "_Help"
 msgstr "_Ajuda"
 
-#: screenlayout/gui.py:126
+#: screenlayout/gui.py:127
 msgid "1:4"
 msgstr ""
 
-#: screenlayout/gui.py:127
+#: screenlayout/gui.py:128
 msgid "1:8"
 msgstr ""
 
-#: screenlayout/gui.py:128
+#: screenlayout/gui.py:129
 msgid "1:16"
 msgstr ""
 
-#: screenlayout/gui.py:175
+#: screenlayout/gui.py:176
 msgid "Script Properties"
 msgstr "Propriedades  de Script"
 
-#: screenlayout/gui.py:187
+#: screenlayout/gui.py:188
 msgid "Script"
 msgstr ""
 
-#: screenlayout/gui.py:203
+#: screenlayout/gui.py:204
 #, python-format
 msgid ""
 "XRandR failed:\n"
@@ -75,19 +75,22 @@ msgstr ""
 "XRandR falhou:\n"
 "%s"
 
-#: screenlayout/gui.py:213
+#: screenlayout/gui.py:214
 msgid "Open Layout"
 msgstr "Abrir Disposição"
 
-#: screenlayout/gui.py:225
+#: screenlayout/gui.py:226
 msgid "Save Layout"
 msgstr "Salvar Disposição"
 
-#: screenlayout/gui.py:275
+#: screenlayout/gui.py:276
 msgid "ARandR Screen Layout Editor"
 msgstr "Editor de Disposição de Tela ARandR"
 
-#: screenlayout/gui.py:278
+#. # translators, please translate in the style of "Another XRandR GUI
+#. # (ein weiteres GUI für XRandR)" so users get both the explanation of
+#. # the acronym and a localized version.
+#: screenlayout/gui.py:283
 msgid "Another XRandR GUI"
 msgstr ""
 
@@ -129,8 +132,12 @@ msgid "gconf not available."
 msgstr "gconf não disponível."
 
 #: screenlayout/metacity.py:269
-msgid "In order to configure metacity, you need to have the python gconf module installed."
-msgstr "Para configurar o metacity, você precisa ter o módulo gconf do python instalado."
+msgid ""
+"In order to configure metacity, you need to have the python gconf module "
+"installed."
+msgstr ""
+"Para configurar o metacity, você precisa ter o módulo gconf do python "
+"instalado."
 
 #: screenlayout/metacity.py:276
 msgid "Keybindings (via Metacity)"
@@ -138,17 +145,28 @@ msgstr "Atalhos (via Metacity)"
 
 #: screenlayout/metacity.py:289
 msgid ""
-"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
+"Click on a button in the left column and press a key combination you want to "
+"bind to a certain screen layout. (Use backspace to clear accelerators, "
+"escape to abort editing.) Then, select one or more layouts in the right "
+"column.\n"
 "\n"
-"This will only work if you use metacity or another program reading its configuration."
+"This will only work if you use metacity or another program reading its "
+"configuration."
 msgstr ""
-"Clique em um botão na coluna esquerda e pressione uma combinação de teclas que deseja associar a alguma disposição de tela. (Use backspace para limpar aceleradors, escape para abortar a edição). Entãom selecione uma ou mais disposições na coluna correta.\n"
+"Clique em um botão na coluna esquerda e pressione uma combinação de teclas "
+"que deseja associar a alguma disposição de tela. (Use backspace para limpar "
+"aceleradors, escape para abortar a edição). Entãom selecione uma ou mais "
+"disposições na coluna correta.\n"
 "\n"
-"Isto somente funcionará se você usar metacity ou outro programa que leia sua configuração."
+"Isto somente funcionará se você usar metacity ou outro programa que leia sua "
+"configuração."
 
 #: screenlayout/widget.py:43
-msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
-msgstr "Sua configuração não inclui um monitor ativo. Deseja aplicar a configuração?"
+msgid ""
+"Your configuration does not include an active monitor. Do you want to apply "
+"the configuration?"
+msgstr ""
+"Sua configuração não inclui um monitor ativo. Deseja aplicar a configuração?"
 
 #: screenlayout/widget.py:257
 msgid "Active"
@@ -179,4 +197,3 @@ msgstr "Um parte da saída está fora da tela virtual."
 #: screenlayout/xrandr.py:208
 msgid "An output is outside the virtual screen."
 msgstr "Uma saída está fora da tela virtual."
-
