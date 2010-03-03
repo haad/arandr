@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: arandr 0.1.2\n"
 "Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
-"POT-Creation-Date: 2010-01-18 20:08+0100\n"
+"POT-Creation-Date: 2010-03-03 14:37+0100\n"
 "PO-Revision-Date: 2010-01-18 20:52+0100\n"
 "Last-Translator: Marco Paolone <marcopaolone@gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
@@ -15,55 +15,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: screenlayout/gui.py:103
+#: screenlayout/gui.py:104
 msgid "_Layout"
 msgstr "_Layout"
 
-#: screenlayout/gui.py:114
+#: screenlayout/gui.py:115
 msgid "_View"
 msgstr "_Visualizza"
 
-#: screenlayout/gui.py:116
+#: screenlayout/gui.py:117
 msgid "_Outputs"
 msgstr "_Output"
 
-#: screenlayout/gui.py:117
+#: screenlayout/gui.py:118
 msgid "Dummy"
 msgstr "Dummy"
 
-#: screenlayout/gui.py:119
+#: screenlayout/gui.py:120
 msgid "_System"
 msgstr "_Sistema"
 
-#: screenlayout/gui.py:120
+#: screenlayout/gui.py:121
 msgid "_Keybindings (Metacity)"
 msgstr "_Scorciatoie (Metacity)"
 
-#: screenlayout/gui.py:122
+#: screenlayout/gui.py:123
 msgid "_Help"
 msgstr "_Aiuto"
 
-#: screenlayout/gui.py:126
+#: screenlayout/gui.py:127
 msgid "1:4"
 msgstr "1:4"
 
-#: screenlayout/gui.py:127
+#: screenlayout/gui.py:128
 msgid "1:8"
 msgstr "1:8"
 
-#: screenlayout/gui.py:128
+#: screenlayout/gui.py:129
 msgid "1:16"
 msgstr "1:16"
 
-#: screenlayout/gui.py:175
+#: screenlayout/gui.py:176
 msgid "Script Properties"
 msgstr "Proprietà script"
 
-#: screenlayout/gui.py:187
+#: screenlayout/gui.py:188
 msgid "Script"
 msgstr "Script"
 
-#: screenlayout/gui.py:203
+#: screenlayout/gui.py:204
 #, python-format
 msgid ""
 "XRandR failed:\n"
@@ -72,19 +72,22 @@ msgstr ""
 "Errore di XRandR:\n"
 "%s"
 
-#: screenlayout/gui.py:213
+#: screenlayout/gui.py:214
 msgid "Open Layout"
 msgstr "Apri layout"
 
-#: screenlayout/gui.py:225
+#: screenlayout/gui.py:226
 msgid "Save Layout"
 msgstr "Salva layout"
 
-#: screenlayout/gui.py:275
+#: screenlayout/gui.py:276
 msgid "ARandR Screen Layout Editor"
 msgstr "Editor layout dello schermo di ARandR"
 
-#: screenlayout/gui.py:278
+#. # translators, please translate in the style of "Another XRandR GUI
+#. # (ein weiteres GUI für XRandR)" so users get both the explanation of
+#. # the acronym and a localized version.
+#: screenlayout/gui.py:283
 msgid "Another XRandR GUI"
 msgstr "Un'altra interfaccia XRandR"
 
@@ -130,8 +133,8 @@ msgid ""
 "In order to configure metacity, you need to have the python gconf module "
 "installed."
 msgstr ""
-"Per poter configurare metacity, è necessario avere il modulo gconf "
-"python installato."
+"Per poter configurare metacity, è necessario avere il modulo gconf python "
+"installato."
 
 #: screenlayout/metacity.py:276
 msgid "Keybindings (via Metacity)"
@@ -147,10 +150,10 @@ msgid ""
 "This will only work if you use metacity or another program reading its "
 "configuration."
 msgstr ""
-"Cliccare su un pulsante nella colonna di sinistra e digitare una combinazione "
-"tasti da utilizzare per un certo layout dello schermo. (Utilizzare backspace per "
-"eliminare gli acceleratori, esc per annullare la modifica. Selezionare in seguito "
-"uno o più layout nella colonna di destra.\n"
+"Cliccare su un pulsante nella colonna di sinistra e digitare una "
+"combinazione tasti da utilizzare per un certo layout dello schermo. "
+"(Utilizzare backspace per eliminare gli acceleratori, esc per annullare la "
+"modifica. Selezionare in seguito uno o più layout nella colonna di destra.\n"
 "\n"
 "Questo metodo funzione solo se si utilizza metacity o un altro programma "
 "capace di leggere la sua configurazione."

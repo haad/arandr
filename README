@@ -47,8 +47,9 @@ Installation
 
     * Slackware using a `slackbuild by PhantomX`_::
 
-        git clone git://github.com/PhantomX/slackbuilds.git
-        cd slackbuilds/arandr
+        wget http://cloud.github.com/downloads/PhantomX/slackbuilds/arandr.tar.bz2
+        tar xjf arandr.tar.bz2
+        cd arandr
         ./arandr.SlackBuild 2>&1 | tee build.log
 
 * From source:
@@ -82,6 +83,7 @@ Dependencies
  * python_
  * PyGTK_
  * xrandr_
+ * docutils_ (>=0.6; for building the man page)
 
 
 
@@ -95,7 +97,7 @@ Bugs / Caveats
 Contributing
 ------------
 
-If you are fluent with languages other than German, English and Italian, you can add translations to ARandR using gettext_. An easy way to do this is `ARandR's transifex site`_.
+If you are fluent with languages other than German, English, Italian, Danish or Brasilian Portuguese, you can add translations to ARandR using gettext_. An easy way to do this is `ARandR's transifex site`_.
 
 Please send bug reports, suggestions, patches and git pull requests to me_.
 
@@ -126,3 +128,4 @@ Inspired by the `dual head sketch`_ in the ThinkWiki_.
  .. _python: http://www.python.org/
  .. _PyGTK: http://www.pygtk.org/
  .. _`slackbuild by PhantomX`: http://github.com/PhantomX/slackbuilds/tree/master/arandr/
+ .. _docutils: http://docutils.sourceforge.net/

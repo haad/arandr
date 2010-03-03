@@ -12,7 +12,7 @@ from .metacity import show_keybinder
 
 
 __version__ = '0.1.2'
-TRANSLATORS = ['chrysn <chrysn@fsfe.org>', 'Quizzlo <paolone.marco@gmail.com>', 'Phantom X <megaphantomx@bol.com.br>']
+TRANSLATORS = ['chrysn <chrysn@fsfe.org>', 'Quizzlo <paolone.marco@gmail.com>', 'Phantom X <megaphantomx@bol.com.br>', 'Joe Hansen <joedalton2@yahoo.dk>']
 
 #import os
 #os.environ['DISPLAY']=':0.0'
@@ -277,6 +277,9 @@ class Application(object):
         d.props.version = __version__
         d.props.translator_credits = "\n".join(TRANSLATORS)
         d.props.copyright = u'© chrysn 2008 – 2009'
+        ## translators, please translate in the style of "Another XRandR GUI
+        ## (ein weiteres GUI für XRandR)" so users get both the explanation of
+        ## the acronym and a localized version.
         d.props.comments = _(u'Another XRandR GUI')
         d.props.license = open(os.path.join(os.path.dirname(__file__), 'data', 'gpl-3.txt')).read()
         d.props.logo_icon_name = 'video-display'
