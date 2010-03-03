@@ -48,15 +48,15 @@ msgstr "_Ajuda"
 
 #: screenlayout/gui.py:127
 msgid "1:4"
-msgstr ""
+msgstr "1:4"
 
 #: screenlayout/gui.py:128
 msgid "1:8"
-msgstr ""
+msgstr "1:8"
 
 #: screenlayout/gui.py:129
 msgid "1:16"
-msgstr ""
+msgstr "1:16"
 
 #: screenlayout/gui.py:176
 msgid "Script Properties"
@@ -64,7 +64,7 @@ msgstr "Propriedades  de Script"
 
 #: screenlayout/gui.py:188
 msgid "Script"
-msgstr ""
+msgstr "Script"
 
 #: screenlayout/gui.py:204
 #, python-format
