@@ -22,6 +22,7 @@ from distutils.command.clean import clean as _clean
 
 
 PO_DIR = 'data/po'
+POT_FILE = os.path.join(PO_DIR, 'messages.pot')
 
 PACKAGENAME = "arandr"
 PACKAGEVERSION = "0.1.2"
@@ -31,28 +32,35 @@ URL = "http://christian.amsuess.com/tools/arandr/"
 LICENSE = "GNU GPL 3"
 DESCRIPTION = "Screen layout editor for xrandr (Another XRandR gui)"
 
-class update_pot(Command):
-    description = 'Update the .pot translation template'
-
+class NoOptionCommand(Command):
+    """Command that doesn't take any options"""
     user_options = []
 
     def initialize_options(self): pass
     def finalize_options(self): pass
 
+class update_pot(NoOptionCommand):
+    description = 'Update the .pot translation template'
+
     def run(self):
-        POT_FILE = os.path.join(PO_DIR, 'messages.pot')
         all_py_files = sorted(reduce(operator.add, [[os.path.join(dn, f) for f in fs if f.endswith('.py')] for (dn,ds,fs) in os.walk('.')])) # sort to make diffs easier
         # not working around xgettext not substituting for PACKAGE everywhere in the header; it's just a template and usually worked on using tools that ignore much of it anyway
         if not self.dry_run:
+            info('Creating %s' % POT_FILE)
             subprocess.check_call(['xgettext', '-LPython', '-o', POT_FILE, '--copyright-holder', AUTHOR, '--package-name', PACKAGENAME, '--package-version', PACKAGEVERSION, '--msgid-bugs-address', AUTHOR_MAIL, '--add-comments=#'] + all_py_files)
 
-class build_trans(Command):
+class update_po(NoOptionCommand):
+    description = 'Update the .po translations from .pot translation template'
+
+    def run(self):
+        # msgmerge data/po/da.po data/po/messages.pot -U
+        for po in glob.glob(os.path.join(PO_DIR, '*.po')):
+            if not self.dry_run:
+                info('Updating %s' % po)
+                subprocess.check_call(['msgmerge', '-U', po, POT_FILE])
+
+class build_trans(NoOptionCommand):
     description = 'Compile .po files into .mo files'
-
-    user_options = []
-
-    def initialize_options(self): pass
-    def finalize_options(self): pass
 
     def run(self):
         for po in glob.glob(os.path.join(PO_DIR,'*.po')):
@@ -68,13 +76,8 @@ class build_trans(Command):
                 if not self.dry_run:
                     subprocess.check_call(cmd)
 
-class build_man(Command):
+class build_man(NoOptionCommand):
     description = 'Generate and compress man page'
-
-    user_options = []
-
-    def initialize_options(self): pass
-    def finalize_options(self): pass
 
     def run(self):
         self.mkpath('build')
@@ -151,6 +154,7 @@ setup(name = PACKAGENAME,
             'sdist': sdist,
             'clean': clean,
             'update_pot': update_pot,
+            'update_po': update_po,
             },
         data_files = [
             ('share/applications', ['data/arandr.desktop']),
