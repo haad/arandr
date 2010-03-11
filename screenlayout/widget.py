@@ -1,6 +1,8 @@
 from __future__ import division
 import os
 import stat
+import pango
+import pangocairo
 import gobject, gtk
 from .auxiliary import Position, Size, NORMAL, ROTATIONS, InadequateConfiguration
 from .xrandr import XRandR
@@ -138,7 +140,7 @@ class ARandRWidget(gtk.DrawingArea):
     #################### painting ####################
 
     def do_expose_event(self, event):
-        cr = self.window.cairo_create()
+        cr = pangocairo.CairoContext(self.window.cairo_create())
         cr.rectangle(event.area.x, event.area.y, event.area.width, event.area.height)
         cr.clip()
 
@@ -172,6 +174,7 @@ class ARandRWidget(gtk.DrawingArea):
             rect = (o.tentative_position if hasattr(o, 'tentative_position') else o.position) + o.size
             center = rect[0]+rect[2]/2, rect[1]+rect[3]/2
 
+            # paint rectangle
             cr.set_source_rgba(1,1,1,0.7)
             cr.rectangle(*rect)
             cr.fill()
@@ -179,13 +182,29 @@ class ARandRWidget(gtk.DrawingArea):
             cr.rectangle(*rect)
             cr.stroke()
 
+            # set up for text
             cr.save()
-            cr.set_font_size(rect[3 if o.rotation.is_odd else 2]/len(on))
+            textwidth = rect[3 if o.rotation.is_odd else 2]
+            widthperchar = textwidth/len(on)
+            textheight = int(widthperchar * 0.8) # i think this looks nice and won't overflow even for wide fonts
+
+            newdescr = pango.FontDescription("sans")
+            newdescr.set_size(textheight * pango.SCALE)
+
+            # create text
+            layout = cr.create_layout()
+            layout.set_font_description(newdescr)
+            layout.set_text(on)
+
+            # position text
+            layoutsize = layout.get_pixel_size()
+            layoutoffset = -layoutsize[0]/2, -layoutsize[1]/2
             cr.move_to(*center)
             cr.rotate(o.rotation.angle)
-            x_bearing, y_bearing, width, height = cr.text_extents(on)[:4]
-            cr.rel_move_to(-width/2-x_bearing, -height/2-y_bearing)
-            cr.show_text(on)
+            cr.rel_move_to(*layoutoffset)
+
+            # pain text
+            cr.show_layout(layout)
             cr.restore()
 
     def _force_repaint(self):
