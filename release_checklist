@@ -1,8 +1,14 @@
 checklist before release:
 
- * set version in `setup.py` and `screenlayout/gui.py`
+ * after next release, ditch old svn, install redirect and notify maintainers
+
+ * in branch master, set version in `setup.py` and `screenlayout/gui.py`
  * update README for new file names (be sure to catch all)
+ * `git checkout release`
+ * `git merge --no-ff master` (make sure files that should not be shipped in the tarball are not pulled)
  * `git tag $VERSION`
- * `git archive $VERSION | gzip > ../arandr-$VERSION.tar.gz`
+ * `git archive $VERSION | gzip -9 > ../arandr-$VERSION.tar.gz`
  * `pristine-tar commit ../arandr-$VERSION.tar.gz`
  * update website to reflect new README
+ * push to gitorious
+ * notify maintainers
