@@ -1,0 +1,183 @@
+# Kannada translations for arandr.
+# Copyright (C) 2010 chrysn
+# This file is distributed under the same license as the PACKAGE package.
+# gundachandru <gundachandru@gmail.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: arandr 0.1.2\n"
+"Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
+"POT-Creation-Date: 2010-03-03 14:37+0100\n"
+"PO-Revision-Date: 2010-03-06 15:55+0530\n"
+"Last-Translator: gundachandru <gundachandru@gmail.com>\n"
+"Language-Team: Kannada\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: screenlayout/gui.py:104
+msgid "_Layout"
+msgstr "ವಿನ್ಯಾಸ(_L)"
+
+#: screenlayout/gui.py:115
+msgid "_View"
+msgstr "ನೋಟ(_V)"
+
+#: screenlayout/gui.py:117
+msgid "_Outputs"
+msgstr "ಔಟ್‌ಪುಟ್‌ಗಳು(_O)"
+
+#: screenlayout/gui.py:118
+msgid "Dummy"
+msgstr "ಡಮ್ಮಿ"
+
+#: screenlayout/gui.py:120
+msgid "_System"
+msgstr "ವ್ಯವಸ್ಥೆ(_S)"
+
+#: screenlayout/gui.py:121
+msgid "_Keybindings (Metacity)"
+msgstr "ಕೀಲಿಬದ್ಧತೆಗಳು (ಮೆಟಾಸಿಟಿ)"
+
+#: screenlayout/gui.py:123
+msgid "_Help"
+msgstr "ಸಹಾಯ(_H)"
+
+#: screenlayout/gui.py:127
+msgid "1:4"
+msgstr "೧:೪"
+
+#: screenlayout/gui.py:128
+msgid "1:8"
+msgstr "೧:೮"
+
+#: screenlayout/gui.py:129
+msgid "1:16"
+msgstr "೧:೧೬"
+
+#: screenlayout/gui.py:176
+msgid "Script Properties"
+msgstr "ಸ್ಕ್ರಿಪ್ಟ್‌ನ ಗುಣಲಕ್ಷಣಗಳು"
+
+#: screenlayout/gui.py:188
+msgid "Script"
+msgstr "ಸ್ಕ್ರಿಪ್ಟ್"
+
+#: screenlayout/gui.py:204
+#, python-format
+msgid ""
+"XRandR failed:\n"
+"%s"
+msgstr ""
+"XRandR ವಿಫಲಗೊಂಡಿದೆ:\n"
+"%s"
+
+#: screenlayout/gui.py:214
+msgid "Open Layout"
+msgstr "ವಿನ್ಯಾಸವನ್ನು ತೆರೆ"
+
+#: screenlayout/gui.py:226
+msgid "Save Layout"
+msgstr "ವಿನ್ಯಾಸವನ್ನು ಉಳಿಸು"
+
+#: screenlayout/gui.py:276
+msgid "ARandR Screen Layout Editor"
+msgstr "ARandR ತೆರೆ ವಿನ್ಯಾಸ ಸಂಪಾದಕ"
+
+#. # translators, please translate in the style of "Another XRandR GUI
+#. # (ein weiteres GUI für XRandR)" so users get both the explanation of
+#. # the acronym and a localized version.
+#: screenlayout/gui.py:283
+msgid "Another XRandR GUI"
+msgstr "ಇನ್ನೊಂದು XRandR GUI"
+
+#: screenlayout/metacity.py:37
+msgid "Accelerator"
+msgstr "ವೇಗೋತ್ಕರ್ಷಕ"
+
+#: screenlayout/metacity.py:38
+msgid "Action"
+msgstr "ಕಾರ್ಯ"
+
+#: screenlayout/metacity.py:104
+msgid "disabled"
+msgstr "ಅಶಕ್ತಗೊಂಡಿದೆ"
+
+#: screenlayout/metacity.py:119
+msgid "New accelerator..."
+msgstr "ಹೊಸ ವೇಗೋತ್ಕರ್ಷಕ..."
+
+#: screenlayout/metacity.py:182
+msgid "no action"
+msgstr "ಯಾವುದೇ ಕಾರ್ಯವು ಇಲ್ಲ"
+
+#: screenlayout/metacity.py:212
+msgid "incompatible configuration"
+msgstr "ಸಹವರ್ತಿಸದ ಸಂರಚನೆ"
+
+#: screenlayout/metacity.py:219
+msgid "other application"
+msgstr "ಇತರೆ ಅನ್ವಯ"
+
+#: screenlayout/metacity.py:239
+#, python-format
+msgid "No files in %(folder)r. Save a layout first."
+msgstr "%(folder)r ನಲ್ಲಿ ಯಾವುದೇ ಕಡತಗಳಿಲ್ಲ. ಮೊದಲು ಒಂದು ವಿನ್ಯಾಸವನ್ನು ಉಳಿಸಿ."
+
+#: screenlayout/metacity.py:268
+msgid "gconf not available."
+msgstr "gconf ಲಭ್ಯವಿಲ್ಲ"
+
+#: screenlayout/metacity.py:269
+msgid "In order to configure metacity, you need to have the python gconf module installed."
+msgstr "ಮೆಟಾಸಿಟಿಯನ್ನು ಸಂರಚಿಸುವ ಸಲುವಾಗಿ, ನೀವು python gconf ಮಾಡ್ಯೂಲ್ ವನ್ನು ಸ್ಥಾಪಿಸಿರಬೇಕು"
+
+#: screenlayout/metacity.py:276
+msgid "Keybindings (via Metacity)"
+msgstr "ಕೀಲಿಬದ್ಧತೆಗಳು (ಮೆಟಾಸಿಟಿಯ ಮೂಲಕ)"
+
+#: screenlayout/metacity.py:289
+msgid ""
+"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
+"\n"
+"This will only work if you use metacity or another program reading its configuration."
+msgstr ""
+"ಎಡಭಾಗದ ಕಾಲಮ್‌ನಲ್ಲಿರುವ ಬಟನ್ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ಒಂದು ತೆರೆ ವಿನ್ಯಾಸಕ್ಕೆ ಬೈಂಡ್ ಮಾಡಬಯಸುವು ಕೀ ಕಾಂಬಿನೇಶನ್ ಒತ್ತಿ. (ವೇಗೋತ್ಕರ್ಷಕಗಳನ್ನು ಅಳಿಸಲು backspace ಬಳಸಿ, ಸಂಪಾದನೆಯನ್ನು ಅಬಾರ್ಟ್ ಮಾಡಲು escape ಬಳಸಿ.), ಹಾಗೂ, ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ವಿನ್ಯಾಸಗಳನ್ನು ಬಲಭಾಗದ ಕಾಲಮ್‌ನಲ್ಲಿ ಆರಿಸಿ.\n"
+"\n"
+"ನೀವು ಮೆಟಾಸಿಟಿ ಬಳಸಿದಾಗ ಅಥವಾ ಇದರ ಸಂರಚನೆಯನ್ನು ಓದುವ ಇನ್ನೊಂದು ಪ್ರೋಗ್ರಾಮ್ ಬಳಸಿದಾಗ ಮಾತ್ರ ಇದು ಕೆಲಸ ಮಾಡುತ್ತದೆ."
+
+#: screenlayout/widget.py:43
+msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
+msgstr "ನಿಮ್ಮ ಸಂರಚನೆಯು ಯಾವುದೇ ಒಂದು ಸಕ್ರಿಯ ಮಾನಿಟರ್‌ವನ್ನು ಒಳಗೊಂಡಿಲ್ಲ. ನೀವು ಈ ಸಂರಚನೆಯನ್ನು ಅನ್ವಯಿಸಲು ಬಯಸುತ್ತೀರಾ?"
+
+#: screenlayout/widget.py:257
+msgid "Active"
+msgstr "ಸಕ್ರಿಯ"
+
+#: screenlayout/widget.py:275
+#, python-format
+msgid "Setting this resolution is not possible here: %s"
+msgstr "ಈ ರೆಸಲ್ಯೂಶನ್ ಅನ್ನು ಸೆಟ್ ಮಾಡುವುದು ಇಲ್ಲಿ ಸಾಧ್ಯವಿಲ್ಲ: %s"
+
+#: screenlayout/widget.py:288
+#, python-format
+msgid "This orientation is not possible here: %s"
+msgstr "ಈ ನಿಲುವು(ಓರಿಯೆಂಟೇಶನ್) ಇಲ್ಲಿ ಸಾಧ್ಯವಿಲ್ಲ: %s"
+
+#: screenlayout/widget.py:294
+msgid "Resolution"
+msgstr "ರೆಸಲ್ಯೂಶನ್"
+
+#: screenlayout/widget.py:296
+msgid "Orientation"
+msgstr "ನಿಲುವು (ಓರಿಯೆಂಟೇಶನ್)"
+
+#: screenlayout/xrandr.py:205
+msgid "A part of an output is outside the virtual screen."
+msgstr "ಔಟ್‌ಪುಟ್‌ನ ಒಂದು ಭಾಗ ವರ್ಚುವಲ್ ಸ್ಕ್ರೀನ್‌ನ ಹೊರಗಿದೆ."
+
+#: screenlayout/xrandr.py:208
+msgid "An output is outside the virtual screen."
+msgstr "ಔಟ್‌ಪುಟ್‌ ವರ್ಚುವಲ್ ಸ್ಕ್ರೀನ್‌ನ ಹೊರಗಿದೆ."
+

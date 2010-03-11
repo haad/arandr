@@ -97,7 +97,7 @@ Bugs / Caveats
 Contributing
 ------------
 
-If you are fluent with languages other than German, English, Italian, Danish or Brasilian Portuguese, you can add translations to ARandR using gettext_. An easy way to do this is `ARandR's transifex site`_.
+If you are fluent with languages not yet supported, you can add translations to ARandR using gettext_. An easy way to do this is `ARandR's transifex site`_.
 
 Please send bug reports, suggestions, patches and git pull requests to me_.
 
@@ -108,6 +108,14 @@ About
 Copyright © chrysn_ <chrysn@fsfe.org> 2008–2009, published under GPLv3_ or any later version.
 
 Inspired by the `dual head sketch`_ in the ThinkWiki_.
+
+Translations by
+
+* Quizzlo (Italian)
+* Phantom X (Brasilian)
+* Joe Hansen (Danish)
+* gundachandru (Kannada)
+* chrysn (German, English)
 
 
  .. _XRandR: http://www.x.org/wiki/Projects/XRandR
