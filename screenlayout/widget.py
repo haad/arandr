@@ -35,7 +35,7 @@ class ARandRWidget(gtk.DrawingArea):
 
     def _set_factor(self, f):
         self._factor = f
-        self.set_size_request(self._xrandr.state.virtual.max[0]//self.factor,self._xrandr.state.virtual.max[1]//self.factor)
+        self._update_size_request()
         self._force_repaint()
 
     factor = property(lambda self: self._factor, _set_factor)
@@ -56,6 +56,15 @@ class ARandRWidget(gtk.DrawingArea):
             d.run()
             d.destroy()
 
+    def _update_size_request(self):
+        max_gapless = sum(max(o.size) if o.active else 0 for o in self._xrandr.configuration.outputs.values()) # this ignores that some outputs might not support rotation, but will always err at the side of caution.
+        # have some buffer
+        usable_size = int(max_gapless * 1.1)
+        # don't request too large a window, but make sure very possible compination fits
+        xdim = min(self._xrandr.state.virtual.max[0], usable_size)
+        ydim = min(self._xrandr.state.virtual.max[1], usable_size)
+        self.set_size_request(xdim//self.factor, ydim//self.factor)
+
     #################### loading ####################
 
     def load_from_file(self, file):
@@ -73,7 +82,7 @@ class ARandRWidget(gtk.DrawingArea):
         self.sequence = sorted(self._xrandr.outputs)
         self._lastclick = (-1,-1)
 
-        self.set_size_request(self._xrandr.state.virtual.max[0]//self.factor,self._xrandr.state.virtual.max[1]//self.factor)
+        self._update_size_request()
         if self.window:
             self._force_repaint()
         self.emit('changed')
