@@ -1,0 +1,21 @@
+Version 0.1.3
+* Prevent too large window size requests
+* New translations:
+  - Italian
+  - Brasilian
+  - Danish
+  - Kannada
+* Better translation infrastructure
+  - Translations now hosted on https://transifex.net/projects/p/arandr/
+* man page enhancements
+  - man page generation now depends on docutils (>=0.6)
+* New source code repository at http://gitorious.org/arandr/arandr
+
+Version 0.1.2
+* Accept xrandr versions newer than 1.2
+
+Version 0.1.1
+* Add support for --randr-display
+
+Version 0.1
+* Initial release
