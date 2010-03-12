@@ -1,10 +1,10 @@
 Version 0.1.3
 * Prevent too large window size requests
 * New translations:
-  - Italian
-  - Brasilian
-  - Danish
-  - Kannada
+  - Italian (by Quizzlo)
+  - Brasilian (by Phantom X)
+  - Danish (by Joe Hansen)
+  - Kannada (by gundachandru)
 * Better translation infrastructure
   - Translations now hosted on https://transifex.net/projects/p/arandr/
 * man page enhancements

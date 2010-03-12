@@ -11,7 +11,7 @@ from . import widget
 from .metacity import show_keybinder
 
 
-__version__ = '0.1.2'
+__version__ = '0.1.3'
 TRANSLATORS = ['chrysn <chrysn@fsfe.org>', 'Quizzlo <paolone.marco@gmail.com>', 'Phantom X <megaphantomx@bol.com.br>', 'Joe Hansen <joedalton2@yahoo.dk>', 'gundachandru <gundachandru@gmail.com>']
 
 #import os
