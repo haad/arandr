@@ -13,10 +13,10 @@ Provide a simple visual front end for XRandR_ 1.2, client side X only (no xorg.c
 Features
 --------
 
-* Full controll over positioning (instead of plain "left of") with edge snapping
+* Full control over positioning (instead of plain "left of") with edge snapping
 * Saving configurations as executable shell scripts (configurations can be loaded without using this program)
 * Configuration files can be edited to include additional payload (like xsetwacom_ commands tablet PC users need when rotating), which is preserved when editing
-* Metacity keybinding integration:
+* Metacity key binding integration:
     * Saved configurations can be bound to arbitrary keys via metacity's custom commands.
     * Several layouts can be bound to one key; they are cycled through. (Useful for "rotate" buttons on tablet PCs.)
 * Main widget separated from packaged application (to facilitate integration with existing solutions)
@@ -35,7 +35,7 @@ See TODO_ for planned features.
 Installation
 ------------
 
-* Using your distribution's instaler:
+* Using your distribution's installer:
 
     * Debian_ / Ubuntu_::
 
@@ -112,7 +112,7 @@ Inspired by the `dual head sketch`_ in the ThinkWiki_.
 Translations by
 
 * Quizzlo (Italian)
-* Phantom X (Brasilian)
+* Phantom X (Brazilian)
 * Joe Hansen (Danish)
 * gundachandru (Kannada)
 * chrysn (German, English)

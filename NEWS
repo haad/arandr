@@ -2,7 +2,7 @@ Version 0.1.3
 * Prevent too large window size requests
 * New translations:
   - Italian (by Quizzlo)
-  - Brasilian (by Phantom X)
+  - Brazilian (by Phantom X)
   - Danish (by Joe Hansen)
   - Kannada (by gundachandru)
 * Better translation infrastructure
