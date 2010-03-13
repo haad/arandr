@@ -1,22 +1,22 @@
 # translation of de.po to Português do Brasil
-# chrysn <chrysn@fsfe.org>, 2008.
-# Phantom X <megaphantomx at bol.com.br>, 2010.
 # ARandR
 # Copyright (C) 2008 chrysn <chrysn@fsfe.org
 # This file is distributed under the same license as the arandr package.
+# chrysn <chrysn@fsfe.org>, 2008.
+# Phantom X <megaphantomx at bol.com.br>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
 "POT-Creation-Date: 2010-03-03 14:37+0100\n"
-"PO-Revision-Date: 2010-01-27 01:45+0100\n"
-"Last-Translator: chrysn <chrysn@fsfe.org>\n"
-"Language-Team: Português do Brasil <pt@li.org>\n"
+"PO-Revision-Date: 2010-03-12 20:50-0300\n"
+"Last-Translator: Phantom X <megaphantomx at bol.com.br>\n"
+"Language-Team: Brazilian Portuguese <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 1.0\n"
 
 #: screenlayout/gui.py:104
 msgid "_Layout"
@@ -166,7 +166,8 @@ msgid ""
 "Your configuration does not include an active monitor. Do you want to apply "
 "the configuration?"
 msgstr ""
-"Sua configuração não inclui um monitor ativo. Deseja aplicar a configuração?"
+"Sua configuração não inclui um monitor ativo. Deseja aplicar a "
+"configuração?"
 
 #: screenlayout/widget.py:257
 msgid "Active"
@@ -197,3 +198,5 @@ msgstr "Um parte da saída está fora da tela virtual."
 #: screenlayout/xrandr.py:208
 msgid "An output is outside the virtual screen."
 msgstr "Uma saída está fora da tela virtual."
+
+
