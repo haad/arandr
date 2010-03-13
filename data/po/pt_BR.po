@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
 "POT-Creation-Date: 2010-03-03 14:37+0100\n"
-"PO-Revision-Date: 2010-03-12 20:50-0300\n"
+"PO-Revision-Date: 2010-03-12 21:05-0300\n"
 "Last-Translator: Phantom X <megaphantomx at bol.com.br>\n"
 "Language-Team: Brazilian Portuguese <>\n"
 "MIME-Version: 1.0\n"
@@ -92,7 +92,7 @@ msgstr "Editor de Disposição de Tela ARandR"
 #. # the acronym and a localized version.
 #: screenlayout/gui.py:283
 msgid "Another XRandR GUI"
-msgstr ""
+msgstr "Another XRandR GUI (Interface para o XRandR)"
 
 #: screenlayout/metacity.py:37
 msgid "Accelerator"
