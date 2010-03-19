@@ -1,0 +1,183 @@
+# ARandR
+# Copyright (C) 2008 chrysn <chrysn@fsfe.org
+# This file is distributed under the same license as the arandr package.
+# chrysn <chrysn@fsfe.org>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: arandr 0.1\n"
+"Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
+"POT-Creation-Date: 2010-03-03 14:37+0100\n"
+"PO-Revision-Date: 2010-03-19 16:49+0300\n"
+"Last-Translator: HsH <hsh@runtu.org>\n"
+"Language-Team: Russian <hsh@runtu.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+
+#: screenlayout/gui.py:104
+msgid "_Layout"
+msgstr "_Схема"
+
+#: screenlayout/gui.py:115
+msgid "_View"
+msgstr "_Вид"
+
+#: screenlayout/gui.py:117
+msgid "_Outputs"
+msgstr "_Экраны"
+
+#: screenlayout/gui.py:118
+msgid "Dummy"
+msgstr "Устаревший"
+
+#: screenlayout/gui.py:120
+msgid "_System"
+msgstr "_Система"
+
+#: screenlayout/gui.py:121
+msgid "_Keybindings (Metacity)"
+msgstr "_Хоткеи (Metacity)"
+
+#: screenlayout/gui.py:123
+msgid "_Help"
+msgstr "_Справка"
+
+#: screenlayout/gui.py:127
+msgid "1:4"
+msgstr "1:4"
+
+#: screenlayout/gui.py:128
+msgid "1:8"
+msgstr "1:8"
+
+#: screenlayout/gui.py:129
+msgid "1:16"
+msgstr "1:16"
+
+#: screenlayout/gui.py:176
+msgid "Script Properties"
+msgstr "Параметры скрипта"
+
+#: screenlayout/gui.py:188
+msgid "Script"
+msgstr "Скрипт"
+
+#: screenlayout/gui.py:204
+#, python-format
+msgid ""
+"XRandR failed:\n"
+"%s"
+msgstr ""
+"Ошибка XRandR:\n"
+" %s"
+
+#: screenlayout/gui.py:214
+msgid "Open Layout"
+msgstr "Открыть схему"
+
+#: screenlayout/gui.py:226
+msgid "Save Layout"
+msgstr "Сохранить схему"
+
+#: screenlayout/gui.py:276
+msgid "ARandR Screen Layout Editor"
+msgstr "Редактор схем экрана ARandR"
+
+#. # translators, please translate in the style of "Another XRandR GUI
+#. # (ein weiteres GUI für XRandR)" so users get both the explanation of
+#. # the acronym and a localized version.
+#: screenlayout/gui.py:283
+msgid "Another XRandR GUI"
+msgstr " GUI-утилита установки XRandR"
+
+#: screenlayout/metacity.py:37
+msgid "Accelerator"
+msgstr "Акселератор"
+
+#: screenlayout/metacity.py:38
+msgid "Action"
+msgstr "Действие"
+
+#: screenlayout/metacity.py:104
+msgid "disabled"
+msgstr "отключен"
+
+#: screenlayout/metacity.py:119
+msgid "New accelerator..."
+msgstr "Новый акселератор..."
+
+#: screenlayout/metacity.py:182
+msgid "no action"
+msgstr "нет действий"
+
+#: screenlayout/metacity.py:212
+msgid "incompatible configuration"
+msgstr "несовместимая комбинация"
+
+#: screenlayout/metacity.py:219
+msgid "other application"
+msgstr "другое приложение"
+
+#: screenlayout/metacity.py:239
+#, python-format
+msgid "No files in %(folder)r. Save a layout first."
+msgstr "Нет файлов в %(folder)r. Сначала сохраните схему."
+
+#: screenlayout/metacity.py:268
+msgid "gconf not available."
+msgstr "gconf не доступен."
+
+#: screenlayout/metacity.py:269
+msgid "In order to configure metacity, you need to have the python gconf module installed."
+msgstr "Для возможности конфигурирования Metacity должен быть установлен модуль Python для GConf."
+
+#: screenlayout/metacity.py:276
+msgid "Keybindings (via Metacity)"
+msgstr "Хоткеи (для Metacity)"
+
+#: screenlayout/metacity.py:289
+msgid ""
+"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
+"\n"
+"This will only work if you use metacity or another program reading its configuration."
+msgstr ""
+"Нажмите  кнопку в левом столбце и введите сочетание клавиш для привязки к определённой конфигурации экрана. (Используйте BackSpace для удаления сочетаний, Esc для отмены редактирования). После этого выберите одну или несколько схем в правом столбце.\n"
+"\n"
+"Это будет работать при использовании Metacity или другой программы, читающей её конфигурацию."
+
+#: screenlayout/widget.py:43
+msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
+msgstr "В вашей конфигурации нет активного монитора. Применить конфигурацию?"
+
+#: screenlayout/widget.py:257
+msgid "Active"
+msgstr "Активный"
+
+#: screenlayout/widget.py:275
+#, python-format
+msgid "Setting this resolution is not possible here: %s"
+msgstr "Не удаётся установить это разрешение: %s"
+
+#: screenlayout/widget.py:288
+#, python-format
+msgid "This orientation is not possible here: %s"
+msgstr "Не удаётся применить ориентацию: %s"
+
+#: screenlayout/widget.py:294
+msgid "Resolution"
+msgstr "Разрешение"
+
+#: screenlayout/widget.py:296
+msgid "Orientation"
+msgstr "Ориентация"
+
+#: screenlayout/xrandr.py:205
+msgid "A part of an output is outside the virtual screen."
+msgstr "Часть изображения за границей виртуального экрана."
+
+#: screenlayout/xrandr.py:208
+msgid "An output is outside the virtual screen."
+msgstr "Изображение за границей виртуального экрана."
+
