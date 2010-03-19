@@ -157,7 +157,7 @@ setup(name = PACKAGENAME,
             'update_po': update_po,
             },
         data_files = [
-            ('share/applications', ['data/arandr.desktop']),
+            ('share/applications', ['data/arandr.desktop']), # FIXME: use desktop-file-install?
             ('share/man/man1', ['build/arandr.1.gz']),
             ],
         scripts = ['arandr'],
