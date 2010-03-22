@@ -6,7 +6,7 @@ ARandR: Another XRandR GUI
 Design intent
 -------------
 
-Provide a simple visual front end for XRandR_ 1.2, client side X only (no xorg.conf involved, no pre-1.2 options).
+Provide a simple visual front end for XRandR_ 1.2/1.3, client side X only (no xorg.conf involved, no pre-1.2 options).
 
 
 
@@ -20,15 +20,6 @@ Features
     * Saved configurations can be bound to arbitrary keys via metacity's custom commands.
     * Several layouts can be bound to one key; they are cycled through. (Useful for "rotate" buttons on tablet PCs.)
 * Main widget separated from packaged application (to facilitate integration with existing solutions)
-
-
-
-Status
-------
-
-Works with recent X servers supporting XRandR 1.2 or 1.3 (which is 1.2 compatible).
-
-See TODO_ for planned features.
 
 
 
@@ -91,7 +82,9 @@ Bugs / Caveats
 --------------
 
  * Changes while running are not caught.
- * Depends on all modes to have a <width>x<height> name.
+ * Depends on all modes to have a <width>x<height> name (see `debian bug #507521`_).
+ * See TODO_ for planned features.
+
 
 
 Contributing
@@ -138,3 +131,4 @@ Translations by
  .. _PyGTK: http://www.pygtk.org/
  .. _`slackbuild by PhantomX`: http://github.com/PhantomX/slackbuilds/tree/master/arandr/
  .. _docutils: http://docutils.sourceforge.net/
+ .. _`debian bug #507521`: http://bugs.debian.org/507521
