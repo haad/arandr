@@ -1,7 +1,5 @@
 checklist before release:
 
- * after next release, ditch old svn, install redirect and notify maintainers
-
  * work on branch master
  * set version in `setup.py` and `screenlayout/gui.py`
  * make sure the latest NEWS entry matches
