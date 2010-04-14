@@ -1,15 +1,17 @@
- * add option to make layout default on startup by means of desktop environment integration
- * implement missing xrandr 1.2 features: reflect, additional modes (for forcibly applying saved layouts so they are already active when an output is connected), fb, fbmm/dpi
- * call xrandr without blocking
- * receive notifications on changes (XRRScreenChangeNotify)
-  * useful resources: <http://www.mail-archive.com/sawfish-list@gnome.org/msg03630.html> (a patch to sawfish for xrandr event support), Xrandr.c (that defines XRRSelectInput), SelInput.c (compare XSelectInput /XRRSelectInput), ./eventdemo.py
- * don't reset displays moved over edges; instead, move as far as possible
- * allow setting dpi
- * integrate related settings: (might end up writing a complete configuration manager, which is not my intention)
+* add option to make layout default on startup by means of desktop environment integration
+* implement missing xrandr 1.2 features: reflect, additional modes (for forcibly applying saved layouts so they are already active when an output is connected), fb, fbmm/dpi
+* call xrandr without blocking
+* receive notifications on changes (XRRScreenChangeNotify)
 
-  * xsetwacom
-  * gnome-panel layout (is this 1.3's --primary?)
+    * useful resources: <http://www.mail-archive.com/sawfish-list@gnome.org/msg03630.html> (a patch to sawfish for xrandr event support), Xrandr.c (that defines XRRSelectInput), SelInput.c (compare XSelectInput /XRRSelectInput), ./eventdemo.py
 
- * integrate new 1.3 features (projection matrix, panning)
- * be more intelligent about future xrandr versions (cf debian #523903)
- * read --props, parse edid (using parse-edid from read-edid), maybe even offer setting properties
+* don't reset displays moved over edges; instead, move as far as possible
+* allow setting dpi
+* integrate related settings: (might end up writing a complete configuration manager, which is not my intention)
+
+    * xsetwacom
+    * gnome-panel layout (is this 1.3's --primary?)
+
+* integrate new 1.3 features (projection matrix, panning)
+* be more intelligent about future xrandr versions (cf debian #523903)
+* read --props, parse edid (using parse-edid from read-edid), maybe even offer setting properties
