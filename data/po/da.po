@@ -3,12 +3,14 @@
 # This file is distributed under the same license as the ARandR package.
 # Joe Hansen <joedalton2@yahoo.dk>, 2010.
 #
+# output -> skærm (se forklaring længere nede).
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: arandr 0.1.2\n"
 "Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
 "POT-Creation-Date: 2010-03-03 14:37+0100\n"
-"PO-Revision-Date: 2010-02-01 17:30+01:00\n"
+"PO-Revision-Date: 2010-04-23 17:30+01:00\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +27,7 @@ msgstr "_Vis"
 
 #: screenlayout/gui.py:117
 msgid "_Outputs"
-msgstr "_Uddata"
+msgstr "_Skærme"
 
 #: screenlayout/gui.py:118
 msgid "Dummy"
@@ -80,9 +82,11 @@ msgstr "Åbn udseende"
 msgid "Save Layout"
 msgstr "Gem udseende"
 
+# skærmudseende. Muligvis er "skærmopsætning" mere dækkende.  XRandR, 
+# som ARandR vist er en grænseflade til, styrer skærmopløsning, rotation osv.
 #: screenlayout/gui.py:276
 msgid "ARandR Screen Layout Editor"
-msgstr "ARandR - redigering af skærmudseende"
+msgstr "ARandR - redigering af skærmopsætning"
 
 #. # translators, please translate in the style of "Another XRandR GUI
 #. # (ein weiteres GUI für XRandR)" so users get both the explanation of
@@ -150,8 +154,8 @@ msgid ""
 "This will only work if you use metacity or another program reading its "
 "configuration."
 msgstr ""
-"Klik på en knap i den venstre kolonne og tryk på en tastkombination du "
-"ønsker at tildele til et bestemt skærmudseende. (Brug Slet tilbage for at "
+"Klik på en knap i den venstre kolonne og tryk på en tastekombination du "
+"ønsker at tildele til et bestemt skærmopsætning. (Brug Slet tilbage for at "
 "rydde acceleratorer, escape for at fortryde redigering.) Vælg så et eller "
 "flere udseender i den højre kolonne.\n"
 "\n"
@@ -163,7 +167,7 @@ msgid ""
 "Your configuration does not include an active monitor. Do you want to apply "
 "the configuration?"
 msgstr ""
-"Din konfiguration inkluderer ikke en aktiv overvågning. Ønsker du at anvende "
+"Din konfiguration inkluderer ikke nogen aktiv overvågning. Ønsker du at anvende "
 "konfigurationen?"
 
 #: screenlayout/widget.py:257
@@ -186,14 +190,25 @@ msgid "Resolution"
 msgstr "Opløsning"
 
 # retning er brugt i OpenOffice, kunne måske også være opsætning
+# Jeg tror Orientering er bedst, da det er hvorvidt skærmen vises drejet
+# 90 grader til venstre, på hovedet eller tilsvarende
+# (jf. xrandr-kommandoen --rotate)
 #: screenlayout/widget.py:296
 msgid "Orientation"
-msgstr "Retning"
+msgstr "Orientering"
 
+# Et output (i xrandr) svarer til en skærm eller anden enhed, som ting
+# kan blive tegnet på.  Kommandoen 'xrandr -q' skriver en liste over de
+# outputs, computeren har.  På min computer er det LVDS (lcd-skærmen),
+# VGA-0 (stikket til f.eks. en projektor) og S-video.  De er altså
+# forskellige outputs.
+# Jeg tror derfor "skærm" eller "uddataenhed" vil være gode
+# oversættelser af output.  Der er vist et par tidligere strenge hvori
+# det muligvis skal gøres konsistent.
 #: screenlayout/xrandr.py:205
 msgid "A part of an output is outside the virtual screen."
-msgstr "En del af noget uddata er uden for den virtuelle skærm."
+msgstr "En del af en skærm er uden for den virtuelle skærm."
 
 #: screenlayout/xrandr.py:208
 msgid "An output is outside the virtual screen."
-msgstr "Uddata er uden for den virtuelle skærm."
+msgstr "En skærm er uden for den virtuelle skærm."
