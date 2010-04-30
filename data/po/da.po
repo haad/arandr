@@ -2,9 +2,9 @@
 # Copyright (C) 2009 chrysn & Joe Hansen.
 # This file is distributed under the same license as the ARandR package.
 # Joe Hansen <joedalton2@yahoo.dk>, 2010.
-#
+# 
 # output -> skærm (se forklaring længere nede).
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: arandr 0.1.2\n"
@@ -82,7 +82,7 @@ msgstr "Åbn udseende"
 msgid "Save Layout"
 msgstr "Gem udseende"
 
-# skærmudseende. Muligvis er "skærmopsætning" mere dækkende.  XRandR, 
+# skærmudseende. Muligvis er "skærmopsætning" mere dækkende.  XRandR,
 # som ARandR vist er en grænseflade til, styrer skærmopløsning, rotation osv.
 #: screenlayout/gui.py:276
 msgid "ARandR Screen Layout Editor"
@@ -133,12 +133,8 @@ msgid "gconf not available."
 msgstr "gconf ikke tilgængelig."
 
 #: screenlayout/metacity.py:269
-msgid ""
-"In order to configure metacity, you need to have the python gconf module "
-"installed."
-msgstr ""
-"For at kunne konfigurere metacity, skal du have pythons gconf-modul "
-"installeret."
+msgid "In order to configure metacity, you need to have the python gconf module installed."
+msgstr "For at kunne konfigurere metacity, skal du have pythons gconf-modul installeret."
 
 #: screenlayout/metacity.py:276
 msgid "Keybindings (via Metacity)"
@@ -146,29 +142,17 @@ msgstr "Nøgletildelinger (via Metacity)"
 
 #: screenlayout/metacity.py:289
 msgid ""
-"Click on a button in the left column and press a key combination you want to "
-"bind to a certain screen layout. (Use backspace to clear accelerators, "
-"escape to abort editing.) Then, select one or more layouts in the right "
-"column.\n"
+"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
 "\n"
-"This will only work if you use metacity or another program reading its "
-"configuration."
+"This will only work if you use metacity or another program reading its configuration."
 msgstr ""
-"Klik på en knap i den venstre kolonne og tryk på en tastekombination du "
-"ønsker at tildele til et bestemt skærmopsætning. (Brug Slet tilbage for at "
-"rydde acceleratorer, escape for at fortryde redigering.) Vælg så et eller "
-"flere udseender i den højre kolonne.\n"
+"Klik på en knap i den venstre kolonne og tryk på en tastekombination du ønsker at tildele til et bestemt skærmopsætning. (Brug Slet tilbage for at rydde acceleratorer, escape for at fortryde redigering.) Vælg så et eller flere udseender i den højre kolonne.\n"
 "\n"
-"Dette vil kun virke, hvis du bruger metacity eller et andet program, der "
-"læser dens konfiguration."
+"Dette vil kun virke, hvis du bruger metacity eller et andet program, der læser metacitys konfiguration."
 
 #: screenlayout/widget.py:43
-msgid ""
-"Your configuration does not include an active monitor. Do you want to apply "
-"the configuration?"
-msgstr ""
-"Din konfiguration inkluderer ikke nogen aktiv overvågning. Ønsker du at anvende "
-"konfigurationen?"
+msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
+msgstr "Din konfiguration inkluderer ikke nogen aktiv overvågning. Ønsker du at anvende konfigurationen?"
 
 #: screenlayout/widget.py:257
 msgid "Active"
