@@ -12,6 +12,13 @@
     * xsetwacom
     * gnome-panel layout (is this 1.3's --primary?)
 
-* integrate new 1.3 features (projection matrix, panning)
+* integrate new 1.3 features (projection matrix, panning (requested in <http://forum.eee-pc.de/viewtopic.php?t=8035>))
 * be more intelligent about future xrandr versions (cf debian #523903)
 * read --props, parse edid (using parse-edid from read-edid), maybe even offer setting properties
+* make script properties editable (and explain what it does)
+* provide example scripts
+
+    * for rotation
+    * for setting background images?
+
+* have inactive outpus in a side bar, showing their size?
