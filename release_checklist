@@ -1,8 +1,18 @@
 checklist before release:
 
+ * work on branch master
  * set version in `setup.py` and `screenlayout/gui.py`
+ * make sure the latest NEWS entry matches
  * update README for new file names (be sure to catch all)
+ * update copyright references to current year (screenlayout/gui.py, README)
+ * commit as 'ready for release ...'
+ * `git log --first-parent master > ChangeLog.new`
+ * `git checkout release`
+ * `git merge --no-ff master` (make sure files that should not be shipped in the tarball are not pulled)
+ * `mv ChangeLog.new ChangeLog; git commit --amend -a` and set commit message to last NEWS entry
  * `git tag $VERSION`
- * `git archive $VERSION | gzip > ../arandr-$VERSION.tar.gz`
- * `pristine-tar commit ../arandr-$VERSION.tar.gz`
+ * `git archive $VERSION --prefix="arandr-$VERSION/" | gzip -9 > ../arandr_$VERSION.orig.tar.gz`
+ * `pristine-tar commit ../arandr-$VERSION.orig.tar.gz $VERSION`
  * update website to reflect new README
+ * push to gitorious
+ * notify maintainers
