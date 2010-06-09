@@ -22,3 +22,8 @@
     * for setting background images?
 
 * have inactive outpus in a side bar, showing their size?
+* gracefully handle
+
+    * loading files describing invalid state
+    * naming transitions (LVDS -> LVDS1)
+    * unimplemented options (--right-of)
