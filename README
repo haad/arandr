@@ -3,17 +3,14 @@ ARandR: Another XRandR GUI
 ==========================
 
 
-Design intent
--------------
-
-Provide a simple visual front end for XRandR_ 1.2/1.3, client side X only (no xorg.conf involved, no pre-1.2 options).
+ARandR is designed to provide a simple visual front end for XRandR_ 1.2/1.3. Relative monitor positions are shown graphically and can be changed in a drag-and-drop way.
 
 
 
 Features
 --------
 
-* Full control over positioning (instead of plain "left of") with edge snapping
+* Full control over output positioning (instead of plain "left of") with edge snapping
 * Saving configurations as executable shell scripts (configurations can be loaded without using this program)
 * Configuration files can be edited to include additional payload (like xsetwacom_ commands tablet PC users need when rotating), which is preserved when editing
 * Metacity key binding integration:
