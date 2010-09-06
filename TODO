@@ -27,3 +27,33 @@
     * loading files describing invalid state
     * naming transitions (LVDS -> LVDS1)
     * unimplemented options (--right-of)
+
+* setting configuration based on hardware: this calls for two additional programs -- one that listens for hardware changes and executes a command when something changes, and one that acts on a change and sets the last used configuration with that hardware (or something else configurable). Martin Insulander suggestes this (with my comments in *[]*):
+
+  ..
+
+    1. When …
+
+        a) the monitor setup changes (trigger through hal or udev)
+
+            *[afaik there is no such thing currently in udev; i'd rather have xrandr with a --listen / --on-change-exec option. furthermore, other mechanisms that do the same thing should be identified to avoid conflicts]*
+
+        b) X starts
+
+    2. Identify all monitors through EDID
+
+        *[using this is already on the todo list]*
+
+    3. If the setup …
+
+        a) has been used before:
+
+           4a. Set the setup that was used last time with this configuration.
+
+                *[that requires the xrandr shell scripts to have an additional line, something like "ln -sf ../$MYFILENAME > ~/.screenlayout/last_used/$HASH_OF_HARDWARE"]*
+
+        b) Else
+
+           4b. Show a notification about new screen setup
+
+           4c. Clicking on the notification starts for example Arandr
