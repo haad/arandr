@@ -12,7 +12,18 @@ from .metacity import show_keybinder
 
 
 __version__ = '0.1.3'
-TRANSLATORS = ['chrysn <chrysn@fsfe.org>', 'Quizzlo <paolone.marco@gmail.com>', 'Phantom X <megaphantomx@bol.com.br>', 'Joe Hansen <joedalton2@yahoo.dk>', 'gundachandru <gundachandru@gmail.com>', 'HsH <hsh@runtu.org>', 'Clément Démoulins <clement@archivel.fr>', 'RooTer <rooter@kyberian.net>', ]
+TRANSLATORS = [
+        'chrysn <chrysn@fsfe.org>',
+        'Quizzlo <paolone.marco@gmail.com>',
+        'Phantom X <megaphantomx@bol.com.br>',
+        'Joe Hansen <joedalton2@yahoo.dk>',
+        'gundachandru <gundachandru@gmail.com>',
+        'HsH <hsh@runtu.org>',
+        'Clément Démoulins <clement@archivel.fr>',
+        'RooTer <rooter@kyberian.net>',
+        'Mohammad Alhargan <malham1@gmail.com>',
+        'Mehmet Gülmen <memetgulmen@gmail.com>',
+        ]
 
 #import os
 #os.environ['DISPLAY']=':0.0'

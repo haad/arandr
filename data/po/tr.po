@@ -1,0 +1,184 @@
+# Translation of ARandR to Turkish. 
+# Copyright (C) 2008 chrysn <chrysn@fsfe.org>
+# This file is distributed under the same license as the arandr package.
+# Mehmet Gülmen <memetgulmen@gmail.com>, 2010
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.3\n"
+"Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
+"POT-Creation-Date: 2010-03-03 14:37+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Mehmet Gülmen <memetgulmen@gmail.com>\n"
+"Language-Team: tr <tr@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Country: TURKEY\n"
+
+#: screenlayout/gui.py:104
+msgid "_Layout"
+msgstr "_Yerleşim"
+
+#: screenlayout/gui.py:115
+msgid "_View"
+msgstr "_Görünüm"
+
+#: screenlayout/gui.py:117
+msgid "_Outputs"
+msgstr "_Çıktılar"
+
+#: screenlayout/gui.py:118
+msgid "Dummy"
+msgstr "Dummy"
+
+#: screenlayout/gui.py:120
+msgid "_System"
+msgstr "_Sistem"
+
+#: screenlayout/gui.py:121
+msgid "_Keybindings (Metacity)"
+msgstr "_Kısayollar (Metacity)"
+
+#: screenlayout/gui.py:123
+msgid "_Help"
+msgstr "_Yardım"
+
+#: screenlayout/gui.py:127
+msgid "1:4"
+msgstr "1:4"
+
+#: screenlayout/gui.py:128
+msgid "1:8"
+msgstr "1:8"
+
+#: screenlayout/gui.py:129
+msgid "1:16"
+msgstr "1:16"
+
+#: screenlayout/gui.py:176
+msgid "Script Properties"
+msgstr "Betik Özellikleri"
+
+#: screenlayout/gui.py:188
+msgid "Script"
+msgstr "Betik"
+
+#: screenlayout/gui.py:204
+#, python-format
+msgid ""
+"XRandR failed:\n"
+"%s"
+msgstr ""
+"XRandR başarısız:\n"
+"%s"
+
+#: screenlayout/gui.py:214
+msgid "Open Layout"
+msgstr "Yerleşim Düzeni Aç"
+
+#: screenlayout/gui.py:226
+msgid "Save Layout"
+msgstr "Yerleşim Düzenini Kaydet"
+
+#: screenlayout/gui.py:276
+msgid "ARandR Screen Layout Editor"
+msgstr "ARandR Ekran Yerleşimi Düzenleyici"
+
+#. # translators, please translate in the style of "Another XRandR GUI
+#. # (ein weiteres GUI für XRandR)" so users get both the explanation of
+#. # the acronym and a localized version.
+#: screenlayout/gui.py:283
+msgid "Another XRandR GUI"
+msgstr "Bir başka XRandR grafik arayüzü"
+
+#: screenlayout/metacity.py:37
+msgid "Accelerator"
+msgstr "Hızlandırıcı"
+
+#: screenlayout/metacity.py:38
+msgid "Action"
+msgstr "Eylem"
+
+#: screenlayout/metacity.py:104
+msgid "disabled"
+msgstr "devre dışı"
+
+#: screenlayout/metacity.py:119
+msgid "New accelerator..."
+msgstr "Yeni Hızlandırıcı..."
+
+#: screenlayout/metacity.py:182
+msgid "no action"
+msgstr "eylem yok"
+
+#: screenlayout/metacity.py:212
+msgid "incompatible configuration"
+msgstr "uyumsuz yapılandırma"
+
+#: screenlayout/metacity.py:219
+msgid "other application"
+msgstr "diğer uygulama"
+
+#: screenlayout/metacity.py:239
+#, python-format
+msgid "No files in %(folder)r. Save a layout first."
+msgstr "%(folder)r konumunda dosya yok. Önce bir yerleşim düzeni kaydedin."
+
+#: screenlayout/metacity.py:268
+msgid "gconf not available."
+msgstr "gconf erişilemez durumda."
+
+#: screenlayout/metacity.py:269
+msgid "In order to configure metacity, you need to have the python gconf module installed."
+msgstr "Metacity'yi yapılandırabilmeniz için python gconf modülünün kurulu olması gerekiyor."
+
+#: screenlayout/metacity.py:276
+msgid "Keybindings (via Metacity)"
+msgstr "Kısayollar (Metacity'nin sağladığı)"
+
+#: screenlayout/metacity.py:289
+msgid ""
+"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
+"\n"
+"This will only work if you use metacity or another program reading its configuration."
+msgstr ""
+"Eğer belli bir ekran yerleşimine kısayol oluşturmak istiyorsanız sol sütundaki bir düğmeye ve bir tuş kombinasyonuna basın. (Hızlandırıcıları silmek için backspace tuşuna, düzenlemeyi bırakmak için escape tuşuna basın.) Daha sonra sağ sütunda bir ya da daha fazla yerleşim düzeni seçin.\n"
+"\n"
+"Bu sadece eğer bu yapılandırmayı okuyacak metacity veya başka bir program kullanıyorsanız işe yarar."
+
+#: screenlayout/widget.py:43
+msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
+msgstr "Yapılandırmanız etkin bir ekran içermiyor. Yine de yapılandırmayı kaydetmek istiyor musunuz?"
+
+#: screenlayout/widget.py:257
+msgid "Active"
+msgstr "Etkin"
+
+#: screenlayout/widget.py:275
+#, python-format
+msgid "Setting this resolution is not possible here: %s"
+msgstr "Bu çözünürlüğü atamak mümkün değil: %s"
+
+#: screenlayout/widget.py:288
+#, python-format
+msgid "This orientation is not possible here: %s"
+msgstr "Bu yön ayarı mümkün değil: %s"
+
+#: screenlayout/widget.py:294
+msgid "Resolution"
+msgstr "Çözünürlük"
+
+#: screenlayout/widget.py:296
+msgid "Orientation"
+msgstr "Yön Ayarı"
+
+#: screenlayout/xrandr.py:205
+msgid "A part of an output is outside the virtual screen."
+msgstr "Bir çıktının bir kısmı sanal ekranın dışında."
+
+#: screenlayout/xrandr.py:208
+msgid "An output is outside the virtual screen."
+msgstr "Bir çıktı sanal ekranın dışında."
+
