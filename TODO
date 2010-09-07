@@ -1,15 +1,62 @@
- * add option to make layout default on startup by means of desktop environment integration
- * implement missing xrandr 1.2 features: reflect, additional modes (for forcibly applying saved layouts so they are already active when an output is connected), fb, fbmm/dpi
- * call xrandr without blocking
- * receive notifications on changes (XRRScreenChangeNotify)
-  * useful resources: <http://www.mail-archive.com/sawfish-list@gnome.org/msg03630.html> (a patch to sawfish for xrandr event support), Xrandr.c (that defines XRRSelectInput), SelInput.c (compare XSelectInput /XRRSelectInput), ./eventdemo.py
- * don't reset displays moved over edges; instead, move as far as possible
- * allow setting dpi
- * integrate related settings: (might end up writing a complete configuration manager, which is not my intention)
+* add option to make layout default on startup by means of desktop environment integration
+* implement missing xrandr 1.2 features: reflect, additional modes (for forcibly applying saved layouts so they are already active when an output is connected), fb, fbmm/dpi
+* call xrandr without blocking
+* receive notifications on changes (XRRScreenChangeNotify)
 
-  * xsetwacom
-  * gnome-panel layout (is this 1.3's --primary?)
+    * useful resources: <http://www.mail-archive.com/sawfish-list@gnome.org/msg03630.html> (a patch to sawfish for xrandr event support), Xrandr.c (that defines XRRSelectInput), SelInput.c (compare XSelectInput /XRRSelectInput), ./eventdemo.py
 
- * integrate new 1.3 features (projection matrix, panning)
- * be more intelligent about future xrandr versions (cf debian #523903)
- * read --props, parse edid (using parse-edid from read-edid), maybe even offer setting properties
+* don't reset displays moved over edges; instead, move as far as possible
+* allow setting dpi
+* integrate related settings: (might end up writing a complete configuration manager, which is not my intention)
+
+    * xsetwacom
+    * gnome-panel layout (is this 1.3's --primary?)
+
+* integrate new 1.3 features (projection matrix, panning (requested in <http://forum.eee-pc.de/viewtopic.php?t=8035>))
+* be more intelligent about future xrandr versions (cf debian #523903)
+* read --props, parse edid (using parse-edid from read-edid), maybe even offer setting properties
+* make script properties editable (and explain what it does)
+* provide example scripts
+
+    * for rotation
+    * for setting background images?
+
+* have inactive outpus in a side bar, showing their size?
+* gracefully handle
+
+    * loading files describing invalid state
+    * naming transitions (LVDS -> LVDS1)
+    * unimplemented options (--right-of)
+
+* setting configuration based on hardware: this calls for two additional programs -- one that listens for hardware changes and executes a command when something changes, and one that acts on a change and sets the last used configuration with that hardware (or something else configurable). Martin Insulander suggestes this (with my comments in *[]*):
+
+  ..
+
+    1. When …
+
+        a) the monitor setup changes (trigger through hal or udev)
+
+            *[afaik there is no such thing currently in udev; i'd rather have xrandr with a --listen / --on-change-exec option. furthermore, other mechanisms that do the same thing should be identified to avoid conflicts]*
+
+        b) X starts
+
+    2. Identify all monitors through EDID
+
+        *[using this is already on the todo list]*
+
+    3. If the setup …
+
+        a) has been used before:
+
+           4a. Set the setup that was used last time with this configuration.
+
+                *[that requires the xrandr shell scripts to have an additional line, something like "ln -sf ../$MYFILENAME > ~/.screenlayout/last_used/$HASH_OF_HARDWARE"]*
+
+        b) Else
+
+           4b. Show a notification about new screen setup
+
+           4c. Clicking on the notification starts for example Arandr
+
+* integrate xvattr for mirror mode (cf http://wiki.debian.org/XStrikeForce/HowToRandR12 section "XV Overlay on only one display") -- but is this still alive at all?
+* integrate --randr-display in gui configuration and add more options than "DISPLAY=${} xrandr" (for example "ssh some-server xrandr", maybe even with zeroconf detection of ssh hosts, but i digress)
