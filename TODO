@@ -13,6 +13,15 @@
     * gnome-panel layout (is this 1.3's --primary?)
 
 * integrate new 1.3 features (projection matrix, panning (requested in <http://forum.eee-pc.de/viewtopic.php?t=8035>))
+
+    * getting the matrix right manually can be difficult. zbar since 0.10 provides recognition for qr codes; plan is like this:
+
+       1. user starts arandr
+       2. user connects webcam
+       3. arandr makes displays show qr codes with their names
+       4. user holds webcam where his head is
+       5. arandr knows what he sees and can position displays and offer to apply a matrix
+
 * be more intelligent about future xrandr versions (cf debian #523903)
 * read --props, parse edid (using parse-edid from read-edid), maybe even offer setting properties
 * make script properties editable (and explain what it does)
