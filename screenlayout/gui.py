@@ -23,6 +23,7 @@ TRANSLATORS = [
         'RooTer <rooter@kyberian.net>',
         'Mohammad Alhargan <malham1@gmail.com>',
         'Mehmet Gülmen <memetgulmen@gmail.com>',
+        'Ricardo A. Hermosilla Carrillo <ra.hermosillac@gmail.com>',
         ]
 
 #import os
