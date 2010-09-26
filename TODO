@@ -69,3 +69,5 @@
 
 * integrate xvattr for mirror mode (cf http://wiki.debian.org/XStrikeForce/HowToRandR12 section "XV Overlay on only one display") -- but is this still alive at all?
 * integrate --randr-display in gui configuration and add more options than "DISPLAY=${} xrandr" (for example "ssh some-server xrandr", maybe even with zeroconf detection of ssh hosts, but i digress)
+* rewrite parser to --verbose
+    * standalone tool to dump a current configuration (more of a demo program) -- unxrandr
