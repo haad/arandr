@@ -37,7 +37,7 @@ msgstr "_Sistema"
 
 #: screenlayout/gui.py:121
 msgid "_Keybindings (Metacity)"
-msgstr ""
+msgstr "_Combinacions de tecles (Metacity)"
 
 #: screenlayout/gui.py:123
 msgid "_Help"
@@ -57,7 +57,7 @@ msgstr "1:16"
 
 #: screenlayout/gui.py:176
 msgid "Script Properties"
-msgstr ""
+msgstr "Propietats de la seqüència"
 
 #: screenlayout/gui.py:188
 msgid "Script"
@@ -69,25 +69,27 @@ msgid ""
 "XRandR failed:\n"
 "%s"
 msgstr ""
+"XRandR fallit:\n"
+"%s"
 
 #: screenlayout/gui.py:214
 msgid "Open Layout"
-msgstr ""
+msgstr "Obre Disseny"
 
 #: screenlayout/gui.py:226
 msgid "Save Layout"
-msgstr ""
+msgstr "Desa disseny"
 
 #: screenlayout/gui.py:276
 msgid "ARandR Screen Layout Editor"
-msgstr ""
+msgstr "Editor del Disseny de Pantalla ARandR"
 
 #. # translators, please translate in the style of "Another XRandR GUI
 #. # (ein weiteres GUI für XRandR)" so users get both the explanation of
 #. # the acronym and a localized version.
 #: screenlayout/gui.py:283
 msgid "Another XRandR GUI"
-msgstr ""
+msgstr "Un altre GUI per a XRandR"
 
 #: screenlayout/metacity.py:37
 msgid "Accelerator"
@@ -111,28 +113,28 @@ msgstr "Res"
 
 #: screenlayout/metacity.py:212
 msgid "incompatible configuration"
-msgstr ""
+msgstr "configuració incompatible"
 
 #: screenlayout/metacity.py:219
 msgid "other application"
-msgstr ""
+msgstr "una altra aplicació"
 
 #: screenlayout/metacity.py:239
 #, python-format
 msgid "No files in %(folder)r. Save a layout first."
-msgstr ""
+msgstr "No hi ha arxius a %(folder)r. Desa un disseny primer."
 
 #: screenlayout/metacity.py:268
 msgid "gconf not available."
-msgstr ""
+msgstr "gconf no disponible."
 
 #: screenlayout/metacity.py:269
 msgid "In order to configure metacity, you need to have the python gconf module installed."
-msgstr ""
+msgstr "Per tal de configurar metacity, necessites tenir el mòdul de python gconf instal·lat."
 
 #: screenlayout/metacity.py:276
 msgid "Keybindings (via Metacity)"
-msgstr ""
+msgstr "Combinacions de tecles (a través de Metacity)"
 
 #: screenlayout/metacity.py:289
 msgid ""
@@ -140,10 +142,13 @@ msgid ""
 "\n"
 "This will only work if you use metacity or another program reading its configuration."
 msgstr ""
+"Fes clic a un botó a la columna esquerra i pressiona una combinació de tecles que vols que es vinculi a un disseny de pantalla determinat. (Usa de retrocés per a la neteja d'acceleradors, escapament per cancel·lar l'edició.) A continuació, selecciona un o més dissenys a la columna de la dreta.\n"
+"\n"
+"Només funciona quan s'utilitza metacity o un altre programa que faci lectura de la seva configuració."
 
 #: screenlayout/widget.py:43
 msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
-msgstr ""
+msgstr "La teva configuració no inclou un monitor actiu. Vols aplicar la configuració?"
 
 #: screenlayout/widget.py:257
 msgid "Active"
@@ -152,12 +157,12 @@ msgstr "Actiu"
 #: screenlayout/widget.py:275
 #, python-format
 msgid "Setting this resolution is not possible here: %s"
-msgstr ""
+msgstr "Establir aquesta resolució no és possible aquí: %s"
 
 #: screenlayout/widget.py:288
 #, python-format
 msgid "This orientation is not possible here: %s"
-msgstr ""
+msgstr "Aquesta orientació no és possible aquí: %s"
 
 #: screenlayout/widget.py:294
 msgid "Resolution"
@@ -169,9 +174,9 @@ msgstr "Orientació"
 
 #: screenlayout/xrandr.py:205
 msgid "A part of an output is outside the virtual screen."
-msgstr ""
+msgstr "Una part d'una sortida es troba fora de la pantalla virtual."
 
 #: screenlayout/xrandr.py:208
 msgid "An output is outside the virtual screen."
-msgstr ""
+msgstr "Una sortida és fora de la pantalla virtual."
 
