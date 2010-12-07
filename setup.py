@@ -57,7 +57,7 @@ class update_po(NoOptionCommand):
         for po in glob.glob(os.path.join(PO_DIR, '*.po')):
             if not self.dry_run:
                 info('Updating %s' % po)
-                subprocess.check_call(['msgmerge', '-U', po, POT_FILE])
+                subprocess.check_call(['msgmerge', '-U', '--no-wrap', po, POT_FILE])
 
 class build_trans(NoOptionCommand):
     description = 'Compile .po files into .mo files'
