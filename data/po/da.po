@@ -2,70 +2,71 @@
 # Copyright (C) 2009 chrysn & Joe Hansen.
 # This file is distributed under the same license as the ARandR package.
 # Joe Hansen <joedalton2@yahoo.dk>, 2010.
-# 
+#
 # output -> skærm (se forklaring længere nede).
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: arandr 0.1.2\n"
 "Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
-"POT-Creation-Date: 2010-03-03 14:37+0100\n"
+"POT-Creation-Date: 2010-12-07 11:15+0100\n"
 "PO-Revision-Date: 2010-04-23 17:30+01:00\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: screenlayout/gui.py:104
+#: screenlayout/gui.py:101
 msgid "_Layout"
 msgstr "_Udseende"
 
-#: screenlayout/gui.py:115
+#: screenlayout/gui.py:112
 msgid "_View"
 msgstr "_Vis"
 
-#: screenlayout/gui.py:117
+#: screenlayout/gui.py:114
 msgid "_Outputs"
 msgstr "_Skærme"
 
-#: screenlayout/gui.py:118
+#: screenlayout/gui.py:115
 msgid "Dummy"
 msgstr "Dummy"
 
-#: screenlayout/gui.py:120
+#: screenlayout/gui.py:117
 msgid "_System"
 msgstr "_System"
 
-#: screenlayout/gui.py:121
+#: screenlayout/gui.py:118
 msgid "_Keybindings (Metacity)"
 msgstr "_Nøgletildelinger (Metacity)"
 
-#: screenlayout/gui.py:123
+#: screenlayout/gui.py:120
 msgid "_Help"
 msgstr "_Hjælp"
 
-#: screenlayout/gui.py:127
+#: screenlayout/gui.py:124
 msgid "1:4"
 msgstr "1:4"
 
-#: screenlayout/gui.py:128
+#: screenlayout/gui.py:125
 msgid "1:8"
 msgstr "1:8"
 
-#: screenlayout/gui.py:129
+#: screenlayout/gui.py:126
 msgid "1:16"
 msgstr "1:16"
 
-#: screenlayout/gui.py:176
+#: screenlayout/gui.py:173
 msgid "Script Properties"
 msgstr "Skriptegenskaber"
 
-#: screenlayout/gui.py:188
+#: screenlayout/gui.py:185
 msgid "Script"
 msgstr "Skript"
 
-#: screenlayout/gui.py:204
+#: screenlayout/gui.py:201
 #, python-format
 msgid ""
 "XRandR failed:\n"
@@ -74,24 +75,24 @@ msgstr ""
 "XRandR mislykkedes:\n"
 "%s"
 
-#: screenlayout/gui.py:214
+#: screenlayout/gui.py:211
 msgid "Open Layout"
 msgstr "Åbn udseende"
 
-#: screenlayout/gui.py:226
+#: screenlayout/gui.py:223
 msgid "Save Layout"
 msgstr "Gem udseende"
 
 # skærmudseende. Muligvis er "skærmopsætning" mere dækkende.  XRandR,
 # som ARandR vist er en grænseflade til, styrer skærmopløsning, rotation osv.
-#: screenlayout/gui.py:276
+#: screenlayout/meta.py:6
 msgid "ARandR Screen Layout Editor"
 msgstr "ARandR - redigering af skærmopsætning"
 
 #. # translators, please translate in the style of "Another XRandR GUI
 #. # (ein weiteres GUI für XRandR)" so users get both the explanation of
 #. # the acronym and a localized version.
-#: screenlayout/gui.py:283
+#: screenlayout/meta.py:10
 msgid "Another XRandR GUI"
 msgstr "Another XRandR GUI (en anden XRandR-grænseflade)"
 
@@ -150,26 +151,26 @@ msgstr ""
 "\n"
 "Dette vil kun virke, hvis du bruger metacity eller et andet program, der læser metacitys konfiguration."
 
-#: screenlayout/widget.py:43
+#: screenlayout/widget.py:45
 msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
 msgstr "Din konfiguration inkluderer ikke nogen aktiv overvågning. Ønsker du at anvende konfigurationen?"
 
-#: screenlayout/widget.py:257
+#: screenlayout/widget.py:285
 msgid "Active"
 msgstr "Aktiv"
 
-#: screenlayout/widget.py:275
+#: screenlayout/widget.py:303
 #, python-format
 msgid "Setting this resolution is not possible here: %s"
 msgstr "Angivelse af denne opløsning er ikke muligt her: %s"
 
 # retning er brugt i OpenOffice, kunne måske også være opsætning
-#: screenlayout/widget.py:288
+#: screenlayout/widget.py:316
 #, python-format
 msgid "This orientation is not possible here: %s"
 msgstr "Denne retning er ikke mulig her: %s"
 
-#: screenlayout/widget.py:294
+#: screenlayout/widget.py:322
 msgid "Resolution"
 msgstr "Opløsning"
 
@@ -177,7 +178,7 @@ msgstr "Opløsning"
 # Jeg tror Orientering er bedst, da det er hvorvidt skærmen vises drejet
 # 90 grader til venstre, på hovedet eller tilsvarende
 # (jf. xrandr-kommandoen --rotate)
-#: screenlayout/widget.py:296
+#: screenlayout/widget.py:324
 msgid "Orientation"
 msgstr "Orientering"
 

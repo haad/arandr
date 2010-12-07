@@ -7,63 +7,64 @@ msgid ""
 msgstr ""
 "Project-Id-Version: arandr 0.1.2\n"
 "Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
-"POT-Creation-Date: 2010-03-03 14:37+0100\n"
+"POT-Creation-Date: 2010-12-07 11:15+0100\n"
 "PO-Revision-Date: 2010-10-17 12:23+0100\n"
 "Last-Translator: el_libre - - www.catmidia.cat <el.libre@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: screenlayout/gui.py:104
+#: screenlayout/gui.py:101
 msgid "_Layout"
 msgstr "_Disposició"
 
-#: screenlayout/gui.py:115
+#: screenlayout/gui.py:112
 msgid "_View"
 msgstr "_Visualitza"
 
-#: screenlayout/gui.py:117
+#: screenlayout/gui.py:114
 msgid "_Outputs"
 msgstr "S_ortides"
 
-#: screenlayout/gui.py:118
+#: screenlayout/gui.py:115
 msgid "Dummy"
 msgstr "Prova"
 
-#: screenlayout/gui.py:120
+#: screenlayout/gui.py:117
 msgid "_System"
 msgstr "_Sistema"
 
-#: screenlayout/gui.py:121
+#: screenlayout/gui.py:118
 msgid "_Keybindings (Metacity)"
 msgstr "_Combinacions de tecles (Metacity)"
 
-#: screenlayout/gui.py:123
+#: screenlayout/gui.py:120
 msgid "_Help"
 msgstr "A_juda"
 
-#: screenlayout/gui.py:127
+#: screenlayout/gui.py:124
 msgid "1:4"
 msgstr "1:4"
 
-#: screenlayout/gui.py:128
+#: screenlayout/gui.py:125
 msgid "1:8"
 msgstr "1:8"
 
-#: screenlayout/gui.py:129
+#: screenlayout/gui.py:126
 msgid "1:16"
 msgstr "1:16"
 
-#: screenlayout/gui.py:176
+#: screenlayout/gui.py:173
 msgid "Script Properties"
 msgstr "Propietats de la seqüència"
 
-#: screenlayout/gui.py:188
+#: screenlayout/gui.py:185
 msgid "Script"
 msgstr "Seqüència"
 
-#: screenlayout/gui.py:204
+#: screenlayout/gui.py:201
 #, python-format
 msgid ""
 "XRandR failed:\n"
@@ -72,22 +73,22 @@ msgstr ""
 "XRandR fallit:\n"
 "%s"
 
-#: screenlayout/gui.py:214
+#: screenlayout/gui.py:211
 msgid "Open Layout"
 msgstr "Obre Disseny"
 
-#: screenlayout/gui.py:226
+#: screenlayout/gui.py:223
 msgid "Save Layout"
 msgstr "Desa disseny"
 
-#: screenlayout/gui.py:276
+#: screenlayout/meta.py:6
 msgid "ARandR Screen Layout Editor"
 msgstr "Editor del Disseny de Pantalla ARandR"
 
 #. # translators, please translate in the style of "Another XRandR GUI
 #. # (ein weiteres GUI für XRandR)" so users get both the explanation of
 #. # the acronym and a localized version.
-#: screenlayout/gui.py:283
+#: screenlayout/meta.py:10
 msgid "Another XRandR GUI"
 msgstr "Un altre GUI per a XRandR"
 
@@ -146,29 +147,29 @@ msgstr ""
 "\n"
 "Només funciona quan s'utilitza metacity o un altre programa que faci lectura de la seva configuració."
 
-#: screenlayout/widget.py:43
+#: screenlayout/widget.py:45
 msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
 msgstr "La teva configuració no inclou un monitor actiu. Vols aplicar la configuració?"
 
-#: screenlayout/widget.py:257
+#: screenlayout/widget.py:285
 msgid "Active"
 msgstr "Actiu"
 
-#: screenlayout/widget.py:275
+#: screenlayout/widget.py:303
 #, python-format
 msgid "Setting this resolution is not possible here: %s"
 msgstr "Establir aquesta resolució no és possible aquí: %s"
 
-#: screenlayout/widget.py:288
+#: screenlayout/widget.py:316
 #, python-format
 msgid "This orientation is not possible here: %s"
 msgstr "Aquesta orientació no és possible aquí: %s"
 
-#: screenlayout/widget.py:294
+#: screenlayout/widget.py:322
 msgid "Resolution"
 msgstr "Resolució"
 
-#: screenlayout/widget.py:296
+#: screenlayout/widget.py:324
 msgid "Orientation"
 msgstr "Orientació"
 
@@ -179,4 +180,3 @@ msgstr "Una part d'una sortida es troba fora de la pantalla virtual."
 #: screenlayout/xrandr.py:208
 msgid "An output is outside the virtual screen."
 msgstr "Una sortida és fora de la pantalla virtual."
-
