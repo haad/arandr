@@ -1,68 +1,70 @@
-# ARandR
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR chrysn
-# This file is distributed under the same license as the arandr package.
-# Mohammad Alhargan <malham1@gmail.com>, 2010
-# 
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: XRandR\n"
+"Project-Id-Version: arandr 0.1.2\n"
 "Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
 "POT-Creation-Date: 2010-03-03 14:37+0100\n"
-"PO-Revision-Date: 2010-11-26 21:24+0800\n"
-"Last-Translator: aboodilankaboot\n"
-"Language-Team: Arabic\n"
+"PO-Revision-Date: 2010-12-05 00:37+0800\n"
+"Last-Translator: careone <Carezero@qq.com>\n"
+"Language-Team: Chinese-China <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Arabic\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
 #: screenlayout/gui.py:104
 msgid "_Layout"
-msgstr "_تصميم"
+msgstr "布局(_L)"
 
 #: screenlayout/gui.py:115
 msgid "_View"
-msgstr "_عرض"
+msgstr "视图(_V)"
 
 #: screenlayout/gui.py:117
 msgid "_Outputs"
-msgstr "_مخرجات"
+msgstr "输出(_O)"
 
 #: screenlayout/gui.py:118
 msgid "Dummy"
-msgstr "وهمي"
+msgstr "虚拟"
 
 #: screenlayout/gui.py:120
 msgid "_System"
-msgstr "_نظام"
+msgstr "系统(_S)"
 
 #: screenlayout/gui.py:121
 msgid "_Keybindings (Metacity)"
-msgstr "_اختصار لوحة المفاتيح (Metacity)"
+msgstr "键盘闪烁(Metacity)(_K)"
 
 #: screenlayout/gui.py:123
 msgid "_Help"
-msgstr "_مساعدة"
+msgstr "帮助(_H)"
 
 #: screenlayout/gui.py:127
 msgid "1:4"
-msgstr "1:4"
+msgstr ""
 
 #: screenlayout/gui.py:128
 msgid "1:8"
-msgstr "1:8"
+msgstr ""
 
 #: screenlayout/gui.py:129
 msgid "1:16"
-msgstr "1:16"
+msgstr ""
 
 #: screenlayout/gui.py:176
 msgid "Script Properties"
-msgstr "خصائص السكربت"
+msgstr "脚本属性"
 
 #: screenlayout/gui.py:188
 msgid "Script"
-msgstr "سكربت"
+msgstr "脚本"
 
 #: screenlayout/gui.py:204
 #, python-format
@@ -70,72 +72,72 @@ msgid ""
 "XRandR failed:\n"
 "%s"
 msgstr ""
-"فشل XRandR:\n"
+"XRandR 失败:\n"
 "%s"
 
 #: screenlayout/gui.py:214
 msgid "Open Layout"
-msgstr "فتح تصميم"
+msgstr "打开布局"
 
 #: screenlayout/gui.py:226
 msgid "Save Layout"
-msgstr "حفظ تصميم"
+msgstr "保存布局"
 
 #: screenlayout/gui.py:276
 msgid "ARandR Screen Layout Editor"
-msgstr "شاشة تحرير تصميم ARandR"
+msgstr "ARandR 屏幕布局编辑器"
 
 #. # translators, please translate in the style of "Another XRandR GUI
 #. # (ein weiteres GUI für XRandR)" so users get both the explanation of
 #. # the acronym and a localized version.
 #: screenlayout/gui.py:283
 msgid "Another XRandR GUI"
-msgstr "واجهة مستخدم XRandR أخرى"
+msgstr "其它 XRandR 图形界面"
 
 #: screenlayout/metacity.py:37
 msgid "Accelerator"
-msgstr "مسرّع"
+msgstr "适配器"
 
 #: screenlayout/metacity.py:38
 msgid "Action"
-msgstr "تأثير"
+msgstr "操作"
 
 #: screenlayout/metacity.py:104
 msgid "disabled"
-msgstr "غير مفعّل"
+msgstr "禁用"
 
 #: screenlayout/metacity.py:119
 msgid "New accelerator..."
-msgstr "مسرّع جديد..."
+msgstr "新建适配器..."
 
 #: screenlayout/metacity.py:182
 msgid "no action"
-msgstr "لا مؤثرات"
+msgstr "无操作"
 
 #: screenlayout/metacity.py:212
 msgid "incompatible configuration"
-msgstr "إعداد غير متوافق"
+msgstr "不合适的配置"
 
 #: screenlayout/metacity.py:219
 msgid "other application"
-msgstr "تطبيق آخر"
+msgstr "其它应用程序"
 
 #: screenlayout/metacity.py:239
 #, python-format
 msgid "No files in %(folder)r. Save a layout first."
-msgstr "لا توجد ملفات في %(folder)r احفظ التصميم أولاً"
+msgstr "在 %(folder)r 没有文件。请先保存一个布局。"
 
 #: screenlayout/metacity.py:268
 msgid "gconf not available."
-msgstr "gconf  غير متوفر"
+msgstr "gconf 不可用。"
 
 #: screenlayout/metacity.py:269
 msgid "In order to configure metacity, you need to have the python gconf module installed."
-msgstr "من أجل إعداد ميتستي ، يجب تثبيت وحدة  . gconf "
+msgstr "要配置 metacity，你需要先安装 python gconf 模块。"
 
 #: screenlayout/metacity.py:276
 msgid "Keybindings (via Metacity)"
-msgstr "اختصار لوحة المفاتيح (via Metacity)"
+msgstr "键盘闪烁(通过Metacity)"
 
 #: screenlayout/metacity.py:289
 msgid ""
@@ -143,40 +145,56 @@ msgid ""
 "\n"
 "This will only work if you use metacity or another program reading its configuration."
 msgstr ""
-"انقر على زر في العمود الأيسر واضغط على تركيبة المفاتيح التي تريد تخصيصها. (استخدم مفتاح الرجوع للخلف للمسح ،وهروب  للخروج من التحرير.) ثم اختر واحد أو أكثر من التخطيطات في العمود الأيمن.\n"
+"点击左边栏的按钮，并在你想要指定的相应屏幕布局里按一个键。\n(按退位键清除字符，按 ESC 键放弃编辑。)\n然后在右边栏里，选择一个或多个布局。\n"
 "\n"
-"سيعمل هذا فقط إذا كنت تستخدم ميتستي أو برنامجا آخر يقرأ الاعدادات"
+"以上这些，只有在你使用 metacity 或者其它程序来读取配置时有效。"
 
 #: screenlayout/widget.py:43
 msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
-msgstr "إعداداتك لا تحتوي على شاشة نشطة . هل تريد تنشيط الاعدادات؟"
+msgstr "你的配置不包括一个活动的显示器。要应用这个配置吗？"
 
 #: screenlayout/widget.py:257
 msgid "Active"
-msgstr "نشط"
+msgstr "激活"
 
 #: screenlayout/widget.py:275
 #, python-format
 msgid "Setting this resolution is not possible here: %s"
-msgstr "لا يمكن إعداد هذه الدقة هنا : %s"
+msgstr "这里不适合设置这个分辨率: %s"
 
 #: screenlayout/widget.py:288
 #, python-format
 msgid "This orientation is not possible here: %s"
-msgstr "هذه الاتجاهات غير متاحة هنا : %s"
+msgstr "这个方向不适合这里: %s"
 
 #: screenlayout/widget.py:294
 msgid "Resolution"
-msgstr "دقة الشاشة"
+msgstr "分辨率"
 
 #: screenlayout/widget.py:296
 msgid "Orientation"
-msgstr "إتجاه"
+msgstr "方向"
 
 #: screenlayout/xrandr.py:205
 msgid "A part of an output is outside the virtual screen."
-msgstr "جزء من الناتج خارج الشاشة الإفتراضية."
+msgstr "输出的部分内容超出虚拟屏幕。"
 
 #: screenlayout/xrandr.py:208
 msgid "An output is outside the virtual screen."
-msgstr "الناتج خارج الشاشة الإفتراضية"
+msgstr "某个输出超出虚拟屏幕。"
+
+msgid "normal"
+msgstr "正常"
+
+msgid "left"
+msgstr "左侧"
+
+msgid "inverted"
+msgstr "倒置"
+
+msgid "right"
+msgstr "右侧"
+
+msgid "Shell script(Layout file)"
+msgstr "Shell脚本(布局文件)"
+

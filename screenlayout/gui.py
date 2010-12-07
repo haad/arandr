@@ -25,6 +25,8 @@ TRANSLATORS = [
         'Mehmet Gülmen <memetgulmen@gmail.com>',
         'Ricardo A. Hermosilla Carrillo <ra.hermosillac@gmail.com>',
         'el_libre <el.libre@gmail.com>',
+        'aboodilankaboot <shiningmoon25@gmail.com>',
+        'Carezero <carezero@qq.com>',
         ]
 
 #import os
