@@ -1,4 +1,3 @@
-# This Python file uses the following encoding: utf-8
 """Main GUI for ARandR"""
 
 import os
@@ -10,24 +9,7 @@ import gtk
 from . import widget
 from .metacity import show_keybinder
 
-
-__version__ = '0.1.3'
-TRANSLATORS = [
-        'chrysn <chrysn@fsfe.org>',
-        'Quizzlo <paolone.marco@gmail.com>',
-        'Phantom X <megaphantomx@bol.com.br>',
-        'Joe Hansen <joedalton2@yahoo.dk>',
-        'gundachandru <gundachandru@gmail.com>',
-        'HsH <hsh@runtu.org>',
-        'Clément Démoulins <clement@archivel.fr>',
-        'RooTer <rooter@kyberian.net>',
-        'Mohammad Alhargan <malham1@gmail.com>',
-        'Mehmet Gülmen <memetgulmen@gmail.com>',
-        'Ricardo A. Hermosilla Carrillo <ra.hermosillac@gmail.com>',
-        'el_libre <el.libre@gmail.com>',
-        'aboodilankaboot <shiningmoon25@gmail.com>',
-        'Carezero <carezero@qq.com>',
-        ]
+from .meta import __version__, TRANSLATORS, COPYRIGHT, PROGRAMNAME, PROGRAMDESCRIPTION
 
 #import os
 #os.environ['DISPLAY']=':0.0'
@@ -288,14 +270,11 @@ class Application(object):
 
     def about(self, *args):
         d = gtk.AboutDialog()
-        d.props.program_name = _(u'ARandR Screen Layout Editor')
+        d.props.program_name = PROGRAMNAME
         d.props.version = __version__
         d.props.translator_credits = "\n".join(TRANSLATORS)
-        d.props.copyright = u'© chrysn 2008 – 2009'
-        ## translators, please translate in the style of "Another XRandR GUI
-        ## (ein weiteres GUI für XRandR)" so users get both the explanation of
-        ## the acronym and a localized version.
-        d.props.comments = _(u'Another XRandR GUI')
+        d.props.copyright = COPYRIGHT
+        d.props.comments = PROGRAMDESCRIPTION
         d.props.license = open(os.path.join(os.path.dirname(__file__), 'data', 'gpl-3.txt')).read()
         d.props.logo_icon_name = 'video-display'
         d.run()
