@@ -71,3 +71,4 @@
 * integrate --randr-display in gui configuration and add more options than "DISPLAY=${} xrandr" (for example "ssh some-server xrandr", maybe even with zeroconf detection of ssh hosts, but i digress)
 * rewrite parser to --verbose
     * standalone tool to dump a current configuration (more of a demo program) -- unxrandr
+* use distutils translation build system instead of custom one (compare hotot package)
