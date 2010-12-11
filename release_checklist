@@ -1,10 +1,10 @@
 checklist before release:
 
  * work on branch master
- * set version in `setup.py` and `screenlayout/gui.py`
+ * set version in `setup.py` and `screenlayout/meta.py`
  * make sure the latest NEWS entry matches
  * update README for new file names (be sure to catch all)
- * update copyright references to current year (screenlayout/gui.py, README)
+ * update copyright references to current year (screenlayout/meta.py, README)
  * commit as 'ready for release ...'
  * `git log --first-parent master > ChangeLog.new`
  * `git checkout release`
