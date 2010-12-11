@@ -106,11 +106,12 @@ class XRandR(object):
             if headline.startswith("  "): continue # a currently disconnected part of the screen i can't currently get any info out of
             if headline == "": continue # noise
 
+            headline = headline.replace('unknown connection', 'unknown-connection')
             hsplit = headline.split(" ")
             o = self.state.Output(hsplit[0])
-            assert hsplit[1] in ("connected","disconnected")
+            assert hsplit[1] in ("connected","disconnected", 'unknown-connection')
 
-            o.connected = (hsplit[1] == 'connected')
+            o.connected = (hsplit[1] in ('connected', 'unknown-connection'))
 
             if not hsplit[2].startswith("("):
                 active = True
