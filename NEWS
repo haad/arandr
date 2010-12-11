@@ -1,13 +1,19 @@
-Unreleased
+Version 0.1.4
+* This is a bugfix / translation update release
+* Fix for "unknown connection" bug
 * New translations:
   - Russian (by HsH)
   - French (by Clément Démoulins)
   - Polish (by RooTer)
   - Arabic (by Mohammad Alhargan)
   - Turkish (by Mehmet Gülmen)
+  - Spanish (by Ricardo A. Hermosilla Carrillo)
+  - Catalan (by el_libre)
+  - Chinese (by Carezero)
 * Translation updates:
   - Danish
   - Brazilian
+  - Arabic (by aboodilankaboot)
 
 Version 0.1.3
 * Prevent too large window size requests
