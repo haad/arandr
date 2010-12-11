@@ -12,7 +12,7 @@ checklist before release:
  * `mv ChangeLog.new ChangeLog; git commit --amend -a` and set commit message to last NEWS entry
  * `git tag $VERSION`
  * `git archive $VERSION --prefix="arandr-$VERSION/" | gzip -9 > ../arandr_$VERSION.orig.tar.gz`
- * `pristine-tar commit ../arandr-$VERSION.orig.tar.gz $VERSION`
- * update website to reflect new README
+ * `pristine-tar commit ../arandr_$VERSION.orig.tar.gz $VERSION`
+ * update website to reflect new README, upload tarball
  * push to gitorious
  * notify maintainers
