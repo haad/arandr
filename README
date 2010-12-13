@@ -29,9 +29,9 @@ Installation
 
         aptitude install arandr
 
-    * archlinux using a PKGBUILD_ on AUR::
+    * archlinux_::
 
-        yaourt -S arandr
+        pacman -S arandr
 
     * Slackware using a `slackbuild by PhantomX`_::
 
@@ -120,7 +120,7 @@ Translations by
  .. _xsetwacom: http://linuxwacom.sourceforge.net/index.php/howto/xsetwacom
  .. _TODO: ./TODO
  .. _`latest release`: http://christian.amsuess.com/tools/arandr/files/arandr-0.1.4.tar.gz
- .. _PKGBUILD: http://aur.archlinux.org/packages.php?ID=17385
+ .. _archlinux: http://www.archlinux.org/packages/community/any/arandr/
  .. _chrysn: http://christian.amsuess.com
  .. _GPLv3: http://www.gnu.org/licenses/gpl-3.0.txt
  .. _`dual head sketch`: http://www.thinkwiki.org/wiki/Image:Intel-DualHead.png
