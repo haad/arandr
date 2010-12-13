@@ -35,8 +35,8 @@ Installation
 
     * Slackware using a `slackbuild by PhantomX`_::
 
-        wget http://cloud.github.com/downloads/PhantomX/slackbuilds/arandr.tar.bz2
-        tar xjf arandr.tar.bz2
+        wget http://cloud.github.com/downloads/PhantomX/slackbuilds/arandr-0.1.4.tar.bz2
+        tar xjf arandr-0.1.4.tar.bz2
         cd arandr
         ./arandr.SlackBuild 2>&1 | tee build.log
 
