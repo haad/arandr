@@ -25,4 +25,5 @@ TRANSLATORS = [
         'el_libre <el.libre@gmail.com>',
         'aboodilankaboot <shiningmoon25@gmail.com>',
         'Carezero <carezero@qq.com>',
+        'wimfeijen <wimfeijen@gmail.com>',
         ]
