@@ -91,7 +91,7 @@ msgstr "ARandR Schermopmaak Editor"
 #. # the acronym and a localized version.
 #: screenlayout/meta.py:10
 msgid "Another XRandR GUI"
-msgstr "Nog een XRandR GUI"
+msgstr "Another XRandR GUI (nog een XRandR GUI)"
 
 #: screenlayout/metacity.py:37
 msgid "Accelerator"
