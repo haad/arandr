@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR chrysn
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: ARandR\n"
+"Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
+"POT-Creation-Date: 2010-12-07 11:15+0100\n"
+"PO-Revision-Date: 2011-02-20 14:55+0000\n"
+"Last-Translator: sjb <gseba@users.sourceforge.net>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2)\n"
+
+#: screenlayout/gui.py:101
+msgid "_Layout"
+msgstr "_Configuraţie"
+
+#: screenlayout/gui.py:112
+msgid "_View"
+msgstr "_Vizualizare"
+
+#: screenlayout/gui.py:114
+msgid "_Outputs"
+msgstr "_Ieşiri"
+
+#: screenlayout/gui.py:115
+msgid "Dummy"
+msgstr "Simulare"
+
+#: screenlayout/gui.py:117
+msgid "_System"
+msgstr "_Sistem"
+
+#: screenlayout/gui.py:118
+msgid "_Keybindings (Metacity)"
+msgstr "_Funcţii taste (Metacity)"
+
+#: screenlayout/gui.py:120
+msgid "_Help"
+msgstr "_Ajutor"
+
+#: screenlayout/gui.py:124
+msgid "1:4"
+msgstr "1:4"
+
+#: screenlayout/gui.py:125
+msgid "1:8"
+msgstr "1:8"
+
+#: screenlayout/gui.py:126
+msgid "1:16"
+msgstr "1:16"
+
+#: screenlayout/gui.py:173
+msgid "Script Properties"
+msgstr "Proprietăţi script"
+
+#: screenlayout/gui.py:185
+msgid "Script"
+msgstr "Script"
+
+#: screenlayout/gui.py:201
+#, python-format
+msgid ""
+"XRandR failed:\n"
+"%s"
+msgstr ""
+"Eşuare XRandR:\n"
+"%s"
+
+#: screenlayout/gui.py:211
+msgid "Open Layout"
+msgstr "Deschidere configuraţie"
+
+#: screenlayout/gui.py:223
+msgid "Save Layout"
+msgstr "Salvare configuraţie"
+
+#: screenlayout/meta.py:6
+msgid "ARandR Screen Layout Editor"
+msgstr "ARandR, editor configuraţii ecrane"
+
+#. # translators, please translate in the style of "Another XRandR GUI
+#. # (ein weiteres GUI für XRandR)" so users get both the explanation of
+#. # the acronym and a localized version.
+#: screenlayout/meta.py:10
+msgid "Another XRandR GUI"
+msgstr "Un alt GUI pentru XRandR"
+
+#: screenlayout/metacity.py:37
+msgid "Accelerator"
+msgstr "Combinaţie"
+
+#: screenlayout/metacity.py:38
+msgid "Action"
+msgstr "Acţiune"
+
+#: screenlayout/metacity.py:104
+msgid "disabled"
+msgstr "dezactivat"
+
+#: screenlayout/metacity.py:119
+msgid "New accelerator..."
+msgstr "Combinaţie nouă..."
+
+#: screenlayout/metacity.py:182
+msgid "no action"
+msgstr "nicio acţiune"
+
+#: screenlayout/metacity.py:212
+msgid "incompatible configuration"
+msgstr "configurare incompatibilă"
+
+#: screenlayout/metacity.py:219
+msgid "other application"
+msgstr "altă aplicaţie"
+
+#: screenlayout/metacity.py:239
+#, python-format
+msgid "No files in %(folder)r. Save a layout first."
+msgstr "Niciun fişier în  %(folder)r. Trebuie salvată întâi o configuraţie."
+
+#: screenlayout/metacity.py:268
+msgid "gconf not available."
+msgstr "gconf indisponibil."
+
+#: screenlayout/metacity.py:269
+msgid "In order to configure metacity, you need to have the python gconf module installed."
+msgstr "Pentru configurare metacity, modulul python gconf trebuie să fie instalat"
+
+#: screenlayout/metacity.py:276
+msgid "Keybindings (via Metacity)"
+msgstr "Funcţii taste (via Metacity)"
+
+#: screenlayout/metacity.py:289
+msgid ""
+"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
+"\n"
+"This will only work if you use metacity or another program reading its configuration."
+msgstr ""
+"Faceţi click pe un buton în coloana din stânga apoi apăsaţi combinaţia de taste dorită la o anume configuraţie de ecrane (utilizaţi backspace pentru ştergere sau escape pentru abandonare).\n"
+"\n"
+"Aceasta nu funcţionează decât dacă utilizaţi metacity sau alt program compatibil la intrare."
+
+#: screenlayout/widget.py:45
+msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
+msgstr "Configuraţia aleasă nu include niciun ecran activ: se aplică totuşi configuraţia?"
+
+#: screenlayout/widget.py:285
+msgid "Active"
+msgstr "Activ"
+
+#: screenlayout/widget.py:303
+#, python-format
+msgid "Setting this resolution is not possible here: %s"
+msgstr "Definirea acestei resoluţii nu este posibilă aici : %s"
+
+#: screenlayout/widget.py:316
+#, python-format
+msgid "This orientation is not possible here: %s"
+msgstr "Această orientare nu este possibilă aici : %s"
+
+#: screenlayout/widget.py:322
+msgid "Resolution"
+msgstr "Rezoluţie"
+
+#: screenlayout/widget.py:324
+msgid "Orientation"
+msgstr "Orientare"
+
+#: screenlayout/xrandr.py:205
+msgid "A part of an output is outside the virtual screen."
+msgstr "Partea unui ecran este în afara zonei virtuale."
+
+#: screenlayout/xrandr.py:208
+msgid "An output is outside the virtual screen."
+msgstr "Un ecran este în afara zonei virtuale."
