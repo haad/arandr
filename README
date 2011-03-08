@@ -80,6 +80,16 @@ Bugs / Caveats
 
  * Changes while running are not caught.
  * Depends on all modes to have a <width>x<height> name (see `debian bug #507521`_).
+
+   * cglita wrote a patch that solves the problem in some cases. To use his version, do::
+
+         git clone git://gitorious.org/arandr/arandr.git
+         cd arandr
+         git checkout cglita
+         ./arandr
+
+     If this fixes the problem for a significant portion of users / graphics cards, I'll release a version including it.
+
  * See TODO_ for planned features.
 
 
