@@ -23,7 +23,7 @@
        5. arandr knows what he sees and can position displays and offer to apply a matrix
 
 * be more intelligent about future xrandr versions (cf debian #523903)
-* read --props, parse edid (using parse-edid from read-edid), maybe even offer setting properties
+* read --props, parse edid (using parse-edid from read-edid; dispcalGUI has dispcalGUI/edid.py with a parse_edid that just works), maybe even offer setting properties
 * make script properties editable (and explain what it does)
 * provide example scripts
 
