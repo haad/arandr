@@ -72,3 +72,4 @@
 * rewrite parser to --verbose
     * standalone tool to dump a current configuration (more of a demo program) -- unxrandr
 * use distutils translation build system instead of custom one (compare hotot package)
+* debian packaging: use dh_python2 (/ dh_python3) instead of python-support
