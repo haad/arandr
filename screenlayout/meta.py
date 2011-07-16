@@ -27,4 +27,5 @@ TRANSLATORS = [
         'Carezero <carezero@qq.com>',
         'wimfeijen <wimfeijen@gmail.com>',
         'sjb <gseba@users.sourceforge.net>',
+        'Slavko <linux@slavino.sk>',
         ]
