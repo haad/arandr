@@ -98,18 +98,20 @@ class build_man(NoOptionCommand):
     def run(self):
         self.mkpath('build')
 
-        sourcefile = 'data/arandr.1.txt'
-        gzfile = os.path.join('build', 'arandr.1.gz')
+        for (sourcefile, gzfile) in [
+                ('data/arandr.1.txt', os.path.join('build', 'arandr.1.gz')),
+                ('data/unxrandr.1.txt', os.path.join('build', 'unxrandr.1.gz')),
+                ]:
 
-        if newer(sourcefile, gzfile):
-            rst_source = open(sourcefile).read()
-            manpage = docutils.core.publish_string(rst_source, writer=docutils.writers.manpage.Writer())
-            info('compressing man page to %s', gzfile)
+            if newer(sourcefile, gzfile):
+                rst_source = open(sourcefile).read()
+                manpage = docutils.core.publish_string(rst_source, writer=docutils.writers.manpage.Writer())
+                info('compressing man page to %s', gzfile)
 
-            if not self.dry_run:
-                compressed = gzip.open(gzfile, 'w', 9)
-                compressed.write(manpage)
-                compressed.close()
+                if not self.dry_run:
+                    compressed = gzip.open(gzfile, 'w', 9)
+                    compressed.write(manpage)
+                    compressed.close()
 
 class build(_build):
     sub_commands = _build.sub_commands + [('build_trans', None), ('build_man', None)]
@@ -174,7 +176,7 @@ setup(name = PACKAGENAME,
             },
         data_files = [
             ('share/applications', ['data/arandr.desktop']), # FIXME: use desktop-file-install?
-            ('share/man/man1', ['build/arandr.1.gz']),
+            ('share/man/man1', ['build/arandr.1.gz', 'build/unxrandr.1.gz']),
             ],
-        scripts = ['arandr'],
+        scripts = ['arandr', 'unxrandr'],
 )
