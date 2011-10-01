@@ -1,21 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR chrysn
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Translators:
+# Себастьян Gli ţa Κατινα <gseba@users.sourceforge.net>, 2011.
+# sjb <gseba@users.sourceforge.net>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: ARandR\n"
 "Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
 "POT-Creation-Date: 2011-10-01 14:13+0200\n"
-"PO-Revision-Date: 2011-02-20 14:55+0000\n"
-"Last-Translator: sjb <gseba@users.sourceforge.net>\n"
+"PO-Revision-Date: 2011-03-22 15:09+0000\n"
+"Last-Translator: Себастьян Gli ţa Κατινα <gseba@users.sourceforge.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1))\n"
 
 #: screenlayout/gui.py:117
 msgid "_Layout"
@@ -27,7 +29,7 @@ msgstr "_Vizualizare"
 
 #: screenlayout/gui.py:130
 msgid "_Outputs"
-msgstr "_Ieşiri"
+msgstr "_Ecrane"
 
 #: screenlayout/gui.py:131
 msgid "Dummy"
@@ -76,7 +78,7 @@ msgstr ""
 
 #: screenlayout/gui.py:227
 msgid "Open Layout"
-msgstr "Deschidere configuraţie"
+msgstr "Deschide configuraţie"
 
 #: screenlayout/gui.py:239
 msgid "Save Layout"
@@ -95,7 +97,7 @@ msgstr "Another ARandR GUI (un alt GUI pentru XRandR)"
 
 #: screenlayout/metacity.py:53
 msgid "Accelerator"
-msgstr "Combinaţie"
+msgstr "Combinaţie taste"
 
 #: screenlayout/metacity.py:54
 msgid "Action"
@@ -107,7 +109,7 @@ msgstr "dezactivat"
 
 #: screenlayout/metacity.py:135
 msgid "New accelerator..."
-msgstr "Combinaţie nouă..."
+msgstr "Adăugare combinaţie taste.."
 
 #: screenlayout/metacity.py:198
 msgid "no action"
@@ -124,7 +126,7 @@ msgstr "altă aplicaţie"
 #: screenlayout/metacity.py:255
 #, python-format
 msgid "No files in %(folder)r. Save a layout first."
-msgstr "Niciun fişier în  %(folder)r. Trebuie salvată întâi o configuraţie."
+msgstr "Niciun fişier în %(folder)r. Trebuie salvată întâi o configuraţie."
 
 #: screenlayout/metacity.py:284
 msgid "gconf not available."
@@ -146,7 +148,7 @@ msgid ""
 msgstr ""
 "Faceţi click pe un buton în coloana din stânga apoi apăsaţi combinaţia de taste dorită la o anume configuraţie de ecrane (utilizaţi backspace pentru ştergere sau escape pentru abandonare).\n"
 "\n"
-"Aceasta nu funcţionează decât dacă utilizaţi metacity sau alt program compatibil la intrare."
+"Aceasta nu funcţionează decât dacă utilizaţi metacity sau alt program compatibil la citire."
 
 #: screenlayout/widget.py:61
 msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
