@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: arandr 0.1.2\n"
 "Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
-"POT-Creation-Date: 2010-12-07 11:15+0100\n"
+"POT-Creation-Date: 2011-10-01 14:13+0200\n"
 "PO-Revision-Date: 2010-04-23 17:30+01:00\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -18,55 +18,55 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: screenlayout/gui.py:101
+#: screenlayout/gui.py:117
 msgid "_Layout"
 msgstr "_Udseende"
 
-#: screenlayout/gui.py:112
+#: screenlayout/gui.py:128
 msgid "_View"
 msgstr "_Vis"
 
-#: screenlayout/gui.py:114
+#: screenlayout/gui.py:130
 msgid "_Outputs"
 msgstr "_Skærme"
 
-#: screenlayout/gui.py:115
+#: screenlayout/gui.py:131
 msgid "Dummy"
 msgstr "Dummy"
 
-#: screenlayout/gui.py:117
+#: screenlayout/gui.py:133
 msgid "_System"
 msgstr "_System"
 
-#: screenlayout/gui.py:118
+#: screenlayout/gui.py:134
 msgid "_Keybindings (Metacity)"
 msgstr "_Nøgletildelinger (Metacity)"
 
-#: screenlayout/gui.py:120
+#: screenlayout/gui.py:136
 msgid "_Help"
 msgstr "_Hjælp"
 
-#: screenlayout/gui.py:124
+#: screenlayout/gui.py:140
 msgid "1:4"
 msgstr "1:4"
 
-#: screenlayout/gui.py:125
+#: screenlayout/gui.py:141
 msgid "1:8"
 msgstr "1:8"
 
-#: screenlayout/gui.py:126
+#: screenlayout/gui.py:142
 msgid "1:16"
 msgstr "1:16"
 
-#: screenlayout/gui.py:173
+#: screenlayout/gui.py:189
 msgid "Script Properties"
 msgstr "Skriptegenskaber"
 
-#: screenlayout/gui.py:185
+#: screenlayout/gui.py:201
 msgid "Script"
 msgstr "Skript"
 
-#: screenlayout/gui.py:201
+#: screenlayout/gui.py:217
 #, python-format
 msgid ""
 "XRandR failed:\n"
@@ -75,73 +75,73 @@ msgstr ""
 "XRandR mislykkedes:\n"
 "%s"
 
-#: screenlayout/gui.py:211
+#: screenlayout/gui.py:227
 msgid "Open Layout"
 msgstr "Åbn udseende"
 
-#: screenlayout/gui.py:223
+#: screenlayout/gui.py:239
 msgid "Save Layout"
 msgstr "Gem udseende"
 
 # skærmudseende. Muligvis er "skærmopsætning" mere dækkende.  XRandR,
 # som ARandR vist er en grænseflade til, styrer skærmopløsning, rotation osv.
-#: screenlayout/meta.py:6
+#: screenlayout/meta.py:23
 msgid "ARandR Screen Layout Editor"
 msgstr "ARandR - redigering af skærmopsætning"
 
 #. # translators, please translate in the style of "Another XRandR GUI
 #. # (ein weiteres GUI für XRandR)" so users get both the explanation of
 #. # the acronym and a localized version.
-#: screenlayout/meta.py:10
+#: screenlayout/meta.py:27
 msgid "Another XRandR GUI"
 msgstr "Another XRandR GUI (en anden XRandR-grænseflade)"
 
-#: screenlayout/metacity.py:37
+#: screenlayout/metacity.py:53
 msgid "Accelerator"
 msgstr "Accelerator"
 
-#: screenlayout/metacity.py:38
+#: screenlayout/metacity.py:54
 msgid "Action"
 msgstr "Handling"
 
-#: screenlayout/metacity.py:104
+#: screenlayout/metacity.py:120
 msgid "disabled"
 msgstr "deaktiveret"
 
-#: screenlayout/metacity.py:119
+#: screenlayout/metacity.py:135
 msgid "New accelerator..."
 msgstr "Ny accelerator..."
 
-#: screenlayout/metacity.py:182
+#: screenlayout/metacity.py:198
 msgid "no action"
 msgstr "ingen handling"
 
-#: screenlayout/metacity.py:212
+#: screenlayout/metacity.py:228
 msgid "incompatible configuration"
 msgstr "inkompatibel konfiguration"
 
-#: screenlayout/metacity.py:219
+#: screenlayout/metacity.py:235
 msgid "other application"
 msgstr "andet program"
 
-#: screenlayout/metacity.py:239
+#: screenlayout/metacity.py:255
 #, python-format
 msgid "No files in %(folder)r. Save a layout first."
 msgstr "Ingen filer i %(folder)r. Gem et udseende først."
 
-#: screenlayout/metacity.py:268
+#: screenlayout/metacity.py:284
 msgid "gconf not available."
 msgstr "gconf ikke tilgængelig."
 
-#: screenlayout/metacity.py:269
+#: screenlayout/metacity.py:285
 msgid "In order to configure metacity, you need to have the python gconf module installed."
 msgstr "For at kunne konfigurere metacity, skal du have pythons gconf-modul installeret."
 
-#: screenlayout/metacity.py:276
+#: screenlayout/metacity.py:292
 msgid "Keybindings (via Metacity)"
 msgstr "Nøgletildelinger (via Metacity)"
 
-#: screenlayout/metacity.py:289
+#: screenlayout/metacity.py:305
 msgid ""
 "Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
 "\n"
@@ -151,26 +151,26 @@ msgstr ""
 "\n"
 "Dette vil kun virke, hvis du bruger metacity eller et andet program, der læser metacitys konfiguration."
 
-#: screenlayout/widget.py:45
+#: screenlayout/widget.py:61
 msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
 msgstr "Din konfiguration inkluderer ikke nogen aktiv overvågning. Ønsker du at anvende konfigurationen?"
 
-#: screenlayout/widget.py:285
+#: screenlayout/widget.py:301
 msgid "Active"
 msgstr "Aktiv"
 
-#: screenlayout/widget.py:303
+#: screenlayout/widget.py:319
 #, python-format
 msgid "Setting this resolution is not possible here: %s"
 msgstr "Angivelse af denne opløsning er ikke muligt her: %s"
 
 # retning er brugt i OpenOffice, kunne måske også være opsætning
-#: screenlayout/widget.py:316
+#: screenlayout/widget.py:332
 #, python-format
 msgid "This orientation is not possible here: %s"
 msgstr "Denne retning er ikke mulig her: %s"
 
-#: screenlayout/widget.py:322
+#: screenlayout/widget.py:338
 msgid "Resolution"
 msgstr "Opløsning"
 
@@ -178,7 +178,7 @@ msgstr "Opløsning"
 # Jeg tror Orientering er bedst, da det er hvorvidt skærmen vises drejet
 # 90 grader til venstre, på hovedet eller tilsvarende
 # (jf. xrandr-kommandoen --rotate)
-#: screenlayout/widget.py:324
+#: screenlayout/widget.py:340
 msgid "Orientation"
 msgstr "Orientering"
 
@@ -190,10 +190,10 @@ msgstr "Orientering"
 # Jeg tror derfor "skærm" eller "uddataenhed" vil være gode
 # oversættelser af output.  Der er vist et par tidligere strenge hvori
 # det muligvis skal gøres konsistent.
-#: screenlayout/xrandr.py:205
+#: screenlayout/xrandr.py:222
 msgid "A part of an output is outside the virtual screen."
 msgstr "En del af en skærm er uden for den virtuelle skærm."
 
-#: screenlayout/xrandr.py:208
+#: screenlayout/xrandr.py:225
 msgid "An output is outside the virtual screen."
 msgstr "En skærm er uden for den virtuelle skærm."
