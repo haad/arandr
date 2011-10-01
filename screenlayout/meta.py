@@ -46,4 +46,5 @@ TRANSLATORS = [
         'sjb <gseba@users.sourceforge.net>',
         'Slavko <linux@slavino.sk>',
         'Alireza Savand <agahia.com@gmail.com>',
+        'Bruno_Patri <bruno.patri@gmail.com>',
         ]
