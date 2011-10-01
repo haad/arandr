@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: arandr 0.1.3\n"
+"Project-Id-Version: arandr 0.1.4\n"
 "Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
-"POT-Creation-Date: 2010-12-07 11:15+0100\n"
+"POT-Creation-Date: 2011-10-01 14:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,128 +17,128 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: screenlayout/gui.py:101
+#: screenlayout/gui.py:117
 msgid "_Layout"
 msgstr ""
 
-#: screenlayout/gui.py:112
+#: screenlayout/gui.py:128
 msgid "_View"
 msgstr ""
 
-#: screenlayout/gui.py:114
+#: screenlayout/gui.py:130
 msgid "_Outputs"
 msgstr ""
 
-#: screenlayout/gui.py:115
+#: screenlayout/gui.py:131
 msgid "Dummy"
 msgstr ""
 
-#: screenlayout/gui.py:117
+#: screenlayout/gui.py:133
 msgid "_System"
 msgstr ""
 
-#: screenlayout/gui.py:118
+#: screenlayout/gui.py:134
 msgid "_Keybindings (Metacity)"
 msgstr ""
 
-#: screenlayout/gui.py:120
+#: screenlayout/gui.py:136
 msgid "_Help"
 msgstr ""
 
-#: screenlayout/gui.py:124
+#: screenlayout/gui.py:140
 msgid "1:4"
 msgstr ""
 
-#: screenlayout/gui.py:125
+#: screenlayout/gui.py:141
 msgid "1:8"
 msgstr ""
 
-#: screenlayout/gui.py:126
+#: screenlayout/gui.py:142
 msgid "1:16"
 msgstr ""
 
-#: screenlayout/gui.py:173
+#: screenlayout/gui.py:189
 msgid "Script Properties"
 msgstr ""
 
-#: screenlayout/gui.py:185
+#: screenlayout/gui.py:201
 msgid "Script"
 msgstr ""
 
-#: screenlayout/gui.py:201
+#: screenlayout/gui.py:217
 #, python-format
 msgid ""
 "XRandR failed:\n"
 "%s"
 msgstr ""
 
-#: screenlayout/gui.py:211
+#: screenlayout/gui.py:227
 msgid "Open Layout"
 msgstr ""
 
-#: screenlayout/gui.py:223
+#: screenlayout/gui.py:239
 msgid "Save Layout"
 msgstr ""
 
-#: screenlayout/meta.py:6
+#: screenlayout/meta.py:23
 msgid "ARandR Screen Layout Editor"
 msgstr ""
 
 #. # translators, please translate in the style of "Another XRandR GUI
 #. # (ein weiteres GUI für XRandR)" so users get both the explanation of
 #. # the acronym and a localized version.
-#: screenlayout/meta.py:10
+#: screenlayout/meta.py:27
 msgid "Another XRandR GUI"
 msgstr ""
 
-#: screenlayout/metacity.py:37
+#: screenlayout/metacity.py:53
 msgid "Accelerator"
 msgstr ""
 
-#: screenlayout/metacity.py:38
+#: screenlayout/metacity.py:54
 msgid "Action"
 msgstr ""
 
-#: screenlayout/metacity.py:104
+#: screenlayout/metacity.py:120
 msgid "disabled"
 msgstr ""
 
-#: screenlayout/metacity.py:119
+#: screenlayout/metacity.py:135
 msgid "New accelerator..."
 msgstr ""
 
-#: screenlayout/metacity.py:182
+#: screenlayout/metacity.py:198
 msgid "no action"
 msgstr ""
 
-#: screenlayout/metacity.py:212
+#: screenlayout/metacity.py:228
 msgid "incompatible configuration"
 msgstr ""
 
-#: screenlayout/metacity.py:219
+#: screenlayout/metacity.py:235
 msgid "other application"
 msgstr ""
 
-#: screenlayout/metacity.py:239
+#: screenlayout/metacity.py:255
 #, python-format
 msgid "No files in %(folder)r. Save a layout first."
 msgstr ""
 
-#: screenlayout/metacity.py:268
+#: screenlayout/metacity.py:284
 msgid "gconf not available."
 msgstr ""
 
-#: screenlayout/metacity.py:269
+#: screenlayout/metacity.py:285
 msgid ""
 "In order to configure metacity, you need to have the python gconf module "
 "installed."
 msgstr ""
 
-#: screenlayout/metacity.py:276
+#: screenlayout/metacity.py:292
 msgid "Keybindings (via Metacity)"
 msgstr ""
 
-#: screenlayout/metacity.py:289
+#: screenlayout/metacity.py:305
 msgid ""
 "Click on a button in the left column and press a key combination you want to "
 "bind to a certain screen layout. (Use backspace to clear accelerators, "
@@ -149,38 +149,38 @@ msgid ""
 "configuration."
 msgstr ""
 
-#: screenlayout/widget.py:45
+#: screenlayout/widget.py:61
 msgid ""
 "Your configuration does not include an active monitor. Do you want to apply "
 "the configuration?"
 msgstr ""
 
-#: screenlayout/widget.py:285
+#: screenlayout/widget.py:301
 msgid "Active"
 msgstr ""
 
-#: screenlayout/widget.py:303
+#: screenlayout/widget.py:319
 #, python-format
 msgid "Setting this resolution is not possible here: %s"
 msgstr ""
 
-#: screenlayout/widget.py:316
+#: screenlayout/widget.py:332
 #, python-format
 msgid "This orientation is not possible here: %s"
 msgstr ""
 
-#: screenlayout/widget.py:322
+#: screenlayout/widget.py:338
 msgid "Resolution"
 msgstr ""
 
-#: screenlayout/widget.py:324
+#: screenlayout/widget.py:340
 msgid "Orientation"
 msgstr ""
 
-#: screenlayout/xrandr.py:205
+#: screenlayout/xrandr.py:222
 msgid "A part of an output is outside the virtual screen."
 msgstr ""
 
-#: screenlayout/xrandr.py:208
+#: screenlayout/xrandr.py:225
 msgid "An output is outside the virtual screen."
 msgstr ""
