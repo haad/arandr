@@ -1,3 +1,14 @@
+Unreleased
+* New unxrandr tool
+* New translations:
+  - Dutch (by wimfeijen)
+  - Romanian (by sjb and Себастьян Gli ţa Κατινα)
+  - Slovak (by Slavko)
+  - Persian (by Alireza Savand)
+* Updated translations:
+  - French (by Bruno Patri)
+* Added copyright headers to all source files
+
 Version 0.1.4
 * This is a bugfix / translation update release
 * Fix for "unknown connection" bug
