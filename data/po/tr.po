@@ -131,8 +131,12 @@ msgid "gconf not available."
 msgstr "gconf erişilemez durumda."
 
 #: screenlayout/metacity.py:285
-msgid "In order to configure metacity, you need to have the python gconf module installed."
-msgstr "Metacity'yi yapılandırabilmeniz için python gconf modülünün kurulu olması gerekiyor."
+msgid ""
+"In order to configure metacity, you need to have the python gconf module "
+"installed."
+msgstr ""
+"Metacity'yi yapılandırabilmeniz için python gconf modülünün kurulu olması "
+"gerekiyor."
 
 #: screenlayout/metacity.py:292
 msgid "Keybindings (via Metacity)"
@@ -140,17 +144,29 @@ msgstr "Kısayollar (Metacity'nin sağladığı)"
 
 #: screenlayout/metacity.py:305
 msgid ""
-"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
+"Click on a button in the left column and press a key combination you want to "
+"bind to a certain screen layout. (Use backspace to clear accelerators, "
+"escape to abort editing.) Then, select one or more layouts in the right "
+"column.\n"
 "\n"
-"This will only work if you use metacity or another program reading its configuration."
+"This will only work if you use metacity or another program reading its "
+"configuration."
 msgstr ""
-"Eğer belli bir ekran yerleşimine kısayol oluşturmak istiyorsanız sol sütundaki bir düğmeye ve bir tuş kombinasyonuna basın. (Hızlandırıcıları silmek için backspace tuşuna, düzenlemeyi bırakmak için escape tuşuna basın.) Daha sonra sağ sütunda bir ya da daha fazla yerleşim düzeni seçin.\n"
+"Eğer belli bir ekran yerleşimine kısayol oluşturmak istiyorsanız sol "
+"sütundaki bir düğmeye ve bir tuş kombinasyonuna basın. (Hızlandırıcıları "
+"silmek için backspace tuşuna, düzenlemeyi bırakmak için escape tuşuna "
+"basın.) Daha sonra sağ sütunda bir ya da daha fazla yerleşim düzeni seçin.\n"
 "\n"
-"Bu sadece eğer bu yapılandırmayı okuyacak metacity veya başka bir program kullanıyorsanız işe yarar."
+"Bu sadece eğer bu yapılandırmayı okuyacak metacity veya başka bir program "
+"kullanıyorsanız işe yarar."
 
 #: screenlayout/widget.py:61
-msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
-msgstr "Yapılandırmanız etkin bir ekran içermiyor. Yine de yapılandırmayı kaydetmek istiyor musunuz?"
+msgid ""
+"Your configuration does not include an active monitor. Do you want to apply "
+"the configuration?"
+msgstr ""
+"Yapılandırmanız etkin bir ekran içermiyor. Yine de yapılandırmayı kaydetmek "
+"istiyor musunuz?"
 
 #: screenlayout/widget.py:301
 msgid "Active"
