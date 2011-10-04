@@ -131,8 +131,11 @@ msgid "gconf not available."
 msgstr "gconf ಲಭ್ಯವಿಲ್ಲ"
 
 #: screenlayout/metacity.py:285
-msgid "In order to configure metacity, you need to have the python gconf module installed."
-msgstr "ಮೆಟಾಸಿಟಿಯನ್ನು ಸಂರಚಿಸುವ ಸಲುವಾಗಿ, ನೀವು python gconf ಮಾಡ್ಯೂಲ್ ವನ್ನು ಸ್ಥಾಪಿಸಿರಬೇಕು"
+msgid ""
+"In order to configure metacity, you need to have the python gconf module "
+"installed."
+msgstr ""
+"ಮೆಟಾಸಿಟಿಯನ್ನು ಸಂರಚಿಸುವ ಸಲುವಾಗಿ, ನೀವು python gconf ಮಾಡ್ಯೂಲ್ ವನ್ನು ಸ್ಥಾಪಿಸಿರಬೇಕು"
 
 #: screenlayout/metacity.py:292
 msgid "Keybindings (via Metacity)"
@@ -140,17 +143,29 @@ msgstr "ಕೀಲಿಬದ್ಧತೆಗಳು (ಮೆಟಾಸಿಟಿಯ ಮ
 
 #: screenlayout/metacity.py:305
 msgid ""
-"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
+"Click on a button in the left column and press a key combination you want to "
+"bind to a certain screen layout. (Use backspace to clear accelerators, "
+"escape to abort editing.) Then, select one or more layouts in the right "
+"column.\n"
 "\n"
-"This will only work if you use metacity or another program reading its configuration."
+"This will only work if you use metacity or another program reading its "
+"configuration."
 msgstr ""
-"ಎಡಭಾಗದ ಕಾಲಮ್‌ನಲ್ಲಿರುವ ಬಟನ್ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ಒಂದು ತೆರೆ ವಿನ್ಯಾಸಕ್ಕೆ ಬೈಂಡ್ ಮಾಡಬಯಸುವು ಕೀ ಕಾಂಬಿನೇಶನ್ ಒತ್ತಿ. (ವೇಗೋತ್ಕರ್ಷಕಗಳನ್ನು ಅಳಿಸಲು backspace ಬಳಸಿ, ಸಂಪಾದನೆಯನ್ನು ಅಬಾರ್ಟ್ ಮಾಡಲು escape ಬಳಸಿ.), ಹಾಗೂ, ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ವಿನ್ಯಾಸಗಳನ್ನು ಬಲಭಾಗದ ಕಾಲಮ್‌ನಲ್ಲಿ ಆರಿಸಿ.\n"
+"ಎಡಭಾಗದ ಕಾಲಮ್‌ನಲ್ಲಿರುವ ಬಟನ್ ಕ್ಲಿಕ್ ಮಾಡಿ ಮತ್ತು ಒಂದು ತೆರೆ ವಿನ್ಯಾಸಕ್ಕೆ ಬೈಂಡ್ ಮಾಡಬಯಸುವು ಕೀ "
+"ಕಾಂಬಿನೇಶನ್ ಒತ್ತಿ. (ವೇಗೋತ್ಕರ್ಷಕಗಳನ್ನು ಅಳಿಸಲು backspace ಬಳಸಿ, ಸಂಪಾದನೆಯನ್ನು ಅಬಾರ್ಟ್ "
+"ಮಾಡಲು escape ಬಳಸಿ.), ಹಾಗೂ, ಒಂದು ಅಥವಾ ಹೆಚ್ಚಿನ ವಿನ್ಯಾಸಗಳನ್ನು ಬಲಭಾಗದ ಕಾಲಮ್‌ನಲ್ಲಿ "
+"ಆರಿಸಿ.\n"
 "\n"
-"ನೀವು ಮೆಟಾಸಿಟಿ ಬಳಸಿದಾಗ ಅಥವಾ ಇದರ ಸಂರಚನೆಯನ್ನು ಓದುವ ಇನ್ನೊಂದು ಪ್ರೋಗ್ರಾಮ್ ಬಳಸಿದಾಗ ಮಾತ್ರ ಇದು ಕೆಲಸ ಮಾಡುತ್ತದೆ."
+"ನೀವು ಮೆಟಾಸಿಟಿ ಬಳಸಿದಾಗ ಅಥವಾ ಇದರ ಸಂರಚನೆಯನ್ನು ಓದುವ ಇನ್ನೊಂದು ಪ್ರೋಗ್ರಾಮ್ ಬಳಸಿದಾಗ ಮಾತ್ರ "
+"ಇದು ಕೆಲಸ ಮಾಡುತ್ತದೆ."
 
 #: screenlayout/widget.py:61
-msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
-msgstr "ನಿಮ್ಮ ಸಂರಚನೆಯು ಯಾವುದೇ ಒಂದು ಸಕ್ರಿಯ ಮಾನಿಟರ್‌ವನ್ನು ಒಳಗೊಂಡಿಲ್ಲ. ನೀವು ಈ ಸಂರಚನೆಯನ್ನು ಅನ್ವಯಿಸಲು ಬಯಸುತ್ತೀರಾ?"
+msgid ""
+"Your configuration does not include an active monitor. Do you want to apply "
+"the configuration?"
+msgstr ""
+"ನಿಮ್ಮ ಸಂರಚನೆಯು ಯಾವುದೇ ಒಂದು ಸಕ್ರಿಯ ಮಾನಿಟರ್‌ವನ್ನು ಒಳಗೊಂಡಿಲ್ಲ. ನೀವು ಈ ಸಂರಚನೆಯನ್ನು "
+"ಅನ್ವಯಿಸಲು ಬಯಸುತ್ತೀರಾ?"
 
 #: screenlayout/widget.py:301
 msgid "Active"

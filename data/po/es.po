@@ -130,8 +130,12 @@ msgid "gconf not available."
 msgstr "gconf no disponible."
 
 #: screenlayout/metacity.py:285
-msgid "In order to configure metacity, you need to have the python gconf module installed."
-msgstr "Con el fin de configurar Metacity, necesita tener instalado el módulo python de gconf."
+msgid ""
+"In order to configure metacity, you need to have the python gconf module "
+"installed."
+msgstr ""
+"Con el fin de configurar Metacity, necesita tener instalado el módulo python "
+"de gconf."
 
 #: screenlayout/metacity.py:292
 msgid "Keybindings (via Metacity)"
@@ -139,17 +143,29 @@ msgstr "Combinaciones de teclas (a través de Metacity)"
 
 #: screenlayout/metacity.py:305
 msgid ""
-"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
+"Click on a button in the left column and press a key combination you want to "
+"bind to a certain screen layout. (Use backspace to clear accelerators, "
+"escape to abort editing.) Then, select one or more layouts in the right "
+"column.\n"
 "\n"
-"This will only work if you use metacity or another program reading its configuration."
+"This will only work if you use metacity or another program reading its "
+"configuration."
 msgstr ""
-"Haga click en un botón en la columna izquierda y presione una combinación de teclas que desee ligar a una pantalla de diseño concreta. (Use Retroceso para borrar aceleradores y Escape para abortar la edición.) Luego selecciones uno o más diseños en la columna derecha.\n"
+"Haga click en un botón en la columna izquierda y presione una combinación de "
+"teclas que desee ligar a una pantalla de diseño concreta. (Use Retroceso "
+"para borrar aceleradores y Escape para abortar la edición.) Luego "
+"selecciones uno o más diseños en la columna derecha.\n"
 "\n"
-"Esto sólo funciona si usted usa Metacity u otro programa para leer su configuración."
+"Esto sólo funciona si usted usa Metacity u otro programa para leer su "
+"configuración."
 
 #: screenlayout/widget.py:61
-msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
-msgstr "Su configuración no incluye un monitor activo. Desea aplicar la configuración?"
+msgid ""
+"Your configuration does not include an active monitor. Do you want to apply "
+"the configuration?"
+msgstr ""
+"Su configuración no incluye un monitor activo. Desea aplicar la "
+"configuración?"
 
 #: screenlayout/widget.py:301
 msgid "Active"

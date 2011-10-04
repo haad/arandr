@@ -131,8 +131,10 @@ msgid "gconf not available."
 msgstr "gconf  غير متوفر"
 
 #: screenlayout/metacity.py:285
-msgid "In order to configure metacity, you need to have the python gconf module installed."
-msgstr "من أجل إعداد ميتستي ، يجب تثبيت وحدة  . gconf "
+msgid ""
+"In order to configure metacity, you need to have the python gconf module "
+"installed."
+msgstr "من أجل إعداد ميتستي ، يجب تثبيت وحدة  . gconf"
 
 #: screenlayout/metacity.py:292
 msgid "Keybindings (via Metacity)"
@@ -140,16 +142,24 @@ msgstr "اختصار لوحة المفاتيح (via Metacity)"
 
 #: screenlayout/metacity.py:305
 msgid ""
-"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
+"Click on a button in the left column and press a key combination you want to "
+"bind to a certain screen layout. (Use backspace to clear accelerators, "
+"escape to abort editing.) Then, select one or more layouts in the right "
+"column.\n"
 "\n"
-"This will only work if you use metacity or another program reading its configuration."
+"This will only work if you use metacity or another program reading its "
+"configuration."
 msgstr ""
-"انقر على زر في العمود الأيسر واضغط على تركيبة المفاتيح التي تريد تخصيصها. (استخدم مفتاح الرجوع للخلف للمسح ،وهروب  للخروج من التحرير.) ثم اختر واحد أو أكثر من التخطيطات في العمود الأيمن.\n"
+"انقر على زر في العمود الأيسر واضغط على تركيبة المفاتيح التي تريد تخصيصها. "
+"(استخدم مفتاح الرجوع للخلف للمسح ،وهروب  للخروج من التحرير.) ثم اختر واحد أو "
+"أكثر من التخطيطات في العمود الأيمن.\n"
 "\n"
 "سيعمل هذا فقط إذا كنت تستخدم ميتستي أو برنامجا آخر يقرأ الاعدادات"
 
 #: screenlayout/widget.py:61
-msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
+msgid ""
+"Your configuration does not include an active monitor. Do you want to apply "
+"the configuration?"
 msgstr "إعداداتك لا تحتوي على شاشة نشطة . هل تريد تنشيط الاعدادات؟"
 
 #: screenlayout/widget.py:301

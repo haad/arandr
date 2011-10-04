@@ -30,7 +30,7 @@ msgstr "_Ausgabegeräte"
 
 #: screenlayout/gui.py:131
 msgid "Dummy"
-msgstr "Dummy"
+msgstr "Platzhalter"
 
 #: screenlayout/gui.py:133
 msgid "_System"
@@ -130,8 +130,11 @@ msgid "gconf not available."
 msgstr "gconf nicht verfügbar."
 
 #: screenlayout/metacity.py:285
-msgid "In order to configure metacity, you need to have the python gconf module installed."
-msgstr "Um metacity zu konfigurieren muss das Python-Modul gconf installiert sein."
+msgid ""
+"In order to configure metacity, you need to have the python gconf module "
+"installed."
+msgstr ""
+"Um metacity zu konfigurieren muss das Python-Modul gconf installiert sein."
 
 #: screenlayout/metacity.py:292
 msgid "Keybindings (via Metacity)"
@@ -139,17 +142,29 @@ msgstr "Tastenkombinationen (über Metacity)"
 
 #: screenlayout/metacity.py:305
 msgid ""
-"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
+"Click on a button in the left column and press a key combination you want to "
+"bind to a certain screen layout. (Use backspace to clear accelerators, "
+"escape to abort editing.) Then, select one or more layouts in the right "
+"column.\n"
 "\n"
-"This will only work if you use metacity or another program reading its configuration."
+"This will only work if you use metacity or another program reading its "
+"configuration."
 msgstr ""
-"Klicken Sie auf einen Button in der linken Spalte und drücken sie eine Tastenkombination, die Sie mit einem Layout belegen möchten. (Backspace löscht Belegungen, Escape bricht ab.) Wählen sie dann ein oder mehrere Layouts in der rechten Spalte.\n"
+"Klicken Sie auf einen Button in der linken Spalte und drücken sie eine "
+"Tastenkombination, die Sie mit einem Layout belegen möchten. (Backspace "
+"löscht Belegungen, Escape bricht ab.) Wählen sie dann ein oder mehrere "
+"Layouts in der rechten Spalte.\n"
 "\n"
-"Die Tastenkombinationen stehen nur zur Verfügung, wenn metacity oder ein anderes Programm, das dessen Konfiguration ausliest, verwendet wird."
+"Die Tastenkombinationen stehen nur zur Verfügung, wenn metacity oder ein "
+"anderes Programm, das dessen Konfiguration ausliest, verwendet wird."
 
 #: screenlayout/widget.py:61
-msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
-msgstr "Diese Konfiguration beinhaltet keinen aktiven Monitor. Soll sie angewendet werden?"
+msgid ""
+"Your configuration does not include an active monitor. Do you want to apply "
+"the configuration?"
+msgstr ""
+"Diese Konfiguration beinhaltet keinen aktiven Monitor. Soll sie angewendet "
+"werden?"
 
 #: screenlayout/widget.py:301
 msgid "Active"

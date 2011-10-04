@@ -133,7 +133,9 @@ msgid "gconf not available."
 msgstr "gconf 不可用。"
 
 #: screenlayout/metacity.py:285
-msgid "In order to configure metacity, you need to have the python gconf module installed."
+msgid ""
+"In order to configure metacity, you need to have the python gconf module "
+"installed."
 msgstr "要配置 metacity，你需要先安装 python gconf 模块。"
 
 #: screenlayout/metacity.py:292
@@ -142,9 +144,13 @@ msgstr "键盘闪烁(通过Metacity)"
 
 #: screenlayout/metacity.py:305
 msgid ""
-"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
+"Click on a button in the left column and press a key combination you want to "
+"bind to a certain screen layout. (Use backspace to clear accelerators, "
+"escape to abort editing.) Then, select one or more layouts in the right "
+"column.\n"
 "\n"
-"This will only work if you use metacity or another program reading its configuration."
+"This will only work if you use metacity or another program reading its "
+"configuration."
 msgstr ""
 "点击左边栏的按钮，并在你想要指定的相应屏幕布局里按一个键。\n"
 "(按退位键清除字符，按 ESC 键放弃编辑。)\n"
@@ -153,7 +159,9 @@ msgstr ""
 "以上这些，只有在你使用 metacity 或者其它程序来读取配置时有效。"
 
 #: screenlayout/widget.py:61
-msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
+msgid ""
+"Your configuration does not include an active monitor. Do you want to apply "
+"the configuration?"
 msgstr "你的配置不包括一个活动的显示器。要应用这个配置吗？"
 
 #: screenlayout/widget.py:301

@@ -91,7 +91,7 @@ msgstr "Редактор схем экрана ARandR"
 #. # the acronym and a localized version.
 #: screenlayout/meta.py:27
 msgid "Another XRandR GUI"
-msgstr " GUI-утилита установки XRandR"
+msgstr "GUI-утилита установки XRandR"
 
 #: screenlayout/metacity.py:53
 msgid "Accelerator"
@@ -131,8 +131,12 @@ msgid "gconf not available."
 msgstr "gconf не доступен."
 
 #: screenlayout/metacity.py:285
-msgid "In order to configure metacity, you need to have the python gconf module installed."
-msgstr "Для возможности конфигурирования Metacity должен быть установлен модуль Python для GConf."
+msgid ""
+"In order to configure metacity, you need to have the python gconf module "
+"installed."
+msgstr ""
+"Для возможности конфигурирования Metacity должен быть установлен модуль "
+"Python для GConf."
 
 #: screenlayout/metacity.py:292
 msgid "Keybindings (via Metacity)"
@@ -140,16 +144,26 @@ msgstr "Хоткеи (для Metacity)"
 
 #: screenlayout/metacity.py:305
 msgid ""
-"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
+"Click on a button in the left column and press a key combination you want to "
+"bind to a certain screen layout. (Use backspace to clear accelerators, "
+"escape to abort editing.) Then, select one or more layouts in the right "
+"column.\n"
 "\n"
-"This will only work if you use metacity or another program reading its configuration."
+"This will only work if you use metacity or another program reading its "
+"configuration."
 msgstr ""
-"Нажмите  кнопку в левом столбце и введите сочетание клавиш для привязки к определённой конфигурации экрана. (Используйте BackSpace для удаления сочетаний, Esc для отмены редактирования). После этого выберите одну или несколько схем в правом столбце.\n"
+"Нажмите  кнопку в левом столбце и введите сочетание клавиш для привязки к "
+"определённой конфигурации экрана. (Используйте BackSpace для удаления "
+"сочетаний, Esc для отмены редактирования). После этого выберите одну или "
+"несколько схем в правом столбце.\n"
 "\n"
-"Это будет работать при использовании Metacity или другой программы, читающей её конфигурацию."
+"Это будет работать при использовании Metacity или другой программы, читающей "
+"её конфигурацию."
 
 #: screenlayout/widget.py:61
-msgid "Your configuration does not include an active monitor. Do you want to apply the configuration?"
+msgid ""
+"Your configuration does not include an active monitor. Do you want to apply "
+"the configuration?"
 msgstr "В вашей конфигурации нет активного монитора. Применить конфигурацию?"
 
 #: screenlayout/widget.py:301
