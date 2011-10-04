@@ -30,7 +30,7 @@ msgstr "_Ausgabegeräte"
 
 #: screenlayout/gui.py:131
 msgid "Dummy"
-msgstr "Dummy"
+msgstr "Platzhalter"
 
 #: screenlayout/gui.py:133
 msgid "_System"

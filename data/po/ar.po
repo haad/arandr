@@ -134,7 +134,7 @@ msgstr "gconf  غير متوفر"
 msgid ""
 "In order to configure metacity, you need to have the python gconf module "
 "installed."
-msgstr "من أجل إعداد ميتستي ، يجب تثبيت وحدة  . gconf "
+msgstr "من أجل إعداد ميتستي ، يجب تثبيت وحدة  . gconf"
 
 #: screenlayout/metacity.py:292
 msgid "Keybindings (via Metacity)"

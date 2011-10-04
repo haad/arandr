@@ -91,7 +91,7 @@ msgstr "Редактор схем экрана ARandR"
 #. # the acronym and a localized version.
 #: screenlayout/meta.py:27
 msgid "Another XRandR GUI"
-msgstr " GUI-утилита установки XRandR"
+msgstr "GUI-утилита установки XRandR"
 
 #: screenlayout/metacity.py:53
 msgid "Accelerator"
