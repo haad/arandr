@@ -1,3 +1,7 @@
+to be always kept in mind:
+
+ * after files that don't go into the release are changed, merge ``master`` into ``release-preparation`` to state that this file should still not be released
+
 checklist before release:
 
  * work on branch master
@@ -7,8 +11,10 @@ checklist before release:
  * update copyright references to current year (screenlayout/meta.py, README)
  * commit as 'ready for release ...'
  * `git log --first-parent master > ChangeLog.new`
+ * `git checkout release-preparation`
+ * `git merge --no-ff master` (this removes all files that are not supposed to be shipped. if conflicts arise, merge -- but this should already have happened!)
  * `git checkout release`
- * `git merge --no-ff master` (make sure files that should not be shipped in the tarball are not pulled)
+ * `git merge --no-ff release-preparation`
  * `mv ChangeLog.new ChangeLog; git commit --amend -a` and set commit message to last NEWS entry
  * `git tag $VERSION`
  * `git archive $VERSION --prefix="arandr-$VERSION/" | gzip -9 > ../arandr_$VERSION.orig.tar.gz`
