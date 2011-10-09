@@ -19,7 +19,7 @@
 import gettext
 gettext.install('arandr')
 
-__version__ = '0.1.4'
+__version__ = '0.1.5'
 PROGRAMNAME = _(u'ARandR Screen Layout Editor')
 ## translators, please translate in the style of "Another XRandR GUI
 ## (ein weiteres GUI für XRandR)" so users get both the explanation of
