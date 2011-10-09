@@ -43,7 +43,6 @@ TRANSLATORS = [
         'aboodilankaboot <shiningmoon25@gmail.com>',
         'Carezero <carezero@qq.com>',
         'wimfeijen <wimfeijen@gmail.com>',
-        'sjb <gseba@users.sourceforge.net>',
         'Slavko <linux@slavino.sk>',
         'Alireza Savand <agahia.com@gmail.com>',
         'Bruno_Patri <bruno.patri@gmail.com>',
