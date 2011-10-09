@@ -40,6 +40,12 @@ Installation
         cd arandr
         ./arandr.SlackBuild 2>&1 | tee build.log
 
+    * Gentoo_::
+
+        ACCEPT_KEYWORDS="~x86" emerge arandr
+
+      (or ``ACCEPT_KEYWORDS="~amd64" ...`` for 64-bit systems)
+
 * From source:
 
     * Fetch either
@@ -147,5 +153,6 @@ Translations by
  .. _python: http://www.python.org/
  .. _PyGTK: http://www.pygtk.org/
  .. _`slackbuild by PhantomX`: http://github.com/PhantomX/slackbuilds/tree/master/arandr/
+ .. _Gentoo: http://packages.gentoo.org/package/x11-misc/arandr
  .. _docutils: http://docutils.sourceforge.net/
  .. _`debian bug #507521`: http://bugs.debian.org/507521
