@@ -1,3 +1,6 @@
+ARandR TODO list
+================
+
 * add option to make layout default on startup by means of desktop environment integration
 * implement missing xrandr 1.2 features: reflect, additional modes (for forcibly applying saved layouts so they are already active when an output is connected), fb, fbmm/dpi
 * call xrandr without blocking
