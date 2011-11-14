@@ -150,6 +150,11 @@ msgid ""
 "This will only work if you use metacity or another program reading its "
 "configuration."
 msgstr ""
+"روی دکمه در ستون چپ کلیک کنید و کلید ترکیبی دلخواه برای تنظیم کردن پوسته "
+"مورد نظر فشار دهید. ( از backcpace برای پاکسازی سرعت‌دهنده‌ها، escape برای "
+"لغو وبرایش استفاده کنید.) سپس یک یا چند پوسته در ستون راست انتخاب کنید.\n"
+"این کار خواهد کرد در صورتی که شما از برای خواندن پیکربندی از metacity یا "
+"دیگر برنامه‌ای استفاده کنید."
 
 #: screenlayout/widget.py:61
 msgid ""
