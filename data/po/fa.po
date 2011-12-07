@@ -75,7 +75,7 @@ msgstr "XRandR شکست خورد :  %s"
 
 #: screenlayout/gui.py:227
 msgid "Open Layout"
-msgstr "لايه باز"
+msgstr "باز کردن لایه"
 
 #: screenlayout/gui.py:239
 msgid "Save Layout"
@@ -98,11 +98,11 @@ msgstr "شتاب دهنده"
 
 #: screenlayout/metacity.py:54
 msgid "Action"
-msgstr "فعاليت"
+msgstr "عمل"
 
 #: screenlayout/metacity.py:120
 msgid "disabled"
-msgstr "غیر فعال"
+msgstr "غیرفعال شده"
 
 #: screenlayout/metacity.py:135
 msgid "New accelerator..."
