@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: ARandR\n"
 "Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
 "POT-Creation-Date: 2011-10-01 14:13+0200\n"
-"PO-Revision-Date: 2011-11-14 05:10+0000\n"
+"PO-Revision-Date: 2011-12-06 19:03+0000\n"
 "Last-Translator: Alireza Savand <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2011-11-15 05:28+0000\n"
-"X-Generator: Launchpad (build 14291)\n"
+"X-Launchpad-Export-Date: 2011-12-07 05:32+0000\n"
+"X-Generator: Launchpad (build 14435)\n"
 "Language: fa\n"
 
 #: screenlayout/gui.py:117
@@ -76,7 +76,7 @@ msgstr "XRandR شکست خورد :  %s"
 
 #: screenlayout/gui.py:227
 msgid "Open Layout"
-msgstr "لايه باز"
+msgstr "باز کردن لایه"
 
 #: screenlayout/gui.py:239
 msgid "Save Layout"
@@ -99,11 +99,11 @@ msgstr "شتاب دهنده"
 
 #: screenlayout/metacity.py:54
 msgid "Action"
-msgstr "فعاليت"
+msgstr "عمل"
 
 #: screenlayout/metacity.py:120
 msgid "disabled"
-msgstr "غیر فعال"
+msgstr "غیرفعال شده"
 
 #: screenlayout/metacity.py:135
 msgid "New accelerator..."
