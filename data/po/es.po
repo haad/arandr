@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: arandr 0.1.2\n"
 "Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
 "POT-Creation-Date: 2011-10-01 14:13+0200\n"
-"PO-Revision-Date: 2010-09-14 04:39-0400\n"
-"Last-Translator: Ricardo A. Hermosilla Carrillo <ra.hermosillac@gmail.com>\n"
+"PO-Revision-Date: 2011-12-09 23:52+0000\n"
+"Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: SPANISH <ES@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,7 @@ msgstr "_Salidas"
 
 #: screenlayout/gui.py:131
 msgid "Dummy"
-msgstr "Tonto"
+msgstr "Simulación"
 
 #: screenlayout/gui.py:133
 msgid "_System"
@@ -38,7 +38,7 @@ msgstr "S_istema"
 
 #: screenlayout/gui.py:134
 msgid "_Keybindings (Metacity)"
-msgstr "_Combinaciones de Teclas (Metacity)"
+msgstr "_Combinaciones de teclas (Metacity)"
 
 #: screenlayout/gui.py:136
 msgid "_Help"
@@ -58,7 +58,7 @@ msgstr "1:16"
 
 #: screenlayout/gui.py:189
 msgid "Script Properties"
-msgstr "Propiedades del Script"
+msgstr "Propiedades del script"
 
 #: screenlayout/gui.py:201
 msgid "Script"
@@ -75,26 +75,26 @@ msgstr ""
 
 #: screenlayout/gui.py:227
 msgid "Open Layout"
-msgstr "Abrir Diseño"
+msgstr "Abrir diseño"
 
 #: screenlayout/gui.py:239
 msgid "Save Layout"
-msgstr "Guardar Diseño"
+msgstr "Guardar diseño"
 
 #: screenlayout/meta.py:23
 msgid "ARandR Screen Layout Editor"
-msgstr "Editor de Diseño ARandR"
+msgstr "Editor de diseños de ARandR"
 
 #. # translators, please translate in the style of "Another XRandR GUI
 #. # (ein weiteres GUI für XRandR)" so users get both the explanation of
 #. # the acronym and a localized version.
 #: screenlayout/meta.py:27
 msgid "Another XRandR GUI"
-msgstr "Another XRandR GUI"
+msgstr "Otra IGU de XRandR"
 
 #: screenlayout/metacity.py:53
 msgid "Accelerator"
-msgstr "Acelerador"
+msgstr "Tecla rápida"
 
 #: screenlayout/metacity.py:54
 msgid "Action"
@@ -102,11 +102,11 @@ msgstr "Acción"
 
 #: screenlayout/metacity.py:120
 msgid "disabled"
-msgstr "deshabilitado"
+msgstr "desactivado"
 
 #: screenlayout/metacity.py:135
 msgid "New accelerator..."
-msgstr "Nuevo acelerado..."
+msgstr "Nueva tecla rápida..."
 
 #: screenlayout/metacity.py:198
 msgid "no action"
@@ -127,15 +127,15 @@ msgstr "No hay archivos en %(folder)r. Guarde un diseño primero."
 
 #: screenlayout/metacity.py:284
 msgid "gconf not available."
-msgstr "gconf no disponible."
+msgstr "gconf no está disponible."
 
 #: screenlayout/metacity.py:285
 msgid ""
 "In order to configure metacity, you need to have the python gconf module "
 "installed."
 msgstr ""
-"Con el fin de configurar Metacity, necesita tener instalado el módulo python "
-"de gconf."
+"Con el fin de configurar Metacity, necesita tener instalado el módulo gconf "
+"de python."
 
 #: screenlayout/metacity.py:292
 msgid "Keybindings (via Metacity)"
@@ -151,10 +151,10 @@ msgid ""
 "This will only work if you use metacity or another program reading its "
 "configuration."
 msgstr ""
-"Haga click en un botón en la columna izquierda y presione una combinación de "
+"Pulse en un botón en la columna izquierda y presione una combinación de "
 "teclas que desee ligar a una pantalla de diseño concreta. (Use Retroceso "
-"para borrar aceleradores y Escape para abortar la edición.) Luego "
-"selecciones uno o más diseños en la columna derecha.\n"
+"para borrar aceleradores y Escape para abortar la edición.) Luego seleccione "
+"uno o más diseños en la columna derecha.\n"
 "\n"
 "Esto sólo funciona si usted usa Metacity u otro programa para leer su "
 "configuración."
@@ -174,12 +174,12 @@ msgstr "Activo"
 #: screenlayout/widget.py:319
 #, python-format
 msgid "Setting this resolution is not possible here: %s"
-msgstr "No es posible establecer esta resolución: %s"
+msgstr "No es posible establecer aquí esta resolución: %s"
 
 #: screenlayout/widget.py:332
 #, python-format
 msgid "This orientation is not possible here: %s"
-msgstr "Esta orientación no es posible: %s"
+msgstr "Esta orientación no es posible aquí: %s"
 
 #: screenlayout/widget.py:338
 msgid "Resolution"
