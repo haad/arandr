@@ -48,4 +48,5 @@ TRANSLATORS = [
         'Bruno_Patri <bruno.patri@gmail.com>',
         'Себастьян Gli ţa Κατινα <gseba@users.sourceforge.net>',
         'Belvar <glasbarg@gmail.com>',
+        'Algimantas Margevičius <margevicius.algimantas@gmail.com>',
         ]
