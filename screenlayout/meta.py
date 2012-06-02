@@ -49,4 +49,8 @@ TRANSLATORS = [
         'Себастьян Gli ţa Κατινα <gseba@users.sourceforge.net>',
         'Belvar <glasbarg@gmail.com>',
         'Algimantas Margevičius <margevicius.algimantas@gmail.com>',
+        'Miguel Anxo Bouzada <mbouzada@gmail.com>',
+        'o-157',
+        'Ingemar Karlsson <ingemar@ingk.se>',
+        'Semsudin Abdic <abdic88@gmail.com>',
         ]
