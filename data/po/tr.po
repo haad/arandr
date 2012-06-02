@@ -91,7 +91,7 @@ msgstr "ARandR Ekran Yerleşimi Düzenleyici"
 #. # the acronym and a localized version.
 #: screenlayout/meta.py:27
 msgid "Another XRandR GUI"
-msgstr "Bir başka XRandR grafik arayüzü"
+msgstr "Another XRandR GUI (Bir başka XRandR grafik arayüzü)"
 
 #: screenlayout/metacity.py:53
 msgid "Accelerator"

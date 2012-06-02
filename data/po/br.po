@@ -90,7 +90,7 @@ msgstr "ARandR; kefluniadur aozadur ar skrammoù"
 #. # the acronym and a localized version.
 #: screenlayout/meta.py:27
 msgid "Another XRandR GUI"
-msgstr "Un etrefas all evit XRandR"
+msgstr "Another XRandR GUI (un etrefas all evit XRandR)"
 
 #: screenlayout/metacity.py:53
 msgid "Accelerator"

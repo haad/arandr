@@ -93,7 +93,7 @@ msgstr "ARandR, configuration de la disposition des écrans"
 #. # the acronym and a localized version.
 #: screenlayout/meta.py:27
 msgid "Another XRandR GUI"
-msgstr "Une autre interface pour XRandR"
+msgstr "Another XRandR GUI (une autre interface pour XRandR)"
 
 #: screenlayout/metacity.py:53
 msgid "Accelerator"

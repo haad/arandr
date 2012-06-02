@@ -91,7 +91,7 @@ msgstr "ARandR ekranų išdėstymų redaktorius"
 #. # the acronym and a localized version.
 #: screenlayout/meta.py:27
 msgid "Another XRandR GUI"
-msgstr "Dar vienas XRandR GUI"
+msgstr "Another XRandR GUI (dar vienas XRandR GUI)"
 
 #: screenlayout/metacity.py:53
 msgid "Accelerator"

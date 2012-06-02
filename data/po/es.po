@@ -90,7 +90,7 @@ msgstr "Editor de diseños de ARandR"
 #. # the acronym and a localized version.
 #: screenlayout/meta.py:27
 msgid "Another XRandR GUI"
-msgstr "Otra IGU de XRandR"
+msgstr "Another XRandR GUI (otra IGU de XRandR)"
 
 #: screenlayout/metacity.py:53
 msgid "Accelerator"
