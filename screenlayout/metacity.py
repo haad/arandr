@@ -188,16 +188,16 @@ class ActionWidget(GConfButton):
     def _update(self, *args):
         s = self.gconf.get_string(self.gconfkey)
 
-        if s.startswith('"'+SCRIPTSDIR) and s.endswith('.sh"'):
+        if not s:
+            self.props.label = _("no action")
+            self.props.editable = True
+            self.items = []
+        elif s.startswith('"'+SCRIPTSDIR) and s.endswith('.sh"'):
             text = s[len(SCRIPTSDIR)+1:-4]
 
             self.props.label = text
             self.props.editable = True
             self.items = [text]
-        elif s == "":
-            self.props.label = _("no action")
-            self.props.editable = True
-            self.items = []
         elif s.startswith(CYCLINGPATTERN_RECOGNITION[0]):
             try:
                 left = s[len(CYCLINGPATTERN_RECOGNITION[0]):]
