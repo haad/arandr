@@ -22,7 +22,7 @@ msgstr "_Layout"
 
 #: screenlayout/gui.py:128
 msgid "_View"
-msgstr "_Ansicht"
+msgstr "A_nsicht"
 
 #: screenlayout/gui.py:130
 msgid "_Outputs"
