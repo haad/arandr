@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR chrysn
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <glasbarg@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: ARandR\n"
+"Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
+"POT-Creation-Date: 2011-10-01 14:13+0200\n"
+"PO-Revision-Date: 2012-02-14 08:16+0000\n"
+"Last-Translator: Belvar <glasbarg@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: br\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+
+#: screenlayout/gui.py:117
+msgid "_Layout"
+msgstr "_Aozadur"
+
+#: screenlayout/gui.py:128
+msgid "_View"
+msgstr "_Gwel"
+
+#: screenlayout/gui.py:130
+msgid "_Outputs"
+msgstr "_Skrammoù"
+
+#: screenlayout/gui.py:131
+msgid "Dummy"
+msgstr "Skramm"
+
+#: screenlayout/gui.py:133
+msgid "_System"
+msgstr "_Reizhad"
+
+#: screenlayout/gui.py:134
+msgid "_Keybindings (Metacity)"
+msgstr "_Berradenn (Metacity)"
+
+#: screenlayout/gui.py:136
+msgid "_Help"
+msgstr "S_koazell"
+
+#: screenlayout/gui.py:140
+msgid "1:4"
+msgstr "1:4"
+
+#: screenlayout/gui.py:141
+msgid "1:8"
+msgstr "1:8"
+
+#: screenlayout/gui.py:142
+msgid "1:16"
+msgstr "1:16"
+
+#: screenlayout/gui.py:189
+msgid "Script Properties"
+msgstr "Perzhioù ar skript"
+
+#: screenlayout/gui.py:201
+msgid "Script"
+msgstr "Skript"
+
+#: screenlayout/gui.py:217
+#, python-format
+msgid ""
+"XRandR failed:\n"
+"%s"
+msgstr "C'hwitadenn XRandR : %s"
+
+#: screenlayout/gui.py:227
+msgid "Open Layout"
+msgstr "Digeriñ un aozadur"
+
+#: screenlayout/gui.py:239
+msgid "Save Layout"
+msgstr "Enrollañ un aozadur"
+
+#: screenlayout/meta.py:23
+msgid "ARandR Screen Layout Editor"
+msgstr "ARandR; kefluniadur aozadur ar skrammoù"
+
+#. # translators, please translate in the style of "Another XRandR GUI
+#. # (ein weiteres GUI für XRandR)" so users get both the explanation of
+#. # the acronym and a localized version.
+#: screenlayout/meta.py:27
+msgid "Another XRandR GUI"
+msgstr "Un etrefas all evit XRandR"
+
+#: screenlayout/metacity.py:53
+msgid "Accelerator"
+msgstr "Berradenn"
+
+#: screenlayout/metacity.py:54
+msgid "Action"
+msgstr "Gwered"
+
+#: screenlayout/metacity.py:120
+msgid "disabled"
+msgstr "Diweredekaet"
+
+#: screenlayout/metacity.py:135
+msgid "New accelerator..."
+msgstr "Berradenn nevez..."
+
+#: screenlayout/metacity.py:198
+msgid "no action"
+msgstr "Gwered ebet"
+
+#: screenlayout/metacity.py:228
+msgid "incompatible configuration"
+msgstr "Kefluniadur digendere"
+
+#: screenlayout/metacity.py:235
+msgid "other application"
+msgstr "meziant all"
+
+#: screenlayout/metacity.py:255
+#, python-format
+msgid "No files in %(folder)r. Save a layout first."
+msgstr "Restr ebet e %(folder)r. Enrollit un aozadur a-raok."
+
+#: screenlayout/metacity.py:284
+msgid "gconf not available."
+msgstr "N'eo ket dieub gconf."
+
+#: screenlayout/metacity.py:285
+msgid ""
+"In order to configure metacity, you need to have the python gconf module "
+"installed."
+msgstr "Evit kefluniañ metacity, ezhomm ho peus kaout ar modul python gconf"
+
+#: screenlayout/metacity.py:292
+msgid "Keybindings (via Metacity)"
+msgstr "Berradennoù (dre Metacity)"
+
+#: screenlayout/metacity.py:305
+msgid ""
+"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
+"\n"
+"This will only work if you use metacity or another program reading its configuration."
+msgstr "Klikit war ur bouton eus ar bann kleiz ha lakait ar berradenn a-zere evit un aozadur eus ar skrammoù (implijit an douchenn Distro evit diverkañ ur berradenn pe Echap. evit nullañ). Mont a raio en dro ma implijit metacity nemetken pe ur meziant all oc'h implij ar memes kefluniadur."
+
+#: screenlayout/widget.py:61
+msgid ""
+"Your configuration does not include an active monitor. Do you want to apply "
+"the configuration?"
+msgstr "Ho kefluniadur n'eus skramm gweredekaet ebet. C'hoant ho peus arloañ ouzh ar c'hefluniadur memestra ? "
+
+#: screenlayout/widget.py:301
+msgid "Active"
+msgstr "Gweredekaet"
+
+#: screenlayout/widget.py:319
+#, python-format
+msgid "Setting this resolution is not possible here: %s"
+msgstr "N'eo ket posupl lakaat ar resolvidigezh-mañ : %s"
+
+#: screenlayout/widget.py:332
+#, python-format
+msgid "This orientation is not possible here: %s"
+msgstr "N'eo ket posupl lakaat ar reteadur-mañ : %s"
+
+#: screenlayout/widget.py:338
+msgid "Resolution"
+msgstr "Resolvidigezh"
+
+#: screenlayout/widget.py:340
+msgid "Orientation"
+msgstr "Reteadur"
+
+#: screenlayout/xrandr.py:222
+msgid "A part of an output is outside the virtual screen."
+msgstr "Ul lodenn eus ar skramm a zo e diavaez eus ar zonenn galloudel."
+
+#: screenlayout/xrandr.py:225
+msgid "An output is outside the virtual screen."
+msgstr "Ur skramm a zo en diavaez eus ar zonenn galloudel."
