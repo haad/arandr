@@ -1,3 +1,6 @@
+ARandR TODO list
+================
+
 * add option to make layout default on startup by means of desktop environment integration
 * implement missing xrandr 1.2 features: reflect, additional modes (for forcibly applying saved layouts so they are already active when an output is connected), fb, fbmm/dpi
 * call xrandr without blocking
@@ -24,6 +27,9 @@
 
 * be more intelligent about future xrandr versions (cf debian #523903)
 * read --props, parse edid (using parse-edid from read-edid; dispcalGUI has dispcalGUI/edid.py with a parse_edid that just works), maybe even offer setting properties
+
+    * sigrok has a pure python implementation at http://sigrok.git.sourceforge.net/git/gitweb.cgi?p=sigrok/sigrok;a=blob;f=libsigrokdecode/decoders/edid/edid.py
+
 * make script properties editable (and explain what it does)
 * provide example scripts
 
@@ -72,3 +78,4 @@
 * rewrite parser to --verbose
 * use distutils translation build system instead of custom one (compare hotot package)
 * debian packaging: use dh_python2 (/ dh_python3) instead of python-support
+* optional "timeout" for applying setting ("does this work? click ok, otherwise it will revert in...")
