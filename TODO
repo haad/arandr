@@ -77,5 +77,4 @@ ARandR TODO list
 * integrate --randr-display in gui configuration and add more options than "DISPLAY=${} xrandr" (for example "ssh some-server xrandr", maybe even with zeroconf detection of ssh hosts, but i digress)
 * rewrite parser to --verbose
 * use distutils translation build system instead of custom one (compare hotot package)
-* debian packaging: use dh_python2 (/ dh_python3) instead of python-support
 * optional "timeout" for applying setting ("does this work? click ok, otherwise it will revert in...")
