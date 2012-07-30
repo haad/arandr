@@ -97,6 +97,21 @@ Bugs / Caveats
  * See TODO_ for planned features.
 
 
+Similar projects
+----------------
+
+A number of other programs exist that cover similar functionality, often
+bundled with a particular desktop environment. Those I know of are, in
+alphabetical order:
+
+* Gnome's ``gnome-control-center display``, notable for its ``~/.config/monitors.xml`` `persistence <https://live.gnome.org/RandR#Storage_of_RANDR_configurations>`_
+* `grandr <ftp://ftp.freedesktop.org/pub/individual/app/>`_
+* `grandr-applet <http://dekorte.homeip.net/download/grandr-applet/>`_ (which seems not to be related to grandr)
+* KDE's RandR tool ``krandrtray``, notable for being the only listed program to be Qt based
+* LXDE's `LXRandR <http://wiki.lxde.org/en/LXRandR>`_, notable for storing configuration in ``~/.config/autostart/lxrandr-autostart``
+* `urandr <http://www.albertomilone.com/urandr.html>`_
+* `zarfy <http://sourceforge.net/projects/zarfy/>`_, notable for its nice use of a current screenshot
+
 
 Contributing
 ------------
