@@ -116,7 +116,7 @@ alphabetical order:
 Contributing
 ------------
 
-If you are fluent with languages not yet supported, you can add translations to ARandR using gettext_. An easy way to do this is `ARandR's transifex site`_ or on `its Launchpad translation site`_.
+If you are fluent with languages not yet supported, you can add translations to ARandR using gettext_. An easy way to do this is `ARandR's transifex site`_. (Launchpad translations were discontinued for lack of SCM integration).
 
 Please send bug reports, suggestions, patches and git pull requests to me_.
 
