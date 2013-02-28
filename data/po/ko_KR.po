@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR chrysn
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# ParkJS <HeavensBus@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: ARandR\n"
+"Report-Msgid-Bugs-To: chrysn@fsfe.org\n"
+"POT-Creation-Date: 2011-10-01 14:13+0200\n"
+"PO-Revision-Date: 2013-02-27 00:36+0000\n"
+"Last-Translator: HeavensBus <HeavensBus@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ko_KR\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: screenlayout/gui.py:117
+msgid "_Layout"
+msgstr "_레이아웃"
+
+#: screenlayout/gui.py:128
+msgid "_View"
+msgstr "_뷰"
+
+#: screenlayout/gui.py:130
+msgid "_Outputs"
+msgstr "_출력"
+
+#: screenlayout/gui.py:131
+msgid "Dummy"
+msgstr "더미"
+
+#: screenlayout/gui.py:133
+msgid "_System"
+msgstr "_시스템"
+
+#: screenlayout/gui.py:134
+msgid "_Keybindings (Metacity)"
+msgstr "_단축키 연결 (Metacity)"
+
+#: screenlayout/gui.py:136
+msgid "_Help"
+msgstr "_도움말"
+
+#: screenlayout/gui.py:140
+msgid "1:4"
+msgstr "1:4"
+
+#: screenlayout/gui.py:141
+msgid "1:8"
+msgstr "1:4"
+
+#: screenlayout/gui.py:142
+msgid "1:16"
+msgstr "1:16"
+
+#: screenlayout/gui.py:189
+msgid "Script Properties"
+msgstr "스크립트 편집"
+
+#: screenlayout/gui.py:201
+msgid "Script"
+msgstr "스크립트"
+
+#: screenlayout/gui.py:217
+#, python-format
+msgid ""
+"XRandR failed:\n"
+"%s"
+msgstr "XRandR 실패:\n%s"
+
+#: screenlayout/gui.py:227
+msgid "Open Layout"
+msgstr "레이아웃 열기"
+
+#: screenlayout/gui.py:239
+msgid "Save Layout"
+msgstr "레이아웃 저장"
+
+#: screenlayout/meta.py:23
+msgid "ARandR Screen Layout Editor"
+msgstr "ARandR Screen Layout Editor"
+
+#. # translators, please translate in the style of "Another XRandR GUI
+#. # (ein weiteres GUI für XRandR)" so users get both the explanation of
+#. # the acronym and a localized version.
+#: screenlayout/meta.py:27
+msgid "Another XRandR GUI"
+msgstr "Another XRandR GUI"
+
+#: screenlayout/metacity.py:53
+msgid "Accelerator"
+msgstr "단축키"
+
+#: screenlayout/metacity.py:54
+msgid "Action"
+msgstr "액션"
+
+#: screenlayout/metacity.py:120
+msgid "disabled"
+msgstr "단축키 없음"
+
+#: screenlayout/metacity.py:135
+msgid "New accelerator..."
+msgstr "새로운 단축키..."
+
+#: screenlayout/metacity.py:198
+msgid "no action"
+msgstr "액션 없음"
+
+#: screenlayout/metacity.py:228
+msgid "incompatible configuration"
+msgstr "잘못된 설정"
+
+#: screenlayout/metacity.py:235
+msgid "other application"
+msgstr "기타 어플리케이션"
+
+#: screenlayout/metacity.py:255
+#, python-format
+msgid "No files in %(folder)r. Save a layout first."
+msgstr "%(folder)r폴더에 파일이 없습니다. 먼저 레이아웃 파일을 저장 하세요."
+
+#: screenlayout/metacity.py:284
+msgid "gconf not available."
+msgstr "gconf를 사용할 수 없습니다."
+
+#: screenlayout/metacity.py:285
+msgid ""
+"In order to configure metacity, you need to have the python gconf module "
+"installed."
+msgstr "단축키 설정창을 열기 위해서는 python gconf 모듈이 설치되어 있어야 합니다."
+
+#: screenlayout/metacity.py:292
+msgid "Keybindings (via Metacity)"
+msgstr "단축키 연결창 (Metacity 사용)"
+
+#: screenlayout/metacity.py:305
+msgid ""
+"Click on a button in the left column and press a key combination you want to bind to a certain screen layout. (Use backspace to clear accelerators, escape to abort editing.) Then, select one or more layouts in the right column.\n"
+"\n"
+"This will only work if you use metacity or another program reading its configuration."
+msgstr "특정 레이아웃에 단축키를 지정하려면 왼쪽 열에서 버튼을 클릭하고 키 조합을 입력 하세요. (단축키 설정을 취소 하려면 백 스페이스 키를 누르세요.) 그 다음 오른쪽 열에서 한 개 이상의 레이아웃을 선택 합니다.\n\n설정된 단축키가 이외 다른 프로그램 설정에서 중복되지 않는지 체크하세요.\n(번역 확인 요망. 원문 - This will only work if you use metacity or another program reading its configuration.)"
+
+#: screenlayout/widget.py:61
+msgid ""
+"Your configuration does not include an active monitor. Do you want to apply "
+"the configuration?"
+msgstr "현재 설정에는 활성된 모니터가 포함되어 있지 않습니다. 정말 이 설정을 적용 하시겠습니까?"
+
+#: screenlayout/widget.py:301
+msgid "Active"
+msgstr "활성"
+
+#: screenlayout/widget.py:319
+#, python-format
+msgid "Setting this resolution is not possible here: %s"
+msgstr "%s 해상도는 설정이 불가능 합니다. "
+
+#: screenlayout/widget.py:332
+#, python-format
+msgid "This orientation is not possible here: %s"
+msgstr "%s 방향은 설정이 불가능 합니다."
+
+#: screenlayout/widget.py:338
+msgid "Resolution"
+msgstr "해상도"
+
+#: screenlayout/widget.py:340
+msgid "Orientation"
+msgstr "방향"
+
+#: screenlayout/xrandr.py:222
+msgid "A part of an output is outside the virtual screen."
+msgstr "출력의 일부가 가상 화면 밖에 있습니다."
+
+#: screenlayout/xrandr.py:225
+msgid "An output is outside the virtual screen."
+msgstr "출력이 가상 화면 밖에 있습니다."

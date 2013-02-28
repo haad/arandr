@@ -57,4 +57,5 @@ TRANSLATORS = [
         'Tamás Nagy <kisagy@gmail.com>',
         'Mantas Kriaučiūnas <mantas@akl.lt>',
         'Dimitris Giouroukis',
+        'ParkJS <HeavensBus@gmail.com>',
         ]
