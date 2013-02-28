@@ -1,3 +1,4 @@
+Version 0.1.7
 * Fix the 'primary' issue
   - ignores the primary keyword
   - makes ARandR compatible with xrandr 1.4.0
