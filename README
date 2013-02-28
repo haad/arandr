@@ -116,7 +116,7 @@ alphabetical order:
 Contributing
 ------------
 
-If you are fluent with languages not yet supported, you can add translations to ARandR using gettext_. An easy way to do this is `ARandR's transifex site`_. (Launchpad translations were discontinued for lack of SCM integration).
+If you are fluent with languages not yet supported, you can add translations to ARandR using gettext_. (Transifex and Launchpad translations were discontinued for lack of SCM integration and associated problems with attributing contributions).
 
 Please send bug reports, suggestions, patches and git pull requests to me_.
 
@@ -168,8 +168,6 @@ Translations by
  .. _Debian: http://packages.debian.org/arandr
  .. _Ubuntu: http://packages.ubuntu.com/arandr
  .. _gettext: http://www.gnu.org/software/gettext/
- .. _`ARandR's transifex site`: https://transifex.net/projects/p/arandr/
- .. _`its Launchpad translation site`: https://translations.launchpad.net/arandr
  .. _me: mailto:chrysn@fsfe.org
  .. _python: http://www.python.org/
  .. _PyGTK: http://www.pygtk.org/
