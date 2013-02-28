@@ -20,7 +20,7 @@ import os
 import subprocess
 import warnings
 
-from .auxiliary import BetterList, Size, Position, Geometry, FileLoadError, FileSyntaxError, InadequateConfiguration, Rotation, ROTATIONS, NORMAL
+from .auxiliary import BetterList, Size, Position, Geometry, FileLoadError, FileSyntaxError, InadequateConfiguration, Rotation, ROTATIONS, NORMAL, NamedSize
 
 import gettext
 gettext.install('arandr')
@@ -91,6 +91,7 @@ class XRandR(object):
 
         for on,oa in options.items():
             o = self.configuration.outputs[on]
+            os = self.state.outputs[on]
             if oa == ['--off']:
                 o.active = False
             else:
@@ -99,7 +100,12 @@ class XRandR(object):
                 parts = [(oa[2*i],oa[2*i+1]) for i in range(len(oa)//2)]
                 for p in parts:
                     if p[0] == '--mode':
-                        o.mode = Size(p[1])
+                        for namedmode in os.modes:
+                            if namedmode.name == p[1]:
+                                o.mode = namedmode
+                                break
+                        else:
+                            raise FileLoadError("Not a known mode: %s"%p[1])
                     elif p[0] == '--pos':
                         o.position = Position(p[1])
                     elif p[0] == '--rotate':
@@ -110,7 +116,7 @@ class XRandR(object):
                         raise FileSyntaxError()
                 o.active = True
 
-    def load_from_x(self): # FIXME -- use --verbose or, better, a library
+    def load_from_x(self): # FIXME -- use a library
         self.configuration = self.Configuration()
         self.state = self.State()
 
@@ -134,11 +140,14 @@ class XRandR(object):
 
                 geometry = Geometry(hsplit[2])
 
-                if hsplit[3] in ROTATIONS: rotation = Rotation(hsplit[3])
+                modeid = hsplit[3].strip("()")
+
+                if hsplit[4] in ROTATIONS: rotation = Rotation(hsplit[4])
                 else: rotation = NORMAL
             else:
                 active = False
                 geometry = None
+                modeid = None
                 rotation = None
 
             o.rotations = set()
@@ -146,22 +155,40 @@ class XRandR(object):
                 if r in headline:
                     o.rotations.add(r)
 
-            for d in details:
-                o.modes.append(Size(int(a) for a in d.strip().split(" ")[0].split("x")))
+            current = None
+            for d, w, h in details:
+                n, m = d[0:2]
+                k = m.strip("()")
+                try:
+                    r = Size([int(w), int(h)])
+                except ValueError:
+                    raise Exception("Output %s parse error: modename %s modeid %s."%(o.name, n,k))
+                if "*current" in d:
+                    currentname = n
+                for x in [ "+preferred", "*current" ]:
+                    if x in d: d.remove(x)
+                o.modes.append(NamedSize(r, name=n))
 
             self.state.outputs[o.name] = o
-            self.configuration.outputs[o.name] = self.configuration.OutputConfiguration(active, geometry, rotation)
+            self.configuration.outputs[o.name] = self.configuration.OutputConfiguration(active, geometry, rotation, currentname)
 
     def _load_raw_lines(self):
-        output = self._output("-q")
+        output = self._output("--verbose")
         items = []
         screenline = None
         for l in output.split('\n'):
             if l.startswith("Screen "):
                 assert screenline is None
                 screenline = l
-            elif l.startswith("   "): # mode
-                items[-1][1].append(l)
+            elif l.startswith('\t'):
+                continue
+            elif l.startswith(2*' '): # [mode, width, height]
+                l = l.strip()
+                if reduce(bool.__or__, [l.startswith(x+':') for x in "hv"]):
+                    l = l[-len(l):l.index(" start")-len(l)]
+                    items[-1][1][-1].append(l[l.rindex(' '):])
+                else: # mode
+                    items[-1][1].append([l.split()])
             else:
                 items.append([l, []])
         return screenline, items
@@ -248,7 +275,7 @@ class XRandR(object):
                 return '<%s %r (%d modes)>'%(type(self).__name__, self.name, len(self.modes))
 
     class Configuration(object):
-        """Represents everything that can be set by xrand (and is therefore subject to saving and loading from files)"""
+        """Represents everything that can be set by xrandr (and is therefore subject to saving and loading from files)"""
         def __init__(self):
             self.outputs = {}
 
@@ -264,7 +291,7 @@ class XRandR(object):
                     args.append("--off")
                 else:
                     args.append("--mode")
-                    args.append(str(o.mode))
+                    args.append(str(o.mode.name))
                     args.append("--pos")
                     args.append(str(o.position))
                     args.append("--rotate")
@@ -272,13 +299,13 @@ class XRandR(object):
             return args
 
         class OutputConfiguration(object):
-            def __init__(self, active, geometry, rotation):
+            def __init__(self, active, geometry, rotation, modename):
                 self.active = active
                 if active:
                     self.position = geometry.position
                     self.rotation = rotation
                     if rotation.is_odd:
-                        self.mode = Size(reversed(geometry.size))
+                        self.mode = NamedSize(Size(reversed(geometry.size)), name=modename)
                     else:
-                        self.mode = geometry.size
-            size = property(lambda self: Size(reversed(self.mode)) if self.rotation.is_odd else self.mode)
+                        self.mode = NamedSize(geometry.size, name=modename)
+            size = property(lambda self: NamedSize(Size(reversed(self.mode)), name=self.mode.name) if self.rotation.is_odd else self.mode)
