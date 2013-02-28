@@ -170,7 +170,15 @@ class XRandR(object):
                     currentname = n
                 for x in [ "+preferred", "*current" ]:
                     if x in d: d.remove(x)
-                o.modes.append(NamedSize(r, name=n))
+
+                for old_mode in o.modes:
+                    if old_mode.name == n:
+                        if tuple(old_mode) != tuple(r):
+                            warnings.warn("Supressing duplicate mode %s even though it has different resolutions (%s, %s)."%(n, r._size, s._size))
+                        break
+                else:
+                    # the mode is really new
+                    o.modes.append(NamedSize(r, name=n))
 
             self.state.outputs[o.name] = o
             self.configuration.outputs[o.name] = self.configuration.OutputConfiguration(active, geometry, rotation, currentname)
