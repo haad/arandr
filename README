@@ -42,9 +42,7 @@ Installation
 
     * Gentoo_::
 
-        ACCEPT_KEYWORDS="~x86" emerge arandr
-
-      (or ``ACCEPT_KEYWORDS="~amd64" ...`` for 64-bit systems)
+        emerge arandr
 
 * From source:
 
