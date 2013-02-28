@@ -44,6 +44,10 @@ Installation
 
         emerge arandr
 
+    * Fedora_::
+
+        yum install arandr
+
 * From source:
 
     * Fetch either
@@ -175,5 +179,6 @@ Translations by
  .. _PyGTK: http://www.pygtk.org/
  .. _`slackbuild by PhantomX`: http://github.com/PhantomX/slackbuilds/tree/master/arandr/
  .. _Gentoo: http://packages.gentoo.org/package/x11-misc/arandr
+ .. _Fedora: https://admin.fedoraproject.org/pkgdb/applications/Arandr
  .. _docutils: http://docutils.sourceforge.net/
  .. _`debian bug #507521`: http://bugs.debian.org/507521
