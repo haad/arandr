@@ -85,15 +85,7 @@ Bugs / Caveats
 --------------
 
  * Changes while running are not caught.
- * Depends on all modes to have a <width>x<height> name (see `debian bug #507521`_).
-
-   * cglita wrote a patch that solves the problem. Until a version is released that includes the changes, use his version if the above does not work for you::
-
-         git clone git://gitorious.org/arandr/arandr.git
-         cd arandr
-         git checkout cglita
-         ./arandr
-
+ * Versions before 0.1.7 depended on all modes to have a <width>x<height> name (see `debian bug #507521`_); if ARandR does not start up, please install the latest version. (On different bugtrackers, this is called the ValueError / "1080p" / "1024x768i" problem).
  * See TODO_ for planned features.
 
 
@@ -111,6 +103,12 @@ alphabetical order:
 * LXDE's `LXRandR <http://wiki.lxde.org/en/LXRandR>`_, notable for storing configuration in ``~/.config/autostart/lxrandr-autostart``
 * `urandr <http://www.albertomilone.com/urandr.html>`_
 * `zarfy <http://sourceforge.net/projects/zarfy/>`_, notable for its nice use of a current screenshot
+* cglita wrote a patch that solved the ValueError / "1080p" problem. His patches went a little further and include more precise mode line selection; I keep it around, and you can try it like this::
+
+    git clone git://gitorious.org/arandr/arandr.git -b cglita
+    cd arandr
+    ./arandr
+
 
 
 Contributing
