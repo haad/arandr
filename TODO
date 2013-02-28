@@ -26,6 +26,9 @@ ARandR TODO list
        5. arandr knows what he sees and can position displays and offer to apply a matrix
 
 * be more intelligent about future xrandr versions (cf debian #523903)
+
+  * parse versions instead of just looking for a string -- '1.3' in output_string won't help detecting an 1.4 client that spews new keywords
+
 * read --props, parse edid (using parse-edid from read-edid; dispcalGUI has dispcalGUI/edid.py with a parse_edid that just works), maybe even offer setting properties
 
     * sigrok has a pure python implementation at http://sigrok.git.sourceforge.net/git/gitweb.cgi?p=sigrok/sigrok;a=blob;f=libsigrokdecode/decoders/edid/edid.py

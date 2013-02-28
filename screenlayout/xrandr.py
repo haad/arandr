@@ -38,7 +38,7 @@ class XRandR(object):
             self.environ['DISPLAY'] = display
 
         version_output = self._output("--version")
-        if not ("1.2" in version_output or "1.3" in version_output) and not force_version:
+        if not ("1.2" in version_output or "1.3" in version_output or "1.4" in version_output) and not force_version:
             raise Exception("XRandR 1.2/1.3 required.")
 
     def _get_outputs(self):
@@ -134,6 +134,9 @@ class XRandR(object):
             assert hsplit[1] in ("connected","disconnected", 'unknown-connection')
 
             o.connected = (hsplit[1] in ('connected', 'unknown-connection'))
+
+            if 'primary' in hsplit:
+                hsplit.remove('primary')
 
             if not hsplit[2].startswith("("):
                 active = True
