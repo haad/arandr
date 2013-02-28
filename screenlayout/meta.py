@@ -25,7 +25,7 @@ PROGRAMNAME = _(u'ARandR Screen Layout Editor')
 ## (ein weiteres GUI für XRandR)" so users get both the explanation of
 ## the acronym and a localized version.
 PROGRAMDESCRIPTION = _(u'Another XRandR GUI')
-COPYRIGHT = u'© chrysn 2008 – 2012'
+COPYRIGHT = u'© chrysn 2008 – 2013, Себастьян Gli ţa Κατινα 2011'
 
 TRANSLATORS = [
         'chrysn <chrysn@fsfe.org>',

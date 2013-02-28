@@ -1,3 +1,4 @@
+* Merged cglita branch (solves ValueError / "1080p" issue)
 * New translations:
   - Ukrainian (by R-a-x)
   - Hungarian (by Tamás Nagy)
