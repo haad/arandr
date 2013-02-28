@@ -158,7 +158,7 @@ class XRandR(object):
                 if r in headline:
                     o.rotations.add(r)
 
-            current = None
+            currentname = None
             for d, w, h in details:
                 n, m = d[0:2]
                 k = m.strip("()")
