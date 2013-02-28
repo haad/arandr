@@ -53,4 +53,8 @@ TRANSLATORS = [
         'o-157',
         'Ingemar Karlsson <ingemar@ingk.se>',
         'Semsudin Abdic <abdic88@gmail.com>',
+        'R-a-x',
+        'Tamás Nagy <kisagy@gmail.com>',
+        'Mantas Kriaučiūnas <mantas@akl.lt>',
+        'Dimitris Giouroukis',
         ]
