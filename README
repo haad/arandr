@@ -85,23 +85,36 @@ Bugs / Caveats
 --------------
 
  * Changes while running are not caught.
- * Depends on all modes to have a <width>x<height> name (see `debian bug #507521`_).
-
-   * cglita wrote a patch that solves the problem. Until a version is released that includes the changes, use his version if the above does not work for you::
-
-         git clone git://gitorious.org/arandr/arandr.git
-         cd arandr
-         git checkout cglita
-         ./arandr
-
+ * Versions before 0.1.7 depended on all modes to have a <width>x<height> name (see `debian bug #507521`_); if ARandR does not start up, please install the latest version. (On different bugtrackers, this is called the ValueError / "1080p" / "1024x768i" problem).
  * See TODO_ for planned features.
+
+
+Similar projects
+----------------
+
+A number of other programs exist that cover similar functionality, often
+bundled with a particular desktop environment. Those I know of are, in
+alphabetical order:
+
+* Gnome's ``gnome-control-center display``, notable for its ``~/.config/monitors.xml`` `persistence <https://live.gnome.org/RandR#Storage_of_RANDR_configurations>`_
+* `grandr <ftp://ftp.freedesktop.org/pub/individual/app/>`_
+* `grandr-applet <http://dekorte.homeip.net/download/grandr-applet/>`_ (which seems not to be related to grandr)
+* KDE's RandR tool ``krandrtray``, notable for being the only listed program to be Qt based
+* LXDE's `LXRandR <http://wiki.lxde.org/en/LXRandR>`_, notable for storing configuration in ``~/.config/autostart/lxrandr-autostart``
+* `urandr <http://www.albertomilone.com/urandr.html>`_
+* `zarfy <http://sourceforge.net/projects/zarfy/>`_, notable for its nice use of a current screenshot
+* cglita wrote a patch that solved the ValueError / "1080p" problem. His patches went a little further and include more precise mode line selection; I keep it around, and you can try it like this::
+
+    git clone git://gitorious.org/arandr/arandr.git -b cglita
+    cd arandr
+    ./arandr
 
 
 
 Contributing
 ------------
 
-If you are fluent with languages not yet supported, you can add translations to ARandR using gettext_. An easy way to do this is `ARandR's transifex site`_ or on `its Launchpad translation site`_.
+If you are fluent with languages not yet supported, you can add translations to ARandR using gettext_. An easy way to do this is `ARandR's page on hosted Weblate`_. (Transifex and Launchpad translations were discontinued for lack of SCM integration and associated problems with attributing contributions).
 
 Please send bug reports, suggestions, patches and git pull requests to me_.
 
@@ -158,8 +171,7 @@ Translations by
  .. _Debian: http://packages.debian.org/arandr
  .. _Ubuntu: http://packages.ubuntu.com/arandr
  .. _gettext: http://www.gnu.org/software/gettext/
- .. _`ARandR's transifex site`: https://transifex.net/projects/p/arandr/
- .. _`its Launchpad translation site`: https://translations.launchpad.net/arandr
+ .. _`ARandR's page on hosted Weblate`: http://hosted.weblate.org/projects/arandr/master/
  .. _me: mailto:chrysn@fsfe.org
  .. _python: http://www.python.org/
  .. _PyGTK: http://www.pygtk.org/
