@@ -59,6 +59,29 @@ class Size(tuple):
     def __str__(self):
         return "%dx%d"%self
 
+class NamedSize(object):
+    """Object that behaves like a size, but has an additional name attribute"""
+    def __init__(self, size, name):
+        self._size = size
+        self.name = name
+
+    width = property(lambda self:self[0])
+    height = property(lambda self:self[1])
+    def __str__(self):
+        if "%dx%d"%(self.width, self.height) in self.name:
+            return self.name
+        else:
+            return "%s (%dx%d)"%(self.name, self.width, self.height)
+
+    def __iter__(self):
+        return self._size.__iter__()
+
+    def __getitem__(self, i):
+        return self._size[i]
+
+    def __len__(self):
+        return 2
+
 class Position(tuple):
     """2-tuple of left and top that can be created from a '<left>x<top>' string"""
     def __new__(cls, arg):

@@ -196,7 +196,7 @@ class ARandRWidget(gtk.DrawingArea):
             o = cfg.outputs[on]
             if not o.active: continue
 
-            rect = (o.tentative_position if hasattr(o, 'tentative_position') else o.position) + o.size
+            rect = (o.tentative_position if hasattr(o, 'tentative_position') else o.position) + tuple(o.size)
             center = rect[0]+rect[2]/2, rect[1]+rect[3]/2
 
             # paint rectangle
@@ -309,9 +309,9 @@ class ARandRWidget(gtk.DrawingArea):
         if oc.active:
             res_m = gtk.Menu()
             for r in os.modes:
-                i = gtk.CheckMenuItem("%sx%s"%r)
+                i = gtk.CheckMenuItem(str(r))
                 i.props.draw_as_radio = True
-                i.props.active = (oc.mode == r)
+                i.props.active = (oc.mode.name == r.name)
                 def _res_set(menuitem, on, r):
                     try:
                         self.set_resolution(on, r)
