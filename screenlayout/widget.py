@@ -287,9 +287,15 @@ class ARandRWidget(gtk.DrawingArea):
     def contextmenu(self):
         m = gtk.Menu()
         for on in self._xrandr.outputs:
+            oc = self._xrandr.configuration.outputs[on]
+            os = self._xrandr.state.outputs[on]
+
             i = gtk.MenuItem(on)
             i.props.submenu = self._contextmenu(on)
             m.add(i)
+
+            if not oc.active and not os.connected:
+                i.props.sensitive = False
         m.show_all()
         return m
 
@@ -300,8 +306,6 @@ class ARandRWidget(gtk.DrawingArea):
 
         enabled = gtk.CheckMenuItem(_("Active"))
         enabled.props.active = oc.active
-        if not oc.active and not os.connected:
-            enabled.props.sensitive = False
         enabled.connect('activate', lambda menuitem: self.set_active(on, menuitem.props.active))
 
         m.add(enabled)
