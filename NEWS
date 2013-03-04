@@ -1,3 +1,6 @@
+Version 0.1.7.1
+* Build even with no translations present
+* Fix AttributeError when modes with same name have different resolutions
 * Show the entire output submenu as disabled instead of the "Active" checkbox
 
 Version 0.1.7
