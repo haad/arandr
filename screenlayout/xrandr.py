@@ -174,7 +174,7 @@ class XRandR(object):
                 for old_mode in o.modes:
                     if old_mode.name == n:
                         if tuple(old_mode) != tuple(r):
-                            warnings.warn("Supressing duplicate mode %s even though it has different resolutions (%s, %s)."%(n, r._size, s._size))
+                            warnings.warn("Supressing duplicate mode %s even though it has different resolutions (%s, %s)."%(n, r, old_mode))
                         break
                 else:
                     # the mode is really new
