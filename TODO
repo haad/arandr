@@ -7,6 +7,7 @@ ARandR TODO list
 * receive notifications on changes (XRRScreenChangeNotify)
 
     * useful resources: <http://www.mail-archive.com/sawfish-list@gnome.org/msg03630.html> (a patch to sawfish for xrandr event support), Xrandr.c (that defines XRRSelectInput), SelInput.c (compare XSelectInput /XRRSelectInput), ./eventdemo.py
+    * use x-on-resize (http://keithp.com/blogs/x-on-resize/)
 
 * don't reset displays moved over edges; instead, move as far as possible
 * allow setting dpi
