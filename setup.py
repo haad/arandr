@@ -79,6 +79,7 @@ class build_trans(NoOptionCommand):
     description = 'Compile .po files into .mo files'
 
     def run(self):
+        self.mkpath(os.path.join("build", "locale")) # create directory even if there are no files, otherwise install would complain
         for po in glob.glob(os.path.join(PO_DIR,'*.po')):
             lang = os.path.basename(po[:-3])
             mo = os.path.join('build', 'locale', lang, 'LC_MESSAGES', 'arandr.mo')
