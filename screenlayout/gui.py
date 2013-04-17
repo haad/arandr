@@ -296,13 +296,20 @@ class Application(object):
         d.run()
         d.destroy()
 
-    def run(self):
+    def run(self, options):
         gtk.main()
+	if options.saveflag:
+		try:
+                	f = os.environ['HOME']+'/.xprofile'
+                	self.widget.save_to_file(f, self.filetemplate)
+		except KeyError:
+			pass
 
 def main():
     p = optparse.OptionParser(usage="%prog [savedfile]", description="Another XRandrR GUI", version="%%prog %s"%__version__)
     p.add_option('--randr-display', help='Use D as display for xrandr (but still show the GUI on the display from the environment; e.g. `localhost:10.0`)', metavar='D')
     p.add_option('--force-version', help='Even run with untested XRandR versions', action='store_true')
+    p.add_option('--save-xprofile-before-exit', help='Save xrandr configuration to .xprofile file before xrandr exists', action='store_true', default=False, dest='saveflag')
 
     (options, args) = p.parse_args()
     if len(args) == 0:
@@ -317,4 +324,4 @@ def main():
             randr_display=options.randr_display,
             force_version=options.force_version
             )
-    a.run()
+    a.run(options)
